@@ -1,0 +1,52 @@
+name: Sync Intervals.icu
+
+on:
+  schedule:
+    # 05:15 UTC = 07:15 ora di Zurigo (estate) / 06:15 (inverno)
+    - cron: "15 5 * * *"
+  workflow_dispatch:
+    inputs:
+      force_refresh:
+        description: "Riscarica tutti gli stream (1 = si)"
+        required: false
+        default: "0"
+      oldest:
+        description: "Data minima (YYYY-MM-DD)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installa dipendenze
+        run: pip install -r requirements.txt
+
+      - name: Sync
+        env:
+          INTERVALS_ATHLETE_ID: ${{ secrets.INTERVALS_ATHLETE_ID }}
+          INTERVALS_API_KEY: ${{ secrets.INTERVALS_API_KEY }}
+          FORCE_REFRESH: ${{ github.event.inputs.force_refresh }}
+          SYNC_OLDEST: ${{ github.event.inputs.oldest || '2026-01-01' }}
+        run: python scripts/sync_intervals.py
+
+      - name: Commit dei dati aggiornati
+        run: |
+          git config user.name "sync-bot"
+          git config user.email "actions@github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "Nessuna modifica."
+          else
+            git commit -m "sync: dati Intervals.icu $(date -u +%Y-%m-%d)"
+            git push
+          fi
