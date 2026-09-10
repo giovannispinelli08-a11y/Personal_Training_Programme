@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preparazione — Mezza Maratona di Zurigo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FCFCFB; --panel:#FFFFFF;
+  --ink:#16181A; --ink2:#5A6068; --ink3:#8C9298;
+  --rule:#E5E7E4; --rule2:#C9CCC8;
+  --signal:#C1121F;
+  --easy:#3E7C6A; --long:#2A5A8C; --tempo:#B8862B; --hard:#A8412A; --race:#6B4C8A;
+  --band:rgba(42,90,140,.13);
+  --grid:#EEF0ED;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#101211; --panel:#171A19;
+    --ink:#E9EBE8; --ink2:#9AA09C; --ink3:#6E736F;
+    --rule:#262A28; --rule2:#3A3F3B;
+    --signal:#E4574C;
+    --easy:#5EA98F; --long:#5B93CC; --tempo:#D2A554; --hard:#D2705A; --race:#A98CC9;
+    --band:rgba(91,147,204,.16);
+    --grid:#1E211F;
+  }
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:Inter,-apple-system,system-ui,sans-serif;
+  font-variant-numeric:tabular-nums;
+  font-size:14px; line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:940px;margin:0 auto;padding:0 20px 64px}
+
+/* ---------- intestazione ---------- */
+header{border-bottom:1px solid var(--rule2);padding:32px 0 0}
+h1{font-size:19px;font-weight:600;letter-spacing:-.01em;margin:0 0 2px}
+.sub{font-size:13px;color:var(--ink2);margin:0 0 22px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin-bottom:0}
+.fact{background:var(--paper);padding:11px 13px}
+.fact .k{font-size:11px;color:var(--ink3);margin:0 0 3px}
+.fact .v{font-size:19px;font-weight:500;letter-spacing:-.02em;margin:0;line-height:1.15}
+.fact .u{font-size:11px;color:var(--ink3);font-weight:400}
+
+nav{display:flex;gap:0;border-bottom:1px solid var(--rule2);margin-bottom:26px}
+nav button{
+  appearance:none;background:none;border:none;border-bottom:2px solid transparent;
+  font:inherit;font-size:13px;color:var(--ink2);padding:12px 15px 10px;cursor:pointer;margin-bottom:-1px;
+}
+nav button[aria-selected=true]{color:var(--ink);border-bottom-color:var(--ink);font-weight:500}
+nav button:focus-visible{outline:2px solid var(--signal);outline-offset:-2px}
+
+section[hidden]{display:none}
+h2{font-size:14px;font-weight:600;margin:34px 0 3px}
+h2:first-child{margin-top:6px}
+.hint{font-size:12px;color:var(--ink3);margin:0 0 14px;max-width:62ch}
+
+/* ---------- piano ---------- */
+.blocco{margin-bottom:26px}
+.blocco-hd{display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+  border-bottom:1px solid var(--rule2);padding-bottom:5px;margin-bottom:2px}
+.blocco-nome{font-size:13px;font-weight:600}
+.blocco-meta{font-size:11px;color:var(--ink3)}
+.sett{border-bottom:1px solid var(--rule)}
+.sett-hd{display:grid;grid-template-columns:64px 1fr auto auto;gap:10px;align-items:center;
+  padding:9px 2px;cursor:pointer;font-size:13px}
+.sett-hd:hover{background:var(--panel)}
+.sett-n{color:var(--ink3);font-size:11px}
+.sett-date{color:var(--ink2)}
+.sett-vol{font-weight:500}
+.sett-bar{width:78px;height:3px;background:var(--grid);position:relative;overflow:hidden}
+.sett-bar i{position:absolute;inset:0 auto 0 0;background:var(--ink3)}
+.sett.now{background:var(--panel)}
+.sett.now .sett-n{color:var(--signal);font-weight:600}
+.sett.now .sett-bar i{background:var(--signal)}
+.sett.scarico .sett-vol{color:var(--ink3)}
+.sedute{padding:2px 0 12px 64px}
+.seduta{display:grid;grid-template-columns:78px 1fr auto;gap:10px;align-items:baseline;
+  padding:5px 0;font-size:13px;border-top:1px solid var(--grid)}
+.seduta:first-child{border-top:none}
+.sd-g{color:var(--ink3);font-size:11px}
+.sd-t{font-weight:500}
+.sd-t::before{content:"";display:inline-block;width:7px;height:7px;margin-right:7px;
+  background:var(--ink3);vertical-align:middle;border-radius:50%}
+.t-facile .sd-t::before,.t-facile_allunghi .sd-t::before{background:var(--easy)}
+.t-lungo .sd-t::before,.t-ritmo_gara .sd-t::before{background:var(--long)}
+.t-tempo .sd-t::before{background:var(--tempo)}
+.t-ripetute .sd-t::before{background:var(--hard)}
+.t-gara .sd-t::before{background:var(--signal)}
+.sd-d{color:var(--ink2);font-size:12px;text-align:right;white-space:nowrap}
+.sd-note{grid-column:2/4;color:var(--ink3);font-size:11.5px;margin-top:-2px;max-width:58ch}
+
+/* ---------- grafici ---------- */
+figure{margin:0 0 30px}
+figcaption{font-size:12px;color:var(--ink3);margin:7px 0 0;max-width:64ch}
+.chartbox{overflow-x:auto;border:1px solid var(--rule);background:var(--panel)}
+svg{display:block}
+.axis text{font-size:10px;fill:var(--ink3)}
+.axis line{stroke:var(--rule)}
+.grid line{stroke:var(--grid)}
+.readout{font-size:12px;color:var(--ink2);min-height:1.5em;margin:6px 0 0;
+  display:flex;gap:16px;flex-wrap:wrap}
+.readout b{font-weight:500;color:var(--ink)}
+.legend{display:flex;gap:15px;flex-wrap:wrap;font-size:11.5px;color:var(--ink2);margin:9px 0 0}
+.legend i{display:inline-block;width:9px;height:9px;margin-right:5px;vertical-align:middle}
+
+/* ---------- stato ---------- */
+.md h1{display:none}
+.md h2{font-size:13px;font-weight:600;margin:26px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--rule)}
+.md ul{margin:0;padding-left:17px}
+.md li{margin:3px 0;font-size:13px}
+.md p{font-size:12px;color:var(--ink3);margin:0 0 9px;max-width:64ch}
+.md table{border-collapse:collapse;width:100%;font-size:12.5px;margin:4px 0 10px}
+.md th{text-align:left;font-weight:500;color:var(--ink3);font-size:11px;
+  border-bottom:1px solid var(--rule2);padding:5px 9px 5px 0}
+.md td{padding:5px 9px 5px 0;border-bottom:1px solid var(--rule)}
+.warn li{color:var(--signal)}
+.loading{color:var(--ink3);font-size:13px;padding:26px 0}
+.err{color:var(--signal);font-size:13px;padding:16px 0}
+footer{border-top:1px solid var(--rule);margin-top:44px;padding-top:14px;
+  font-size:11px;color:var(--ink3)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Mezza Maratona di Zurigo</h1>
+  <p class="sub" id="sub">11 aprile 2027 · 21,1 km</p>
+  <div class="facts" id="facts"></div>
+</header>
+
+<nav role="tablist">
+  <button role="tab" aria-selected="true" data-t="piano">Piano</button>
+  <button role="tab" aria-selected="false" data-t="andamento">Andamento</button>
+  <button role="tab" aria-selected="false" data-t="stato">Stato</button>
+</nav>
+
+<section id="piano"><div class="loading">Carico il piano…</div></section>
+
+<section id="andamento" hidden>
+  <h2>Volume settimanale</h2>
+  <p class="hint">Minuti di corsa a settimana. Le barre sono il fatto, la linea il previsto.
+     Le settimane di scarico sono previste, non mancate.</p>
+  <figure>
+    <div class="chartbox"><svg id="c-vol" viewBox="0 0 900 250" width="900" height="250"></svg></div>
+    <div class="readout" id="r-vol"></div>
+    <div class="legend">
+      <span><i style="background:var(--easy)"></i>svolto</span>
+      <span><i style="background:var(--ink3)"></i>previsto</span>
+      <span><i style="background:var(--signal)"></i>settimana corrente</span>
+    </div>
+  </figure>
+
+  <h2>Efficienza aerobica</h2>
+  <p class="hint">Velocità corretta per la pendenza divisa per la frequenza cardiaca.
+     I punti sono le singole corse, la curva è la media mobile su cinque uscite,
+     la banda è ±1 deviazione standard. Se la curva sale, la stessa velocità costa meno battiti.</p>
+  <figure>
+    <div class="chartbox"><svg id="c-ef" viewBox="0 0 900 250" width="900" height="250"></svg></div>
+    <div class="readout" id="r-ef"></div>
+  </figure>
+
+  <h2>Forma e fatica</h2>
+  <p class="hint">Carico cronico (la base costruita nelle ultime settimane) e carico acuto
+     (la stanchezza degli ultimi giorni). Quando l'acuto sta molto sopra il cronico
+     si sta accumulando più fatica di quanta base ci sia sotto.</p>
+  <figure>
+    <div class="chartbox"><svg id="c-load" viewBox="0 0 900 230" width="900" height="230"></svg></div>
+    <div class="readout" id="r-load"></div>
+    <div class="legend">
+      <span><i style="background:var(--long)"></i>cronico · forma</span>
+      <span><i style="background:var(--hard)"></i>acuto · fatica</span>
+    </div>
+  </figure>
+</section>
+
+<section id="stato" hidden><div class="loading">Carico i dati…</div></section>
+
+<footer id="foot"></footer>
+</div>
+
+<script>
+"use strict";
+
+const GARA = new Date("2027-04-11T00:00:00");
+const OGGI = new Date(); OGGI.setHours(0,0,0,0);
+
+const ETICHETTE = {
+  facile:"Facile", facile_allunghi:"Facile con allunghi", lungo:"Lungo",
+  tempo:"Soglia", ripetute:"Ripetute", ritmo_gara:"Lungo a ritmo gara", gara:"Gara"
+};
+const MESI = ["gen","feb","mar","apr","mag","giu","lug","ago","set","ott","nov","dic"];
+const GIORNI = ["dom","lun","mar","mer","gio","ven","sab"];
+
+/* ---------- utilità ---------- */
+function parseCSV(text){
+  const rows=[]; let row=[], cur="", q=false;
+  for(let i=0;i<text.length;i++){
+    const c=text[i];
+    if(q){
+      if(c==='"'){ if(text[i+1]==='"'){cur+='"';i++;} else q=false; }
+      else cur+=c;
+    } else if(c==='"') q=true;
+    else if(c===','){ row.push(cur); cur=""; }
+    else if(c==='\n'){ row.push(cur); rows.push(row); row=[]; cur=""; }
+    else if(c!=='\r') cur+=c;
+  }
+  if(cur.length||row.length){ row.push(cur); rows.push(row); }
+  if(!rows.length) return [];
+  const head=rows.shift().map(h=>h.trim());
+  return rows.filter(r=>r.length>1).map(r=>{
+    const o={}; head.forEach((h,i)=>o[h]=(r[i]??"").trim()); return o;
+  });
+}
+const num=(v)=>{ const n=parseFloat(v); return Number.isFinite(n)?n:null; };
+const d2 = (n)=>String(n).padStart(2,"0");
+function dLoc(iso){ const d=new Date(iso+"T00:00:00"); return d; }
+function fmtD(d){ return `${d.getDate()} ${MESI[d.getMonth()]}`; }
+function fmtDG(d){ return `${GIORNI[d.getDay()]} ${d.getDate()} ${MESI[d.getMonth()]}`; }
+function lunediDi(d){ const x=new Date(d); const w=(x.getDay()+6)%7; x.setDate(x.getDate()-w); x.setHours(0,0,0,0); return x; }
+function chiave(d){ return `${d.getFullYear()}-${d2(d.getMonth()+1)}-${d2(d.getDate())}`; }
+function pace(sec){ return `${Math.floor(sec/60)}:${d2(Math.round(sec%60))}`; }
+function media(a){ return a.reduce((s,x)=>s+x,0)/a.length; }
+function sd(a){ if(a.length<2) return 0; const m=media(a); return Math.sqrt(media(a.map(x=>(x-m)**2))); }
+
+/* curva morbida: Catmull-Rom convertita in cubiche di Bézier */
+function curva(pts){
+  if(pts.length<2) return "";
+  let d=`M${pts[0][0].toFixed(1)},${pts[0][1].toFixed(1)}`;
+  for(let i=0;i<pts.length-1;i++){
+    const p0=pts[i-1]||pts[i], p1=pts[i], p2=pts[i+1], p3=pts[i+2]||p2;
+    const c1=[p1[0]+(p2[0]-p0[0])/6, p1[1]+(p2[1]-p0[1])/6];
+    const c2=[p2[0]-(p3[0]-p1[0])/6, p2[1]-(p3[1]-p1[1])/6];
+    d+=`C${c1[0].toFixed(1)},${c1[1].toFixed(1)} ${c2[0].toFixed(1)},${c2[1].toFixed(1)} ${p2[0].toFixed(1)},${p2[1].toFixed(1)}`;
+  }
+  return d;
+}
+const NS="http://www.w3.org/2000/svg";
+function el(tag,attrs={},parent){
+  const e=document.createElementNS(NS,tag);
+  for(const k in attrs) e.setAttribute(k,attrs[k]);
+  if(parent) parent.appendChild(e);
+  return e;
+}
+
+/* ---------- caricamento ---------- */
+async function testo(url){
+  const r=await fetch(url,{cache:"no-store"});
+  if(!r.ok) throw new Error(`${url}: ${r.status}`);
+  return r.text();
+}
+
+const S={corse:[],altre:[],piano:[],digest:""};
+
+async function carica(){
+  const esiti=await Promise.allSettled([
+    testo("data/summary.csv"), testo("plan/sessions.csv"), testo("data/digest.md")
+  ]);
+  if(esiti[0].status==="fulfilled"){
+    for(const r of parseCSV(esiti[0].value)){
+      const dist=num(r.distance_m), t=num(r.moving_time_s);
+      if(!r.start_local) continue;
+      const d=new Date(r.start_local); d.setHours(0,0,0,0);
+      if(isNaN(d)) continue;
+      const base={data:d, tipo:r.type, min:(t||0)/60, load:num(r.training_load)||0,
+                  ctl:num(r.ctl_fitness), atl:num(r.atl_fatica)};
+      if(r.type==="Run"){
+        if(!dist||dist<1000||!t||t<600) continue;
+        S.corse.push({...base, km:dist/1000, pace:t/(dist/1000),
+          gap:num(r.grade_adjusted_pace), fc:num(r.avg_hr), disl:num(r.elev_gain_m)||0});
+      } else S.altre.push(base);
+    }
+    S.corse.sort((a,b)=>a.data-b.data);
+  }
+  if(esiti[1].status==="fulfilled") S.piano=parseCSV(esiti[1].value);
+  if(esiti[2].status==="fulfilled") S.digest=esiti[2].value;
+  return esiti;
+}
+
+/* ---------- intestazione ---------- */
+function renderFacts(){
+  const giorni=Math.max(0,Math.round((GARA-OGGI)/864e5));
+  const sett=Math.ceil(giorni/7);
+  const ora=S.piano.filter(r=>r.data && lunediDi(dLoc(r.data)).getTime()===lunediDi(OGGI).getTime());
+  const nSett=ora.length?ora[0].settimana:"—";
+  const blocco=ora.length?ora[0].blocco:"—";
+  const l28=S.corse.filter(c=>(OGGI-c.data)/864e5<=28);
+  const km28=l28.reduce((s,c)=>s+c.km,0);
+  const lungo=l28.length?Math.max(...l28.map(c=>c.km)):0;
+  const ult=S.corse[S.corse.length-1];
+  const f=document.getElementById("facts");
+  const dati=[
+    ["Alla gara", giorni, "giorni"],
+    ["Settimana", nSett, `di 30 · ${blocco}`],
+    ["Ultimi 28 giorni", km28.toFixed(1), `km · ${l28.length} corse`],
+    ["Lungo massimo", lungo?lungo.toFixed(1):"—", "km"],
+    ["Ultima corsa", ult?fmtD(ult.data):"—", ult?`${ult.km.toFixed(1)} km`:""],
+  ];
+  f.innerHTML=dati.map(([k,v,u])=>
+    `<div class="fact"><p class="k">${k}</p><p class="v">${v} <span class="u">${u||""}</span></p></div>`).join("");
+  document.getElementById("sub").textContent=`11 aprile 2027 · 21,1 km · ${sett} settimane`;
+}
+
+/* ---------- piano ---------- */
+function renderPiano(){
+  const box=document.getElementById("piano");
+  if(!S.piano.length){ box.innerHTML='<p class="err">plan/sessions.csv non trovato.</p>'; return; }
+  const lunOra=lunediDi(OGGI).getTime();
+  const perSett=new Map();
+  for(const r of S.piano){
+    if(!r.data) continue;
+    const lun=lunediDi(dLoc(r.data)).getTime();
+    if(!perSett.has(lun)) perSett.set(lun,{lun,righe:[],blocco:r.blocco,n:r.settimana,scarico:r.scarico});
+    const s=perSett.get(lun);
+    s.righe.push(r);
+    if(r.blocco) s.blocco=r.blocco;
+    if(r.settimana) s.n=r.settimana;
+    if(r.scarico) s.scarico=r.scarico;
+  }
+  const sett=[...perSett.values()].sort((a,b)=>a.lun-b.lun);
+  const maxVol=Math.max(...sett.map(s=>s.righe.reduce((t,r)=>t+(num(r.minuti)||0),0)),1);
+
+  let html="", bloccoCorr=null;
+  for(const s of sett){
+    if(s.blocco!==bloccoCorr){
+      if(bloccoCorr!==null) html+="</div>";
+      const dellB=sett.filter(x=>x.blocco===s.blocco);
+      const tot=dellB.reduce((t,x)=>t+x.righe.reduce((u,r)=>u+(num(r.minuti)||0),0),0);
+      html+=`<div class="blocco"><div class="blocco-hd">
+        <span class="blocco-nome">${s.blocco||"—"}</span>
+        <span class="blocco-meta">${dellB.length} settimane · ${Math.round(tot/60)} ore</span></div>`;
+      bloccoCorr=s.blocco;
+    }
+    const vol=s.righe.reduce((t,r)=>t+(num(r.minuti)||0),0);
+    const ora=s.lun===lunOra;
+    const dom=new Date(s.lun+6*864e5);
+    const cls=["sett",ora?"now":"",s.scarico?"scarico":""].filter(Boolean).join(" ");
+    const apri=ora||(s.lun>lunOra&&s.lun<lunOra+15*864e5);
+    html+=`<div class="${cls}" data-lun="${s.lun}">
+      <div class="sett-hd" role="button" tabindex="0" aria-expanded="${apri}">
+        <span class="sett-n">Sett ${s.n||"—"}</span>
+        <span class="sett-date">${fmtD(new Date(s.lun))} – ${fmtD(dom)}${s.scarico?" · scarico":""}</span>
+        <span class="sett-vol">${vol?Math.round(vol)+"′":"gara"}</span>
+        <span class="sett-bar"><i style="width:${(vol/maxVol*100).toFixed(0)}%"></i></span>
+      </div>
+      <div class="sedute"${apri?"":" hidden"}>${s.righe.map(seduta).join("")}</div>
+    </div>`;
+  }
+  html+="</div>";
+  box.innerHTML=html;
+
+  box.querySelectorAll(".sett-hd").forEach(h=>{
+    const toggle=()=>{
+      const c=h.nextElementSibling, ap=c.hidden;
+      c.hidden=!ap; h.setAttribute("aria-expanded",String(ap));
+    };
+    h.addEventListener("click",toggle);
+    h.addEventListener("keydown",e=>{ if(e.key==="Enter"||e.key===" "){e.preventDefault();toggle();} });
+  });
+  const now=box.querySelector(".sett.now");
+  if(now) now.scrollIntoView({block:"center"});
+}
+
+function seduta(r){
+  const d=dLoc(r.data);
+  const et=ETICHETTE[r.tipo]||r.tipo;
+  let dettaglio;
+  if(r.tipo==="gara") dettaglio=`${r.km_indicativi} km`;
+  else{
+    const fc=r.fc_min?`FC ${r.fc_min}–${r.fc_max}`:"a sensazione";
+    dettaglio=`${r.minuti}′ · ${fc}`;
+  }
+  const nota=r.note?`<span class="sd-note">${r.note}</span>`:"";
+  return `<div class="seduta t-${r.tipo}">
+    <span class="sd-g">${fmtDG(d)}</span>
+    <span class="sd-t">${et}</span>
+    <span class="sd-d">${dettaglio}</span>${nota}</div>`;
+}
+
+/* ---------- grafico: volume settimanale ---------- */
+function chartVolume(){
+  const svg=document.getElementById("c-vol");
+  const W=900,H=250,M={t:14,r:16,b:30,l:44};
+  const iw=W-M.l-M.r, ih=H-M.t-M.b;
+
+  const prev=new Map();
+  for(const r of S.piano){
+    if(!r.data||!r.minuti) continue;
+    const k=lunediDi(dLoc(r.data)).getTime();
+    prev.set(k,(prev.get(k)||0)+(num(r.minuti)||0));
+  }
+  const reale=new Map();
+  for(const c of S.corse){
+    const k=lunediDi(c.data).getTime();
+    reale.set(k,(reale.get(k)||0)+c.min);
+  }
+  const chiavi=[...new Set([...prev.keys(),...reale.keys()])].sort((a,b)=>a-b);
+  if(!chiavi.length) return;
+  const lunOra=lunediDi(OGGI).getTime();
+  const dal=lunOra-10*7*864e5;
+  const sett=chiavi.filter(k=>k>=dal);
+  const maxY=Math.max(...sett.map(k=>Math.max(prev.get(k)||0,reale.get(k)||0)),60);
+  const yMax=Math.ceil(maxY/60)*60;
+
+  const x=i=>M.l+(sett.length>1? i*iw/(sett.length-1):iw/2);
+  const y=v=>M.t+ih-(v/yMax)*ih;
+  const bw=Math.max(3,Math.min(16,iw/sett.length*0.55));
+
+  svg.innerHTML="";
+  const g=el("g",{class:"grid"},svg);
+  for(let v=0;v<=yMax;v+=60){
+    el("line",{x1:M.l,x2:W-M.r,y1:y(v),y2:y(v)},g);
+    el("text",{x:M.l-8,y:y(v)+3.5,"text-anchor":"end",class:"axis"},svg).textContent=v;
+  }
+  svg.querySelectorAll("text").forEach(t=>t.setAttribute("fill","currentColor"));
+
+  // barre = svolto
+  sett.forEach((k,i)=>{
+    const v=reale.get(k)||0;
+    if(!v) return;
+    const ora=k===lunOra;
+    el("rect",{x:x(i)-bw/2,y:y(v),width:bw,height:M.t+ih-y(v),
+      fill:ora?"var(--signal)":"var(--easy)","fill-opacity":ora?".85":".7"},svg);
+  });
+  // linea = previsto
+  const pts=sett.map((k,i)=>prev.has(k)?[x(i),y(prev.get(k))]:null).filter(Boolean);
+  if(pts.length>1) el("path",{d:curva(pts),fill:"none",stroke:"var(--ink3)",
+    "stroke-width":1.4,"stroke-linecap":"round"},svg);
+
+  // asse x
+  const ax=el("g",{class:"axis"},svg);
+  el("line",{x1:M.l,x2:W-M.r,y1:M.t+ih,y2:M.t+ih},ax);
+  sett.forEach((k,i)=>{
+    const d=new Date(k);
+    if(i%3) return;
+    el("text",{x:x(i),y:H-11,"text-anchor":"middle",fill:"currentColor"},ax).textContent=fmtD(d);
+  });
+  // guida oggi
+  const io=sett.indexOf(lunOra);
+  if(io>=0) el("line",{x1:x(io),x2:x(io),y1:M.t,y2:M.t+ih,stroke:"var(--signal)",
+    "stroke-width":1,"stroke-dasharray":"2 3","stroke-opacity":".5"},svg);
+
+  interattivo(svg,sett.map((k,i)=>({cx:x(i),k})),(d)=>{
+    const p=prev.get(d.k), r=reale.get(d.k);
+    const perc=(p&&r)?` · <b>${Math.round(r/p*100)}%</b>`:"";
+    return `<span>settimana del <b>${fmtD(new Date(d.k))}</b></span>
+      <span>svolto <b>${r?Math.round(r):0}′</b></span>
+      <span>previsto <b>${p?Math.round(p):"—"}′</b></span>${perc}`;
+  },"r-vol",M,ih);
+}
+
+/* ---------- grafico: efficienza ---------- */
+function chartEfficienza(){
+  const svg=document.getElementById("c-ef");
+  const W=900,H=250,M={t:14,r:16,b:30,l:44};
+  const iw=W-M.l-M.r, ih=H-M.t-M.b;
+  const dal=new Date(OGGI-120*864e5);
+  const dati=S.corse.filter(c=>c.fc&&c.gap&&c.data>=dal)
+                    .map(c=>({...c, ef:c.gap/c.fc*1000}));
+  svg.innerHTML="";
+  if(dati.length<3){
+    el("text",{x:W/2,y:H/2,"text-anchor":"middle",fill:"currentColor",class:"axis"},svg)
+      .textContent="Servono almeno tre corse con dati cardio.";
+    return;
+  }
+  const t0=dati[0].data.getTime(), t1=Math.max(dati[dati.length-1].data.getTime(),OGGI.getTime());
+  const vals=dati.map(d=>d.ef);
+  const lo=Math.min(...vals), hi=Math.max(...vals);
+  const pad=(hi-lo)*0.35||1;
+  const yLo=lo-pad, yHi=hi+pad;
+  const x=t=>M.l+((t-t0)/Math.max(t1-t0,1))*iw;
+  const y=v=>M.t+ih-((v-yLo)/(yHi-yLo))*ih;
+
+  const g=el("g",{class:"grid"},svg);
+  const step=(yHi-yLo)/4;
+  for(let i=0;i<=4;i++){
+    const v=yLo+step*i;
+    el("line",{x1:M.l,x2:W-M.r,y1:y(v),y2:y(v)},g);
+    el("text",{x:M.l-8,y:y(v)+3.5,"text-anchor":"end",fill:"currentColor",class:"axis"},svg)
+      .textContent=v.toFixed(1);
+  }
+
+  // media mobile e banda ±1 SD
+  const K=5, mean=[], up=[], dn=[];
+  for(let i=0;i<dati.length;i++){
+    const a=Math.max(0,i-Math.floor(K/2)), b=Math.min(dati.length,a+K);
+    const w=vals.slice(a,b);
+    const m=media(w), s=sd(w);
+    const px=x(dati[i].data.getTime());
+    mean.push([px,y(m)]); up.push([px,y(m+s)]); dn.push([px,y(m-s)]);
+  }
+  el("path",{d:curva(up)+"L"+dn.slice().reverse().map(p=>`${p[0].toFixed(1)},${p[1].toFixed(1)}`).join("L")+"Z",
+    fill:"var(--band)",stroke:"none"},svg);
+  el("path",{d:curva(mean),fill:"none",stroke:"var(--long)","stroke-width":1.8,
+    "stroke-linecap":"round"},svg);
+  dati.forEach(d=>{
+    el("circle",{cx:x(d.data.getTime()),cy:y(d.ef),r:2.6,fill:"var(--paper)",
+      stroke:"var(--long)","stroke-width":1.2},svg);
+  });
+
+  const ax=el("g",{class:"axis"},svg);
+  el("line",{x1:M.l,x2:W-M.r,y1:M.t+ih,y2:M.t+ih},ax);
+  for(let i=0;i<=5;i++){
+    const t=t0+(t1-t0)*i/5;
+    el("text",{x:x(t),y:H-11,"text-anchor":"middle",fill:"currentColor"},ax)
+      .textContent=fmtD(new Date(t));
+  }
+  interattivo(svg,dati.map(d=>({cx:x(d.data.getTime()),d})),(o)=>
+    `<span><b>${fmtD(o.d.data)}</b></span><span>${o.d.km.toFixed(1)} km</span>
+     <span>${pace(o.d.pace)} /km</span><span>FC <b>${Math.round(o.d.fc)}</b></span>
+     <span>efficienza <b>${o.d.ef.toFixed(1)}</b></span>`,"r-ef",M,ih);
+}
+
+/* ---------- grafico: forma e fatica ---------- */
+function chartCarico(){
+  const svg=document.getElementById("c-load");
+  const W=900,H=230,M={t:14,r:16,b:30,l:44};
+  const iw=W-M.l-M.r, ih=H-M.t-M.b;
+  const dal=new Date(OGGI-150*864e5);
+  const tutte=[...S.corse,...S.altre].filter(a=>a.ctl!=null&&a.atl!=null&&a.data>=dal)
+    .sort((a,b)=>a.data-b.data);
+  svg.innerHTML="";
+  if(tutte.length<3){
+    el("text",{x:W/2,y:H/2,"text-anchor":"middle",fill:"currentColor",class:"axis"},svg)
+      .textContent="Dati di carico non ancora disponibili.";
+    return;
+  }
+  const t0=tutte[0].data.getTime(), t1=Math.max(tutte[tutte.length-1].data.getTime(),OGGI.getTime());
+  const yHi=Math.max(...tutte.map(a=>Math.max(a.ctl,a.atl)))*1.15||10;
+  const x=t=>M.l+((t-t0)/Math.max(t1-t0,1))*iw;
+  const y=v=>M.t+ih-(v/yHi)*ih;
+
+  const g=el("g",{class:"grid"},svg);
+  for(let i=0;i<=4;i++){
+    const v=yHi*i/4;
+    el("line",{x1:M.l,x2:W-M.r,y1:y(v),y2:y(v)},g);
+    el("text",{x:M.l-8,y:y(v)+3.5,"text-anchor":"end",fill:"currentColor",class:"axis"},svg)
+      .textContent=v.toFixed(0);
+  }
+  const ctl=tutte.map(a=>[x(a.data.getTime()),y(a.ctl)]);
+  const atl=tutte.map(a=>[x(a.data.getTime()),y(a.atl)]);
+  el("path",{d:curva(atl)+"L"+ctl.slice().reverse().map(p=>`${p[0].toFixed(1)},${p[1].toFixed(1)}`).join("L")+"Z",
+    fill:"var(--hard)","fill-opacity":".10",stroke:"none"},svg);
+  el("path",{d:curva(ctl),fill:"none",stroke:"var(--long)","stroke-width":1.8},svg);
+  el("path",{d:curva(atl),fill:"none",stroke:"var(--hard)","stroke-width":1.4,
+    "stroke-dasharray":"4 2.5"},svg);
+
+  const ax=el("g",{class:"axis"},svg);
+  el("line",{x1:M.l,x2:W-M.r,y1:M.t+ih,y2:M.t+ih},ax);
+  for(let i=0;i<=5;i++){
+    const t=t0+(t1-t0)*i/5;
+    el("text",{x:x(t),y:H-11,"text-anchor":"middle",fill:"currentColor"},ax)
+      .textContent=fmtD(new Date(t));
+  }
+  interattivo(svg,tutte.map(a=>({cx:x(a.data.getTime()),a})),(o)=>
+    `<span><b>${fmtD(o.a.data)}</b></span><span>forma <b>${o.a.ctl.toFixed(1)}</b></span>
+     <span>fatica <b>${o.a.atl.toFixed(1)}</b></span>
+     <span>rapporto <b>${(o.a.atl/(o.a.ctl||1)).toFixed(2)}</b></span>`,"r-load",M,ih);
+}
+
+/* ---------- interazione comune ai grafici ---------- */
+function interattivo(svg,punti,fmt,outId,M,ih){
+  if(!punti.length) return;
+  const out=document.getElementById(outId);
+  const guida=el("line",{y1:M.t,y2:M.t+ih,stroke:"var(--ink3)","stroke-width":1,
+    "stroke-opacity":".45",visibility:"hidden"},svg);
+  const mostra=(clientX)=>{
+    const r=svg.getBoundingClientRect();
+    const px=(clientX-r.left)/r.width*svg.viewBox.baseVal.width;
+    let best=punti[0],bd=Infinity;
+    for(const p of punti){ const d=Math.abs(p.cx-px); if(d<bd){bd=d;best=p;} }
+    guida.setAttribute("x1",best.cx); guida.setAttribute("x2",best.cx);
+    guida.setAttribute("visibility","visible");
+    out.innerHTML=fmt(best);
+  };
+  svg.addEventListener("pointermove",e=>mostra(e.clientX));
+  svg.addEventListener("pointerdown",e=>mostra(e.clientX));
+  svg.addEventListener("pointerleave",()=>{
+    guida.setAttribute("visibility","hidden"); out.innerHTML="";
+  });
+  mostra(svg.getBoundingClientRect().right);
+}
+
+/* ---------- stato: markdown minimale ---------- */
+function renderStato(){
+  const box=document.getElementById("stato");
+  if(!S.digest){ box.innerHTML='<p class="err">data/digest.md non trovato.</p>'; return; }
+  const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+  const righe=S.digest.split("\n");
+  let html='<div class="md">', lista=null, tab=null, sez="";
+  const chiudi=()=>{ if(lista){html+=`</ul>`;lista=null;} if(tab){html+="</tbody></table>";tab=null;} };
+  for(const r of righe){
+    const l=r.trim();
+    if(!l){ continue; }
+    if(l.startsWith("## ")){ chiudi(); sez=l.slice(3); html+=`<h2>${esc(sez)}</h2>`; continue; }
+    if(l.startsWith("# ")){ continue; }
+    if(l.startsWith("|")){
+      const celle=l.split("|").slice(1,-1).map(c=>c.trim());
+      if(celle.every(c=>/^-+$/.test(c))) continue;
+      if(!tab){ html+="<table><thead><tr>"+celle.map(c=>`<th>${esc(c)}</th>`).join("")+"</tr></thead><tbody>"; tab=1; }
+      else html+="<tr>"+celle.map(c=>`<td>${esc(c)}</td>`).join("")+"</tr>";
+      continue;
+    }
+    if(l.startsWith("- ")){
+      if(tab){html+="</tbody></table>";tab=null;}
+      if(!lista){ const w=/segnalazioni/i.test(sez)?' class="warn"':""; html+=`<ul${w}>`; lista=1; }
+      html+=`<li>${esc(l.slice(2))}</li>`;
+      continue;
+    }
+    chiudi();
+    html+=`<p>${esc(l)}</p>`;
+  }
+  chiudi();
+  box.innerHTML=html+"</div>";
+}
+
+/* ---------- avvio ---------- */
+document.querySelectorAll("nav button").forEach(b=>{
+  b.addEventListener("click",()=>{
+    document.querySelectorAll("nav button").forEach(o=>o.setAttribute("aria-selected",String(o===b)));
+    ["piano","andamento","stato"].forEach(id=>{
+      document.getElementById(id).hidden = (id!==b.dataset.t);
+    });
+    if(b.dataset.t==="andamento") disegna();
+  });
+});
+
+let disegnato=false;
+function disegna(){
+  if(disegnato) return;
+  disegnato=true;
+  try{ chartVolume(); chartEfficienza(); chartCarico(); }
+  catch(e){ console.error(e); }
+}
+
+carica().then(()=>{
+  renderFacts(); renderPiano(); renderStato();
+  const ult=S.corse[S.corse.length-1];
+  document.getElementById("foot").textContent =
+    `${S.corse.length} corse nei dati` +
+    (ult?` · ultimo aggiornamento ${fmtD(ult.data)}`:"") +
+    " · dati da Garmin via Intervals.icu";
+}).catch(e=>{
+  document.getElementById("piano").innerHTML=`<p class="err">Errore nel caricamento: ${e.message}</p>`;
+});
+</script>
+</body>
+</html>
