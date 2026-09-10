@@ -2,7 +2,6 @@ name: Sync Intervals.icu
 
 on:
   schedule:
-    # 05:15 UTC = 07:15 ora di Zurigo (estate) / 06:15 (inverno)
     - cron: "15 5 * * *"
   workflow_dispatch:
     inputs:
@@ -22,16 +21,16 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
       - name: Installa dipendenze
         run: pip install -r requirements.txt
 
-      - name: Sync
+      - name: Scarica i dati da Intervals.icu
         env:
           INTERVALS_ATHLETE_ID: ${{ secrets.INTERVALS_ATHLETE_ID }}
           INTERVALS_API_KEY: ${{ secrets.INTERVALS_API_KEY }}
@@ -39,14 +38,20 @@ jobs:
           SYNC_OLDEST: ${{ github.event.inputs.oldest || '2026-01-01' }}
         run: python scripts/sync_intervals.py
 
-      - name: Commit dei dati aggiornati
+      - name: Genera il piano
+        run: python scripts/build_plan.py
+
+      - name: Confronta piano e realta
+        run: python scripts/analyze.py
+
+      - name: Commit
         run: |
           git config user.name "sync-bot"
           git config user.email "actions@github.com"
-          git add data/
+          git add data/ plan/
           if git diff --staged --quiet; then
             echo "Nessuna modifica."
           else
-            git commit -m "sync: dati Intervals.icu $(date -u +%Y-%m-%d)"
+            git commit -m "sync: $(date -u +%Y-%m-%d)"
             git push
           fi
