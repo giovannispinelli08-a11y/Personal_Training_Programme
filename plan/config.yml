@@ -1,0 +1,145 @@
+# ============================================================
+# CONFIG DEL PIANO — lo strato di giudizio.
+# Questo file lo si aggiorna a mano a fine di ogni blocco.
+# Tutto il resto (date, sedute, zone, progressioni) lo calcola
+# build_plan.py a partire da qui.
+# ============================================================
+
+atleta:
+  fc_max: 195
+  # Sensore cardio: ottico da polso (fascia rotta).
+  # Affidabile sul continuo, inaffidabile sulle variazioni rapide:
+  # per questo le sedute intervallate NON hanno target FC.
+  sensore_fc: ottico_polso
+  # Ritmo facile indicativo, usato SOLO per convertire i minuti in km
+  # stimati nella tabella. Non è un target: il target è la FC.
+  # Da aggiornare quando i dati lo spostano.
+  ritmo_facile_indicativo: "6:50"
+
+gara_obiettivo:
+  nome: "Zurich Marathon — Halbmarathon"
+  data: 2027-04-11
+  distanza_km: 21.1
+
+gare_intermedie:
+  - nome: "Pfäffikersee-Lauf"
+    data: 2026-10-04
+    distanza_km: 12.2
+    dislivello_m: 108
+    modalita: controllata   # non a cronometro: lungo con pettorale
+
+# ------------------------------------------------------------
+# Zone di frequenza cardiaca, come % della FC max.
+# ------------------------------------------------------------
+zone_fc:
+  Z1: [0.60, 0.70]   # recupero
+  Z2: [0.70, 0.80]   # aerobica — il grosso del volume
+  Z3: [0.80, 0.87]   # soglia bassa / tempo
+  Z4: [0.87, 0.92]   # soglia alta
+  Z5: [0.92, 1.00]   # VO2max
+
+# ------------------------------------------------------------
+# Tipi di seduta. hr_zone = null significa "niente target FC",
+# si va a durata e sforzo percepito (vedi nota sensore ottico).
+# ------------------------------------------------------------
+tipi_seduta:
+  facile:        { hr_zone: Z2, quota_volume: 1.0 }
+  facile_allunghi: { hr_zone: Z2, quota_volume: 1.0, extra: "5x100m in scioltezza a fine seduta, recupero camminando" }
+  lungo:         { hr_zone: Z2, quota_volume: 1.0, nota: "tenere la FC nella metà bassa della zona" }
+  tempo:         { hr_zone: Z3, quota_volume: 1.45, nota: "blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento" }
+  ripetute:      { hr_zone: null, quota_volume: 1.45, nota: "sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico" }
+  ritmo_gara:    { hr_zone: null, quota_volume: 1.0, nota: "ultimi km del lungo al ritmo gara previsto" }
+  riposo:        { hr_zone: null, quota_volume: 0.0 }
+
+# ------------------------------------------------------------
+# BLOCCHI. minuti_settimana e lungo_minuti sono i due numeri che
+# guidano tutto: il primo è il volume settimanale totale, il secondo
+# la durata del lungo. Entrambi progrediscono linearmente dentro
+# il blocco, da [inizio] a [fine].
+# ------------------------------------------------------------
+blocchi:
+
+  - id: base-1
+    nome: "Base — ripresa del volume"
+    dal: 2026-09-14
+    al: 2026-10-04
+    minuti_settimana: [135, 170]
+    lungo_minuti: [45, 70]
+    schema: [lungo, facile, facile, facile_allunghi]
+    note: >
+      Si riparte dal volume attuale. Nessun lavoro di qualità:
+      l'unica variabile che si muove è la durata del lungo.
+      Il blocco chiude con il Pfäffikersee corso in modo controllato.
+
+  - id: base-2
+    nome: "Base — costruzione"
+    dal: 2026-10-05
+    al: 2026-11-15
+    minuti_settimana: [150, 215]
+    lungo_minuti: [55, 90]
+    schema: [lungo, facile, facile_allunghi, facile]
+    note: >
+      Ancora tutto aerobico. A fine blocco, se il volume ha retto
+      senza fastidi, si valuta il test da 5 km per calibrare i ritmi.
+
+  - id: base-3
+    nome: "Base — introduzione della soglia"
+    dal: 2026-11-16
+    al: 2026-12-27
+    minuti_settimana: [200, 265]
+    lungo_minuti: [85, 110]
+    schema: [lungo, facile, tempo, facile]
+    note: >
+      Entra una seduta di soglia a settimana. Il lungo supera
+      l'ora e mezza: è qui che si costruisce la mezza.
+
+  - id: build
+    nome: "Build — qualità"
+    dal: 2026-12-28
+    al: 2027-02-07
+    minuti_settimana: [250, 310]
+    lungo_minuti: [105, 130]
+    schema: [lungo, facile, tempo, ripetute, facile]
+    note: >
+      Cinque uscite. Ripetute e soglia nella stessa settimana:
+      tenerle separate da almeno 48 ore.
+
+  - id: specifico
+    nome: "Specifico — ritmo gara"
+    dal: 2027-02-08
+    al: 2027-03-28
+    minuti_settimana: [270, 330]
+    lungo_minuti: [125, 150]
+    schema: [ritmo_gara, facile, tempo, ripetute, facile]
+    note: >
+      Il lungo diventa specifico: ultima parte al ritmo gara.
+      Volume al picco, poi si scarica.
+
+  - id: taper
+    nome: "Taper e gara"
+    dal: 2027-03-29
+    al: 2027-04-11
+    minuti_settimana: [170, 95]
+    lungo_minuti: [75, 0]
+    schema: [facile_allunghi, facile, facile, riposo]
+    note: >
+      Volume giù, intensità appena accennata. Ultima settimana:
+      solo sciogliere le gambe. Gara la domenica.
+
+# Settimane (indice globale, 1 = prima settimana del piano) in cui
+# il volume viene ridotto per scaricare.
+settimane_scarico: [6, 10, 14, 18, 22, 26]
+fattore_scarico: 0.65
+
+# Giorno preferito per tipo di seduta. Serve a tenere le sedute
+# di qualità lontane dal lungo: ripetute a inizio settimana, soglia
+# a metà, lungo la domenica con almeno un giorno facile in mezzo.
+# Il confronto piano/reale è settimanale, quindi spostare una seduta
+# di un giorno non conta come scostamento.
+giorni_preferiti:
+  lungo:      domenica
+  ritmo_gara: domenica
+  ripetute:   martedi
+  tempo:      giovedi
+# Le sedute facili riempiono i giorni rimasti, in quest'ordine.
+giorni_riempimento: [martedi, giovedi, sabato, mercoledi, venerdi]
