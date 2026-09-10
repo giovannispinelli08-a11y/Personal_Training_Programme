@@ -4,6 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Preparazione — Mezza Maratona di Zurigo</title>
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Mezza">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#FCFCFB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101211" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -37,7 +47,8 @@ body{
   font-size:14px; line-height:1.5;
   -webkit-font-smoothing:antialiased;
 }
-.wrap{max-width:940px;margin:0 auto;padding:0 20px 64px}
+.wrap{max-width:940px;margin:0 auto;padding:0 20px calc(64px + env(safe-area-inset-bottom))}
+header{padding-top:calc(32px + env(safe-area-inset-top))}
 
 /* ---------- intestazione ---------- */
 header{border-bottom:1px solid var(--rule2);padding:32px 0 0}
@@ -651,6 +662,9 @@ carica().then(()=>{
 }).catch(e=>{
   document.getElementById("piano").innerHTML=`<p class="err">Errore nel caricamento: ${e.message}</p>`;
 });
+if("serviceWorker" in navigator){
+  window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
+}
 </script>
 </body>
 </html>
