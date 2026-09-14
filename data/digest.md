@@ -1,9 +1,9 @@
-# Digest — 2026-09-13
+# Digest — 2026-09-14
 
 ## Stato
 
 - Ultima corsa: 2026-09-11 — 4.7 km in 30' (6:27/km, FC 144)
-- Giorni dall'ultima corsa: 2
+- Giorni dall'ultima corsa: 3
 - Ultimi 7 giorni: 3 corse, 14.4 km, 91 min
 - Ultimi 28 giorni: 7 corse, 34.4 km, 219 min
 - Lungo più lungo (28gg): 5.7 km
@@ -13,17 +13,17 @@
 
 | Settimana | Piano min | Reale min | % | Lungo piano | Lungo reale |
 |---|---|---|---|---|---|
-| 2026-08-17 | 0 | 30 | — | 0 | 30 |
 | 2026-08-24 | 0 | 32 | — | 0 | 32 |
 | 2026-08-31 | 0 | 65 | — | 0 | 36 |
 | 2026-09-07 | 0 | 91 | — | 0 | 33 |
+| 2026-09-14 | 135 | 0 | 0% | 45 | 0 |
 
-## In programma (settimana dal 2026-09-14)
+## In programma (settimana dal 2026-09-21)
 
-- 2026-09-15 · facile 30' — FC 136-156
-- 2026-09-17 · facile 30' — FC 136-156
-- 2026-09-19 · facile_allunghi 30' — FC 136-156
-- 2026-09-20 · lungo 45' — FC 136-156
+- 2026-09-22 · facile 32' — FC 136-156
+- 2026-09-24 · facile 32' — FC 136-156
+- 2026-09-26 · facile_allunghi 32' — FC 136-156
+- 2026-09-27 · lungo 58' — FC 136-156
 
 ## Efficienza aerobica
 
@@ -45,10 +45,11 @@ Trend ultime 3 vs 3 precedenti: +1.7%
 ## Altro carico (28 giorni)
 
 - Hike: 153 min, carico 46
-- Ride: 257 min, carico 195
+- Ride: 143 min, carico 94
 
 ## Segnalazioni
 
+- Salto di volume: settimana del 2026-09-07 91 min contro 65 della precedente (+40%).
 - Salto di volume: settimana del 2026-08-31 65 min contro 32 della precedente (+104%).
 - Il lungo è cresciuto da 3.5 a 5.7 km in un mese (+63%).
 - Fatica acuta alta rispetto alla base (ATL/CTL 2.10): settimana più leggera o un giorno in più di recupero.
