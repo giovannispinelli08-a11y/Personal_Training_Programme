@@ -1,10 +1,10 @@
-# Digest — 2026-09-14
+# Digest — 2026-09-15
 
 ## Stato
 
 - Ultima corsa: 2026-09-11 — 4.7 km in 30' (6:27/km, FC 144)
-- Giorni dall'ultima corsa: 3
-- Ultimi 7 giorni: 3 corse, 14.4 km, 91 min
+- Giorni dall'ultima corsa: 4
+- Ultimi 7 giorni: 2 corse, 9.6 km, 63 min
 - Ultimi 28 giorni: 7 corse, 34.4 km, 219 min
 - Lungo più lungo (28gg): 5.7 km
 - Carico: CTL 8.7 / ATL 18.2 (rapporto 2.10)
