@@ -1,9 +1,9 @@
-# Digest — 2026-09-15
+# Digest — 2026-09-16
 
 ## Stato
 
 - Ultima corsa: 2026-09-11 — 4.7 km in 30' (6:27/km, FC 144)
-- Giorni dall'ultima corsa: 4
+- Giorni dall'ultima corsa: 5
 - Ultimi 7 giorni: 2 corse, 9.6 km, 63 min
 - Ultimi 28 giorni: 7 corse, 34.4 km, 219 min
 - Lungo più lungo (28gg): 5.7 km
