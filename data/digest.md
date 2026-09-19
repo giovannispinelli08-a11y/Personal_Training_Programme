@@ -1,11 +1,11 @@
-# Digest — 2026-09-18
+# Digest — 2026-09-19
 
 ## Stato
 
 - Ultima corsa: 2026-09-11 — 4.7 km in 30' (6:27/km, FC 144)
-- Giorni dall'ultima corsa: 7
-- Ultimi 7 giorni: 1 corse, 4.7 km, 30 min
-- Ultimi 28 giorni: 7 corse, 34.4 km, 219 min
+- Giorni dall'ultima corsa: 8
+- Ultimi 7 giorni: 0 corse, 0.0 km, 0 min
+- Ultimi 28 giorni: 6 corse, 29.8 km, 189 min
 - Lungo più lungo (28gg): 5.7 km
 - Carico: CTL 8.7 / ATL 18.2 (rapporto 2.10)
 
@@ -44,12 +44,11 @@ Trend ultime 3 vs 3 precedenti: +1.7%
 
 ## Altro carico (28 giorni)
 
-- Hike: 153 min, carico 46
-- Ride: 191 min, carico 124
+- Hike: 189 min, carico 54
+- Ride: 209 min, carico 138
 
 ## Segnalazioni
 
 - Salto di volume: settimana del 2026-09-07 91 min contro 65 della precedente (+40%).
 - Salto di volume: settimana del 2026-08-31 65 min contro 32 della precedente (+104%).
-- Il lungo è cresciuto da 3.5 a 5.7 km in un mese (+63%).
 - Fatica acuta alta rispetto alla base (ATL/CTL 2.10): settimana più leggera o un giorno in più di recupero.
