@@ -1,9 +1,9 @@
-# Digest — 2026-09-21
+# Digest — 2026-09-22
 
 ## Stato
 
 - Ultima corsa: 2026-09-11 — 4.7 km in 30' (6:27/km, FC 144)
-- Giorni dall'ultima corsa: 10
+- Giorni dall'ultima corsa: 11
 - Ultimi 7 giorni: 0 corse, 0.0 km, 0 min
 - Ultimi 28 giorni: 6 corse, 29.8 km, 189 min
 - Lungo più lungo (28gg): 5.7 km
@@ -49,7 +49,7 @@ Trend ultime 3 vs 3 precedenti: +1.7%
 
 ## Segnalazioni
 
-- Ferm* da 10 giorni: al rientro ripartire dal volume di due settimane fa, non da dove si era arrivati.
+- Ferm* da 11 giorni: al rientro ripartire dal volume di due settimane fa, non da dove si era arrivati.
 - Salto di volume: settimana del 2026-09-07 91 min contro 65 della precedente (+40%).
 - Fatica acuta alta rispetto alla base (ATL/CTL 2.10): settimana più leggera o un giorno in più di recupero.
 - Settimana scorsa al 0% del piano: se si ripete, il piano va riscalato invece di accumulare arretrato.
