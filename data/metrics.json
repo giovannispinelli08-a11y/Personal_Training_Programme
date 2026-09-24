@@ -1,0 +1,3286 @@
+{
+ "generato": "2026-09-24",
+ "zone": [
+  "Z1",
+  "Z2",
+  "Z3",
+  "Z4",
+  "Z5"
+ ],
+ "zone_bpm": [
+  [
+   117,
+   136
+  ],
+  [
+   136,
+   156
+  ],
+  [
+   156,
+   170
+  ],
+  [
+   170,
+   179
+  ],
+  [
+   179,
+   195
+  ]
+ ],
+ "oggi": {
+  "data": "2026-09-24",
+  "prontezza": 83,
+  "livello": "verde",
+  "ieri": 88,
+  "componenti": {
+   "hrv": {
+    "valore": 109.0,
+    "baseline": 100.0,
+    "z": 0.62,
+    "punti": 79.0,
+    "peso": 0.35
+   },
+   "rhr": {
+    "valore": 44.0,
+    "baseline": 44.8,
+    "delta": -0.8,
+    "z": -0.42,
+    "punti": 76.0,
+    "peso": 0.2
+   },
+   "sonno": {
+    "ore": 8.2,
+    "score": 97.0,
+    "punti": 98.0,
+    "peso": 0.25
+   },
+   "carico": {
+    "rapporto": 1.06,
+    "tsb": -0.5,
+    "punti": 80.0,
+    "peso": 0.2
+   }
+  },
+  "hrv_settimana": {
+   "media7": 105,
+   "banda": [
+    92,
+    106
+   ],
+   "stato": "normale"
+  },
+  "seduta": {
+   "tipo": "facile",
+   "minuti": "32",
+   "fc_min": "136",
+   "fc_max": "156",
+   "note": ""
+  },
+  "consiglio": "Via libera: seduta come da piano.",
+  "note": []
+ },
+ "giornaliero": [
+  {
+   "data": "2026-05-28",
+   "hrv": null,
+   "hrv7": 85,
+   "hrv_banda": [
+    75,
+    87
+   ],
+   "rhr": 51.0,
+   "rhr_base": 48.6,
+   "sonno_h": 8.0,
+   "sonno_score": 86.0,
+   "prontezza": 63,
+   "ctl": 7.1,
+   "atl": 12.3,
+   "tsb": -5.2,
+   "load": 0.0
+  },
+  {
+   "data": "2026-05-29",
+   "hrv": null,
+   "hrv7": 83,
+   "hrv_banda": [
+    76,
+    87
+   ],
+   "rhr": 47.0,
+   "rhr_base": 48.7,
+   "sonno_h": 7.1,
+   "sonno_score": 82.0,
+   "prontezza": 67,
+   "ctl": 7.0,
+   "atl": 10.7,
+   "tsb": -3.7,
+   "load": 0.0
+  },
+  {
+   "data": "2026-05-30",
+   "hrv": 76.0,
+   "hrv7": 81,
+   "hrv_banda": [
+    76,
+    87
+   ],
+   "rhr": 49.0,
+   "rhr_base": 48.6,
+   "sonno_h": 10.28,
+   "sonno_score": 82.0,
+   "prontezza": 69,
+   "ctl": 6.8,
+   "atl": 9.2,
+   "tsb": -2.5,
+   "load": 0.0
+  },
+  {
+   "data": "2026-05-31",
+   "hrv": 77.0,
+   "hrv7": 81,
+   "hrv_banda": [
+    76,
+    87
+   ],
+   "rhr": 50.0,
+   "rhr_base": 48.6,
+   "sonno_h": 5.32,
+   "sonno_score": 67.0,
+   "prontezza": 66,
+   "ctl": 6.6,
+   "atl": 8.0,
+   "tsb": -1.4,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-01",
+   "hrv": 107.0,
+   "hrv7": 85,
+   "hrv_banda": [
+    76,
+    88
+   ],
+   "rhr": 45.0,
+   "rhr_base": 48.0,
+   "sonno_h": 7.68,
+   "sonno_score": 94.0,
+   "prontezza": 90,
+   "ctl": 6.5,
+   "atl": 6.9,
+   "tsb": -0.5,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-02",
+   "hrv": 83.0,
+   "hrv7": 84,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 49.0,
+   "rhr_base": 47.2,
+   "sonno_h": 6.73,
+   "sonno_score": 80.0,
+   "prontezza": 75,
+   "ctl": 6.3,
+   "atl": 6.0,
+   "tsb": 0.3,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-03",
+   "hrv": 69.0,
+   "hrv7": 81,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 50.0,
+   "rhr_base": 46.7,
+   "sonno_h": 3.12,
+   "sonno_score": 41.0,
+   "prontezza": 54,
+   "ctl": 6.3,
+   "atl": 5.8,
+   "tsb": 0.5,
+   "load": 4.0
+  },
+  {
+   "data": "2026-06-04",
+   "hrv": null,
+   "hrv7": 81,
+   "hrv_banda": [
+    76,
+    88
+   ],
+   "rhr": null,
+   "rhr_base": 46.8,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": null,
+   "ctl": 6.1,
+   "atl": 5.0,
+   "tsb": 1.1,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-05",
+   "hrv": null,
+   "hrv7": 81,
+   "hrv_banda": [
+    76,
+    88
+   ],
+   "rhr": 52.0,
+   "rhr_base": 46.8,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 60,
+   "ctl": 6.0,
+   "atl": 4.3,
+   "tsb": 1.7,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-06",
+   "hrv": null,
+   "hrv7": 83,
+   "hrv_banda": [
+    76,
+    88
+   ],
+   "rhr": 52.0,
+   "rhr_base": 47.0,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 62,
+   "ctl": 5.8,
+   "atl": 3.7,
+   "tsb": 2.1,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-07",
+   "hrv": 104.0,
+   "hrv7": 89,
+   "hrv_banda": [
+    78,
+    88
+   ],
+   "rhr": 44.0,
+   "rhr_base": 47.1,
+   "sonno_h": 7.92,
+   "sonno_score": 97.0,
+   "prontezza": 93,
+   "ctl": 5.7,
+   "atl": 3.2,
+   "tsb": 2.4,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-08",
+   "hrv": 67.0,
+   "hrv7": 79,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 49.0,
+   "rhr_base": 46.9,
+   "sonno_h": 3.33,
+   "sonno_score": 38.0,
+   "prontezza": 54,
+   "ctl": 5.6,
+   "atl": 2.8,
+   "tsb": 2.7,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-09",
+   "hrv": 66.0,
+   "hrv7": 75,
+   "hrv_banda": [
+    77,
+    89
+   ],
+   "rhr": 51.0,
+   "rhr_base": 46.9,
+   "sonno_h": 8.12,
+   "sonno_score": 86.0,
+   "prontezza": 65,
+   "ctl": 5.4,
+   "atl": 2.4,
+   "tsb": 3.0,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-10",
+   "hrv": 84.0,
+   "hrv7": 79,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 47.0,
+   "rhr_base": 47.1,
+   "sonno_h": 8.82,
+   "sonno_score": 88.0,
+   "prontezza": 80,
+   "ctl": 5.9,
+   "atl": 5.3,
+   "tsb": 0.6,
+   "load": 24.0
+  },
+  {
+   "data": "2026-06-11",
+   "hrv": null,
+   "hrv7": 79,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 48.0,
+   "rhr_base": 47.2,
+   "sonno_h": 10.02,
+   "sonno_score": 91.0,
+   "prontezza": 83,
+   "ctl": 5.7,
+   "atl": 4.6,
+   "tsb": 1.1,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-12",
+   "hrv": null,
+   "hrv7": 79,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 46.0,
+   "rhr_base": 47.3,
+   "sonno_h": 8.37,
+   "sonno_score": 91.0,
+   "prontezza": 87,
+   "ctl": 5.6,
+   "atl": 4.0,
+   "tsb": 1.6,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-13",
+   "hrv": null,
+   "hrv7": 79,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 50.0,
+   "rhr_base": 47.4,
+   "sonno_h": 7.35,
+   "sonno_score": 67.0,
+   "prontezza": 73,
+   "ctl": 5.5,
+   "atl": 3.5,
+   "tsb": 2.0,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-14",
+   "hrv": null,
+   "hrv7": 72,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 50.0,
+   "rhr_base": 47.4,
+   "sonno_h": 6.77,
+   "sonno_score": 65.0,
+   "prontezza": 72,
+   "ctl": 5.3,
+   "atl": 3.0,
+   "tsb": 2.3,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-15",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    77,
+    89
+   ],
+   "rhr": 46.0,
+   "rhr_base": 47.6,
+   "sonno_h": 9.42,
+   "sonno_score": 90.0,
+   "prontezza": 87,
+   "ctl": 5.2,
+   "atl": 2.6,
+   "tsb": 2.6,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-16",
+   "hrv": 80.0,
+   "hrv7": null,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 45.0,
+   "rhr_base": 47.5,
+   "sonno_h": 5.68,
+   "sonno_score": 75.0,
+   "prontezza": 75,
+   "ctl": 5.1,
+   "atl": 2.3,
+   "tsb": 2.8,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-17",
+   "hrv": 76.0,
+   "hrv7": null,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 49.0,
+   "rhr_base": 47.4,
+   "sonno_h": 10.1,
+   "sonno_score": 91.0,
+   "prontezza": 71,
+   "ctl": 5.0,
+   "atl": 2.0,
+   "tsb": 3.0,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-18",
+   "hrv": 92.0,
+   "hrv7": 82,
+   "hrv_banda": [
+    79,
+    89
+   ],
+   "rhr": 45.0,
+   "rhr_base": 47.6,
+   "sonno_h": 8.7,
+   "sonno_score": 83.0,
+   "prontezza": 86,
+   "ctl": 4.9,
+   "atl": 1.7,
+   "tsb": 3.2,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-19",
+   "hrv": 87.0,
+   "hrv7": 84,
+   "hrv_banda": [
+    79,
+    89
+   ],
+   "rhr": 44.0,
+   "rhr_base": 47.5,
+   "sonno_h": 9.27,
+   "sonno_score": 87.0,
+   "prontezza": 85,
+   "ctl": 4.7,
+   "atl": 1.5,
+   "tsb": 3.3,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-20",
+   "hrv": 62.0,
+   "hrv7": 79,
+   "hrv_banda": [
+    79,
+    89
+   ],
+   "rhr": 51.0,
+   "rhr_base": 47.4,
+   "sonno_h": 3.45,
+   "sonno_score": 41.0,
+   "prontezza": 40,
+   "ctl": 4.6,
+   "atl": 1.3,
+   "tsb": 3.4,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-21",
+   "hrv": null,
+   "hrv7": 79,
+   "hrv_banda": [
+    78,
+    88
+   ],
+   "rhr": null,
+   "rhr_base": 47.8,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": null,
+   "ctl": 4.5,
+   "atl": 1.1,
+   "tsb": 3.4,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-22",
+   "hrv": null,
+   "hrv7": 79,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 51.0,
+   "rhr_base": 47.9,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 52,
+   "ctl": 4.4,
+   "atl": 1.0,
+   "tsb": 3.5,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-23",
+   "hrv": 80.0,
+   "hrv7": 79,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 45.0,
+   "rhr_base": 48.1,
+   "sonno_h": 9.28,
+   "sonno_score": 87.0,
+   "prontezza": 80,
+   "ctl": 4.3,
+   "atl": 0.8,
+   "tsb": 3.5,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-24",
+   "hrv": 86.0,
+   "hrv7": 81,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 45.0,
+   "rhr_base": 48.0,
+   "sonno_h": 5.95,
+   "sonno_score": 76.0,
+   "prontezza": 78,
+   "ctl": 4.2,
+   "atl": 0.7,
+   "tsb": 3.5,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-25",
+   "hrv": 88.0,
+   "hrv7": 80,
+   "hrv_banda": [
+    78,
+    88
+   ],
+   "rhr": 46.0,
+   "rhr_base": 48.0,
+   "sonno_h": 9.88,
+   "sonno_score": 96.0,
+   "prontezza": 85,
+   "ctl": 4.1,
+   "atl": 0.6,
+   "tsb": 3.5,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-26",
+   "hrv": 106.0,
+   "hrv7": 83,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 44.0,
+   "rhr_base": 48.0,
+   "sonno_h": 7.55,
+   "sonno_score": 88.0,
+   "prontezza": 95,
+   "ctl": 4.5,
+   "atl": 3.5,
+   "tsb": 1.1,
+   "load": 22.0
+  },
+  {
+   "data": "2026-06-27",
+   "hrv": 84.0,
+   "hrv7": 88,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 46.0,
+   "rhr_base": 47.9,
+   "sonno_h": 6.28,
+   "sonno_score": 80.0,
+   "prontezza": 76,
+   "ctl": 4.4,
+   "atl": 3.0,
+   "tsb": 1.4,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-28",
+   "hrv": 80.0,
+   "hrv7": 87,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 47.0,
+   "rhr_base": 47.7,
+   "sonno_h": 6.85,
+   "sonno_score": 79.0,
+   "prontezza": 73,
+   "ctl": 4.3,
+   "atl": 2.6,
+   "tsb": 1.7,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-29",
+   "hrv": 73.0,
+   "hrv7": 85,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 47.0,
+   "rhr_base": 47.7,
+   "sonno_h": 8.45,
+   "sonno_score": 89.0,
+   "prontezza": 72,
+   "ctl": 4.2,
+   "atl": 2.3,
+   "tsb": 2.0,
+   "load": 0.0
+  },
+  {
+   "data": "2026-06-30",
+   "hrv": 76.0,
+   "hrv7": 84,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 47.0,
+   "rhr_base": 47.6,
+   "sonno_h": 7.13,
+   "sonno_score": 78.0,
+   "prontezza": 71,
+   "ctl": 4.1,
+   "atl": 2.0,
+   "tsb": 2.2,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-01",
+   "hrv": 100.0,
+   "hrv7": 86,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 46.0,
+   "rhr_base": 47.5,
+   "sonno_h": 8.87,
+   "sonno_score": 95.0,
+   "prontezza": 90,
+   "ctl": 4.0,
+   "atl": 1.7,
+   "tsb": 2.3,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-02",
+   "hrv": null,
+   "hrv7": 86,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 47.0,
+   "rhr_base": 47.6,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 73,
+   "ctl": 3.9,
+   "atl": 1.5,
+   "tsb": 2.5,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-03",
+   "hrv": null,
+   "hrv7": 82,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 47.0,
+   "rhr_base": 47.5,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 73,
+   "ctl": 3.8,
+   "atl": 1.3,
+   "tsb": 2.6,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-04",
+   "hrv": 79.0,
+   "hrv7": 81,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 47.0,
+   "rhr_base": 47.4,
+   "sonno_h": 5.62,
+   "sonno_score": 55.0,
+   "prontezza": 66,
+   "ctl": 3.7,
+   "atl": 1.1,
+   "tsb": 2.6,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-05",
+   "hrv": 94.0,
+   "hrv7": 84,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 46.0,
+   "rhr_base": 47.4,
+   "sonno_h": 8.8,
+   "sonno_score": 95.0,
+   "prontezza": 87,
+   "ctl": 3.7,
+   "atl": 1.0,
+   "tsb": 2.7,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-06",
+   "hrv": null,
+   "hrv7": 87,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 51.0,
+   "rhr_base": 47.2,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 45,
+   "ctl": 3.6,
+   "atl": 0.8,
+   "tsb": 2.7,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-07",
+   "hrv": 80.0,
+   "hrv7": 88,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 46.0,
+   "rhr_base": 47.1,
+   "sonno_h": 6.0,
+   "sonno_score": 78.0,
+   "prontezza": 72,
+   "ctl": 3.5,
+   "atl": 0.7,
+   "tsb": 2.8,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-08",
+   "hrv": null,
+   "hrv7": 84,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 51.0,
+   "rhr_base": 47.2,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 44,
+   "ctl": 3.4,
+   "atl": 0.6,
+   "tsb": 2.8,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-09",
+   "hrv": 90.0,
+   "hrv7": 86,
+   "hrv_banda": [
+    78,
+    90
+   ],
+   "rhr": 47.0,
+   "rhr_base": 47.3,
+   "sonno_h": 3.68,
+   "sonno_score": 44.0,
+   "prontezza": 66,
+   "ctl": 3.7,
+   "atl": 2.7,
+   "tsb": 1.0,
+   "load": 16.0
+  },
+  {
+   "data": "2026-07-10",
+   "hrv": 88.0,
+   "hrv7": 86,
+   "hrv_banda": [
+    78,
+    90
+   ],
+   "rhr": 44.0,
+   "rhr_base": 47.1,
+   "sonno_h": 10.85,
+   "sonno_score": 84.0,
+   "prontezza": 85,
+   "ctl": 3.6,
+   "atl": 2.3,
+   "tsb": 1.3,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-11",
+   "hrv": 74.0,
+   "hrv7": 85,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 47.0,
+   "rhr_base": 47.0,
+   "sonno_h": 8.7,
+   "sonno_score": 87.0,
+   "prontezza": 71,
+   "ctl": 4.2,
+   "atl": 5.7,
+   "tsb": -1.5,
+   "load": 28.0
+  },
+  {
+   "data": "2026-07-12",
+   "hrv": null,
+   "hrv7": 83,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 49.0,
+   "rhr_base": 47.0,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 56,
+   "ctl": 4.1,
+   "atl": 5.0,
+   "tsb": -0.9,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-13",
+   "hrv": null,
+   "hrv7": 83,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 47.0,
+   "rhr_base": 47.1,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 71,
+   "ctl": 4.0,
+   "atl": 4.3,
+   "tsb": -0.3,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-14",
+   "hrv": null,
+   "hrv7": 84,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 47.0,
+   "rhr_base": 47.0,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 70,
+   "ctl": 3.9,
+   "atl": 3.7,
+   "tsb": 0.2,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-15",
+   "hrv": null,
+   "hrv7": 84,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 49.0,
+   "rhr_base": 46.9,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 55,
+   "ctl": 3.8,
+   "atl": 3.2,
+   "tsb": 0.6,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-16",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    79,
+    89
+   ],
+   "rhr": 47.0,
+   "rhr_base": 47.0,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 70,
+   "ctl": 3.7,
+   "atl": 2.8,
+   "tsb": 0.9,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-17",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 48.0,
+   "rhr_base": 47.1,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 63,
+   "ctl": 3.6,
+   "atl": 2.4,
+   "tsb": 1.2,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-18",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    78,
+    90
+   ],
+   "rhr": 45.0,
+   "rhr_base": 47.0,
+   "sonno_h": 8.37,
+   "sonno_score": 92.0,
+   "prontezza": 91,
+   "ctl": 3.5,
+   "atl": 2.1,
+   "tsb": 1.4,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-19",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 43.0,
+   "rhr_base": 47.0,
+   "sonno_h": 6.77,
+   "sonno_score": 81.0,
+   "prontezza": 91,
+   "ctl": 3.5,
+   "atl": 1.8,
+   "tsb": 1.6,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-20",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 45.0,
+   "rhr_base": 47.0,
+   "sonno_h": 5.98,
+   "sonno_score": 74.0,
+   "prontezza": 78,
+   "ctl": 3.4,
+   "atl": 1.6,
+   "tsb": 1.8,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-21",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    78,
+    88
+   ],
+   "rhr": 50.0,
+   "rhr_base": 46.8,
+   "sonno_h": 7.08,
+   "sonno_score": 78.0,
+   "prontezza": 67,
+   "ctl": 3.3,
+   "atl": 1.4,
+   "tsb": 1.9,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-22",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 50.0,
+   "rhr_base": 46.9,
+   "sonno_h": 5.65,
+   "sonno_score": 60.0,
+   "prontezza": 57,
+   "ctl": 3.2,
+   "atl": 1.2,
+   "tsb": 2.0,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-23",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": null,
+   "rhr_base": 46.9,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": null,
+   "ctl": 3.1,
+   "atl": 1.0,
+   "tsb": 2.1,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-24",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": null,
+   "rhr_base": 46.9,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": null,
+   "ctl": 3.1,
+   "atl": 0.9,
+   "tsb": 2.2,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-25",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 51.0,
+   "rhr_base": 47.0,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 40,
+   "ctl": 3.0,
+   "atl": 0.8,
+   "tsb": 2.2,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-26",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 46.0,
+   "rhr_base": 47.2,
+   "sonno_h": 4.81,
+   "sonno_score": 63.0,
+   "prontezza": 69,
+   "ctl": 2.9,
+   "atl": 0.7,
+   "tsb": 2.3,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-27",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 57.0,
+   "rhr_base": 47.2,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 0,
+   "ctl": 2.9,
+   "atl": 0.6,
+   "tsb": 2.3,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-28",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 47.0,
+   "rhr_base": 47.6,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 74,
+   "ctl": 2.8,
+   "atl": 0.5,
+   "tsb": 2.3,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-29",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 47.0,
+   "rhr_base": 47.6,
+   "sonno_h": 3.85,
+   "sonno_score": 42.0,
+   "prontezza": 58,
+   "ctl": 2.7,
+   "atl": 0.4,
+   "tsb": 2.3,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-30",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 46.0,
+   "rhr_base": 47.6,
+   "sonno_h": 7.62,
+   "sonno_score": 86.0,
+   "prontezza": 86,
+   "ctl": 2.7,
+   "atl": 0.4,
+   "tsb": 2.3,
+   "load": 0.0
+  },
+  {
+   "data": "2026-07-31",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    77,
+    89
+   ],
+   "rhr": 44.0,
+   "rhr_base": 47.6,
+   "sonno_h": 7.3,
+   "sonno_score": 85.0,
+   "prontezza": 89,
+   "ctl": 2.6,
+   "atl": 0.3,
+   "tsb": 2.3,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-01",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 45.0,
+   "rhr_base": 47.5,
+   "sonno_h": 7.67,
+   "sonno_score": 85.0,
+   "prontezza": 87,
+   "ctl": 2.5,
+   "atl": 0.3,
+   "tsb": 2.3,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-02",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    76,
+    88
+   ],
+   "rhr": 50.0,
+   "rhr_base": 47.5,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 57,
+   "ctl": 2.8,
+   "atl": 2.2,
+   "tsb": 0.6,
+   "load": 15.0
+  },
+  {
+   "data": "2026-08-03",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 48.0,
+   "rhr_base": 47.6,
+   "sonno_h": 9.25,
+   "sonno_score": 94.0,
+   "prontezza": 84,
+   "ctl": 2.8,
+   "atl": 1.9,
+   "tsb": 0.8,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-04",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 49.0,
+   "rhr_base": 47.6,
+   "sonno_h": 7.25,
+   "sonno_score": 70.0,
+   "prontezza": 72,
+   "ctl": 2.7,
+   "atl": 1.7,
+   "tsb": 1.0,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-05",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 47.0,
+   "rhr_base": 47.7,
+   "sonno_h": 8.33,
+   "sonno_score": 94.0,
+   "prontezza": 87,
+   "ctl": 2.6,
+   "atl": 1.5,
+   "tsb": 1.2,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-06",
+   "hrv": 71.0,
+   "hrv7": null,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 47.0,
+   "rhr_base": 47.6,
+   "sonno_h": 8.8,
+   "sonno_score": 81.0,
+   "prontezza": 70,
+   "ctl": 2.6,
+   "atl": 1.3,
+   "tsb": 1.3,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-07",
+   "hrv": 99.0,
+   "hrv7": null,
+   "hrv_banda": [
+    76,
+    87
+   ],
+   "rhr": 44.0,
+   "rhr_base": 47.6,
+   "sonno_h": 7.35,
+   "sonno_score": 85.0,
+   "prontezza": 90,
+   "ctl": 2.5,
+   "atl": 1.1,
+   "tsb": 1.4,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-08",
+   "hrv": 91.0,
+   "hrv7": 86,
+   "hrv_banda": [
+    77,
+    88
+   ],
+   "rhr": 46.0,
+   "rhr_base": 47.4,
+   "sonno_h": 3.33,
+   "sonno_score": 38.0,
+   "prontezza": 67,
+   "ctl": 2.5,
+   "atl": 1.0,
+   "tsb": 1.5,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-09",
+   "hrv": null,
+   "hrv7": 86,
+   "hrv_banda": [
+    79,
+    89
+   ],
+   "rhr": null,
+   "rhr_base": 47.3,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": null,
+   "ctl": 2.4,
+   "atl": 0.8,
+   "tsb": 1.6,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-10",
+   "hrv": null,
+   "hrv7": 86,
+   "hrv_banda": [
+    79,
+    89
+   ],
+   "rhr": 42.0,
+   "rhr_base": 47.4,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 99,
+   "ctl": 2.3,
+   "atl": 0.7,
+   "tsb": 1.6,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-11",
+   "hrv": 78.0,
+   "hrv7": 84,
+   "hrv_banda": [
+    79,
+    89
+   ],
+   "rhr": 45.0,
+   "rhr_base": 47.3,
+   "sonno_h": 7.37,
+   "sonno_score": 86.0,
+   "prontezza": 75,
+   "ctl": 2.3,
+   "atl": 0.6,
+   "tsb": 1.7,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-12",
+   "hrv": 104.0,
+   "hrv7": 88,
+   "hrv_banda": [
+    78,
+    89
+   ],
+   "rhr": 43.0,
+   "rhr_base": 47.1,
+   "sonno_h": 9.75,
+   "sonno_score": 92.0,
+   "prontezza": 95,
+   "ctl": 2.2,
+   "atl": 0.5,
+   "tsb": 1.7,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-13",
+   "hrv": 97.0,
+   "hrv7": 93,
+   "hrv_banda": [
+    79,
+    90
+   ],
+   "rhr": 45.0,
+   "rhr_base": 47.0,
+   "sonno_h": 8.05,
+   "sonno_score": 88.0,
+   "prontezza": 87,
+   "ctl": 2.2,
+   "atl": 0.5,
+   "tsb": 1.7,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-14",
+   "hrv": 107.0,
+   "hrv7": 95,
+   "hrv_banda": [
+    79,
+    90
+   ],
+   "rhr": 43.0,
+   "rhr_base": 46.9,
+   "sonno_h": 7.62,
+   "sonno_score": 91.0,
+   "prontezza": 94,
+   "ctl": 2.1,
+   "atl": 0.4,
+   "tsb": 1.7,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-15",
+   "hrv": 102.0,
+   "hrv7": 97,
+   "hrv_banda": [
+    80,
+    91
+   ],
+   "rhr": 44.0,
+   "rhr_base": 46.7,
+   "sonno_h": 10.73,
+   "sonno_score": 82.0,
+   "prontezza": 89,
+   "ctl": 2.1,
+   "atl": 0.4,
+   "tsb": 1.7,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-16",
+   "hrv": 104.0,
+   "hrv7": 98,
+   "hrv_banda": [
+    80,
+    92
+   ],
+   "rhr": 43.0,
+   "rhr_base": 46.6,
+   "sonno_h": 8.18,
+   "sonno_score": 89.0,
+   "prontezza": 91,
+   "ctl": 4.4,
+   "atl": 13.7,
+   "tsb": -9.3,
+   "load": 101.0
+  },
+  {
+   "data": "2026-08-17",
+   "hrv": 74.0,
+   "hrv7": 94,
+   "hrv_banda": [
+    81,
+    93
+   ],
+   "rhr": 48.0,
+   "rhr_base": 46.4,
+   "sonno_h": 7.68,
+   "sonno_score": 67.0,
+   "prontezza": 65,
+   "ctl": 4.3,
+   "atl": 11.9,
+   "tsb": -7.6,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-18",
+   "hrv": 89.0,
+   "hrv7": 96,
+   "hrv_banda": [
+    80,
+    93
+   ],
+   "rhr": 46.0,
+   "rhr_base": 46.5,
+   "sonno_h": 7.28,
+   "sonno_score": 83.0,
+   "prontezza": 77,
+   "ctl": 4.2,
+   "atl": 10.3,
+   "tsb": -6.1,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-19",
+   "hrv": 109.0,
+   "hrv7": 97,
+   "hrv_banda": [
+    80,
+    93
+   ],
+   "rhr": 43.0,
+   "rhr_base": 46.6,
+   "sonno_h": 9.26,
+   "sonno_score": 93.0,
+   "prontezza": 93,
+   "ctl": 4.1,
+   "atl": 9.0,
+   "tsb": -4.9,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-20",
+   "hrv": 118.0,
+   "hrv7": 99,
+   "hrv_banda": [
+    83,
+    94
+   ],
+   "rhr": 42.0,
+   "rhr_base": 46.5,
+   "sonno_h": 8.37,
+   "sonno_score": 97.0,
+   "prontezza": 97,
+   "ctl": 4.0,
+   "atl": 7.8,
+   "tsb": -3.8,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-21",
+   "hrv": 117.0,
+   "hrv7": 101,
+   "hrv_banda": [
+    83,
+    96
+   ],
+   "rhr": 41.0,
+   "rhr_base": 46.2,
+   "sonno_h": 8.77,
+   "sonno_score": 89.0,
+   "prontezza": 96,
+   "ctl": 4.5,
+   "atl": 9.9,
+   "tsb": -5.5,
+   "load": 24.0
+  },
+  {
+   "data": "2026-08-22",
+   "hrv": 120.0,
+   "hrv7": 103,
+   "hrv_banda": [
+    84,
+    97
+   ],
+   "rhr": 37.0,
+   "rhr_base": 45.9,
+   "sonno_h": 10.55,
+   "sonno_score": 87.0,
+   "prontezza": 98,
+   "ctl": 4.4,
+   "atl": 8.6,
+   "tsb": -4.2,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-23",
+   "hrv": 119.0,
+   "hrv7": 105,
+   "hrv_banda": [
+    84,
+    99
+   ],
+   "rhr": 41.0,
+   "rhr_base": 45.6,
+   "sonno_h": 7.09,
+   "sonno_score": 88.0,
+   "prontezza": 75,
+   "ctl": 5.3,
+   "atl": 13.6,
+   "tsb": -8.2,
+   "load": 46.0
+  },
+  {
+   "data": "2026-08-24",
+   "hrv": 104.0,
+   "hrv7": 110,
+   "hrv_banda": [
+    85,
+    100
+   ],
+   "rhr": 43.0,
+   "rhr_base": 45.4,
+   "sonno_h": 6.78,
+   "sonno_score": 82.0,
+   "prontezza": 67,
+   "ctl": 5.2,
+   "atl": 11.8,
+   "tsb": -6.6,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-25",
+   "hrv": 126.0,
+   "hrv7": 116,
+   "hrv_banda": [
+    86,
+    101
+   ],
+   "rhr": 41.0,
+   "rhr_base": 45.1,
+   "sonno_h": 6.38,
+   "sonno_score": 81.0,
+   "prontezza": 74,
+   "ctl": 5.1,
+   "atl": 10.2,
+   "tsb": -5.1,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-26",
+   "hrv": 87.0,
+   "hrv7": 112,
+   "hrv_banda": [
+    86,
+    102
+   ],
+   "rhr": 44.0,
+   "rhr_base": 45.0,
+   "sonno_h": 6.97,
+   "sonno_score": 73.0,
+   "prontezza": 72,
+   "ctl": 5.0,
+   "atl": 8.8,
+   "tsb": -3.9,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-27",
+   "hrv": null,
+   "hrv7": 111,
+   "hrv_banda": [
+    86,
+    102
+   ],
+   "rhr": 45.0,
+   "rhr_base": 44.5,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 67,
+   "ctl": 4.9,
+   "atl": 7.7,
+   "tsb": -2.8,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-28",
+   "hrv": 86.0,
+   "hrv7": 106,
+   "hrv_banda": [
+    86,
+    102
+   ],
+   "rhr": 46.0,
+   "rhr_base": 44.4,
+   "sonno_h": 7.9,
+   "sonno_score": 86.0,
+   "prontezza": 71,
+   "ctl": 4.7,
+   "atl": 6.6,
+   "tsb": -1.9,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-29",
+   "hrv": null,
+   "hrv7": 103,
+   "hrv_banda": [
+    87,
+    103
+   ],
+   "rhr": null,
+   "rhr_base": 44.4,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": null,
+   "ctl": 4.6,
+   "atl": 5.8,
+   "tsb": -1.1,
+   "load": 0.0
+  },
+  {
+   "data": "2026-08-30",
+   "hrv": null,
+   "hrv7": 100,
+   "hrv_banda": [
+    88,
+    103
+   ],
+   "rhr": 44.0,
+   "rhr_base": 44.4,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 49,
+   "ctl": 5.2,
+   "atl": 8.7,
+   "tsb": -3.5,
+   "load": 28.0
+  },
+  {
+   "data": "2026-08-31",
+   "hrv": 105.0,
+   "hrv7": 100,
+   "hrv_banda": [
+    88,
+    103
+   ],
+   "rhr": 44.0,
+   "rhr_base": 44.4,
+   "sonno_h": 9.03,
+   "sonno_score": 91.0,
+   "prontezza": 75,
+   "ctl": 5.1,
+   "atl": 7.6,
+   "tsb": -2.5,
+   "load": 0.0
+  },
+  {
+   "data": "2026-09-01",
+   "hrv": 107.0,
+   "hrv7": 96,
+   "hrv_banda": [
+    88,
+    104
+   ],
+   "rhr": 43.0,
+   "rhr_base": 44.3,
+   "sonno_h": 6.4,
+   "sonno_score": 80.0,
+   "prontezza": 79,
+   "ctl": 4.9,
+   "atl": 6.6,
+   "tsb": -1.6,
+   "load": 0.0
+  },
+  {
+   "data": "2026-09-02",
+   "hrv": 95.0,
+   "hrv7": 98,
+   "hrv_banda": [
+    88,
+    104
+   ],
+   "rhr": 45.0,
+   "rhr_base": 44.1,
+   "sonno_h": 8.23,
+   "sonno_score": 79.0,
+   "prontezza": 65,
+   "ctl": 5.4,
+   "atl": 9.0,
+   "tsb": -3.6,
+   "load": 25.0
+  },
+  {
+   "data": "2026-09-03",
+   "hrv": 93.0,
+   "hrv7": 97,
+   "hrv_banda": [
+    89,
+    104
+   ],
+   "rhr": 46.0,
+   "rhr_base": 44.0,
+   "sonno_h": 7.12,
+   "sonno_score": 84.0,
+   "prontezza": 65,
+   "ctl": 5.3,
+   "atl": 7.8,
+   "tsb": -2.5,
+   "load": 0.0
+  },
+  {
+   "data": "2026-09-04",
+   "hrv": 88.0,
+   "hrv7": 97,
+   "hrv_banda": [
+    89,
+    104
+   ],
+   "rhr": 46.0,
+   "rhr_base": 43.9,
+   "sonno_h": 7.5,
+   "sonno_score": 82.0,
+   "prontezza": 66,
+   "ctl": 5.2,
+   "atl": 6.8,
+   "tsb": -1.6,
+   "load": 0.0
+  },
+  {
+   "data": "2026-09-05",
+   "hrv": 99.0,
+   "hrv7": 98,
+   "hrv_banda": [
+    89,
+    104
+   ],
+   "rhr": 45.0,
+   "rhr_base": 43.8,
+   "sonno_h": 10.0,
+   "sonno_score": 84.0,
+   "prontezza": 65,
+   "ctl": 5.8,
+   "atl": 10.0,
+   "tsb": -4.2,
+   "load": 31.0
+  },
+  {
+   "data": "2026-09-06",
+   "hrv": null,
+   "hrv7": 98,
+   "hrv_banda": [
+    90,
+    105
+   ],
+   "rhr": 49.0,
+   "rhr_base": 43.8,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 22,
+   "ctl": 7.8,
+   "atl": 21.2,
+   "tsb": -13.3,
+   "load": 94.0
+  },
+  {
+   "data": "2026-09-07",
+   "hrv": 93.0,
+   "hrv7": 96,
+   "hrv_banda": [
+    90,
+    105
+   ],
+   "rhr": 46.0,
+   "rhr_base": 43.9,
+   "sonno_h": 8.67,
+   "sonno_score": 91.0,
+   "prontezza": 60,
+   "ctl": 8.3,
+   "atl": 22.1,
+   "tsb": -13.8,
+   "load": 28.0
+  },
+  {
+   "data": "2026-09-08",
+   "hrv": 88.0,
+   "hrv7": 93,
+   "hrv_banda": [
+    90,
+    105
+   ],
+   "rhr": 46.0,
+   "rhr_base": 43.9,
+   "sonno_h": 6.67,
+   "sonno_score": 81.0,
+   "prontezza": 55,
+   "ctl": 8.1,
+   "atl": 19.1,
+   "tsb": -11.0,
+   "load": 0.0
+  },
+  {
+   "data": "2026-09-09",
+   "hrv": 91.0,
+   "hrv7": 92,
+   "hrv_banda": [
+    90,
+    105
+   ],
+   "rhr": 46.0,
+   "rhr_base": 44.0,
+   "sonno_h": 8.65,
+   "sonno_score": 92.0,
+   "prontezza": 60,
+   "ctl": 8.5,
+   "atl": 19.7,
+   "tsb": -11.2,
+   "load": 23.0
+  },
+  {
+   "data": "2026-09-10",
+   "hrv": 98.0,
+   "hrv7": 93,
+   "hrv_banda": [
+    91,
+    105
+   ],
+   "rhr": 45.0,
+   "rhr_base": 44.1,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 53,
+   "ctl": 8.3,
+   "atl": 17.0,
+   "tsb": -8.8,
+   "load": 0.0
+  },
+  {
+   "data": "2026-09-11",
+   "hrv": 125.0,
+   "hrv7": 98,
+   "hrv_banda": [
+    91,
+    105
+   ],
+   "rhr": 43.0,
+   "rhr_base": 44.1,
+   "sonno_h": 8.2,
+   "sonno_score": 92.0,
+   "prontezza": 75,
+   "ctl": 8.7,
+   "atl": 18.2,
+   "tsb": -9.5,
+   "load": 26.0
+  },
+  {
+   "data": "2026-09-12",
+   "hrv": 116.0,
+   "hrv7": 101,
+   "hrv_banda": [
+    92,
+    106
+   ],
+   "rhr": 42.0,
+   "rhr_base": 44.1,
+   "sonno_h": 8.12,
+   "sonno_score": 92.0,
+   "prontezza": 73,
+   "ctl": 8.5,
+   "atl": 15.8,
+   "tsb": -7.3,
+   "load": 0.0
+  },
+  {
+   "data": "2026-09-13",
+   "hrv": 82.0,
+   "hrv7": 98,
+   "hrv_banda": [
+    92,
+    106
+   ],
+   "rhr": 49.0,
+   "rhr_base": 44.0,
+   "sonno_h": 5.32,
+   "sonno_score": 36.0,
+   "prontezza": 44,
+   "ctl": 8.3,
+   "atl": 13.7,
+   "tsb": -5.4,
+   "load": 0.0
+  },
+  {
+   "data": "2026-09-14",
+   "hrv": 111.0,
+   "hrv7": 101,
+   "hrv_banda": [
+    91,
+    106
+   ],
+   "rhr": 43.0,
+   "rhr_base": 44.2,
+   "sonno_h": 7.42,
+   "sonno_score": 84.0,
+   "prontezza": 75,
+   "ctl": 8.1,
+   "atl": 11.9,
+   "tsb": -3.8,
+   "load": 0.0
+  },
+  {
+   "data": "2026-09-15",
+   "hrv": 99.0,
+   "hrv7": 102,
+   "hrv_banda": [
+    92,
+    106
+   ],
+   "rhr": 45.0,
+   "rhr_base": 44.2,
+   "sonno_h": 8.6,
+   "sonno_score": 94.0,
+   "prontezza": 74,
+   "ctl": 7.9,
+   "atl": 10.3,
+   "tsb": -2.4,
+   "load": 0.0
+  },
+  {
+   "data": "2026-09-16",
+   "hrv": 98.0,
+   "hrv7": 103,
+   "hrv_banda": [
+    92,
+    106
+   ],
+   "rhr": 45.0,
+   "rhr_base": 44.3,
+   "sonno_h": 8.9,
+   "sonno_score": 89.0,
+   "prontezza": 75,
+   "ctl": 7.7,
+   "atl": 8.9,
+   "tsb": -1.2,
+   "load": 0.0
+  },
+  {
+   "data": "2026-09-17",
+   "hrv": 106.0,
+   "hrv7": 104,
+   "hrv_banda": [
+    92,
+    106
+   ],
+   "rhr": 43.0,
+   "rhr_base": 44.2,
+   "sonno_h": 8.43,
+   "sonno_score": 90.0,
+   "prontezza": 78,
+   "ctl": 8.1,
+   "atl": 10.7,
+   "tsb": -2.6,
+   "load": 22.0
+  },
+  {
+   "data": "2026-09-18",
+   "hrv": 109.0,
+   "hrv7": 102,
+   "hrv_banda": [
+    92,
+    106
+   ],
+   "rhr": 44.0,
+   "rhr_base": 44.1,
+   "sonno_h": 7.78,
+   "sonno_score": 96.0,
+   "prontezza": 74,
+   "ctl": 8.6,
+   "atl": 13.2,
+   "tsb": -4.7,
+   "load": 30.0
+  },
+  {
+   "data": "2026-09-19",
+   "hrv": 104.0,
+   "hrv7": 101,
+   "hrv_banda": [
+    93,
+    106
+   ],
+   "rhr": 45.0,
+   "rhr_base": 44.1,
+   "sonno_h": 4.0,
+   "sonno_score": 42.0,
+   "prontezza": 62,
+   "ctl": 8.4,
+   "atl": 11.5,
+   "tsb": -3.1,
+   "load": 0.0
+  },
+  {
+   "data": "2026-09-20",
+   "hrv": 76.0,
+   "hrv7": 100,
+   "hrv_banda": [
+    93,
+    106
+   ],
+   "rhr": 47.0,
+   "rhr_base": 44.2,
+   "sonno_h": 8.17,
+   "sonno_score": 84.0,
+   "prontezza": 61,
+   "ctl": 8.2,
+   "atl": 10.0,
+   "tsb": -1.8,
+   "load": 0.0
+  },
+  {
+   "data": "2026-09-21",
+   "hrv": 110.0,
+   "hrv7": 100,
+   "hrv_banda": [
+    92,
+    106
+   ],
+   "rhr": 44.0,
+   "rhr_base": 44.4,
+   "sonno_h": 8.55,
+   "sonno_score": 89.0,
+   "prontezza": 82,
+   "ctl": 8.0,
+   "atl": 8.6,
+   "tsb": -0.6,
+   "load": 0.0
+  },
+  {
+   "data": "2026-09-22",
+   "hrv": 119.0,
+   "hrv7": 102,
+   "hrv_banda": [
+    92,
+    106
+   ],
+   "rhr": 44.0,
+   "rhr_base": 44.7,
+   "sonno_h": 3.4,
+   "sonno_score": 38.0,
+   "prontezza": 74,
+   "ctl": 7.8,
+   "atl": 7.5,
+   "tsb": 0.3,
+   "load": 0.0
+  },
+  {
+   "data": "2026-09-23",
+   "hrv": 116.0,
+   "hrv7": 105,
+   "hrv_banda": [
+    93,
+    107
+   ],
+   "rhr": 43.0,
+   "rhr_base": 44.8,
+   "sonno_h": 8.95,
+   "sonno_score": 97.0,
+   "prontezza": 88,
+   "ctl": 7.9,
+   "atl": 8.3,
+   "tsb": -0.4,
+   "load": 14.0
+  },
+  {
+   "data": "2026-09-24",
+   "hrv": 109.0,
+   "hrv7": 105,
+   "hrv_banda": [
+    93,
+    107
+   ],
+   "rhr": 44.0,
+   "rhr_base": 44.8,
+   "sonno_h": 8.25,
+   "sonno_score": 97.0,
+   "prontezza": 83,
+   "ctl": 8.0,
+   "atl": 8.4,
+   "tsb": -0.5,
+   "load": 9.0
+  }
+ ],
+ "settimane": [
+  {
+   "lun": "2026-06-08",
+   "corse": 1,
+   "min_corsa": 31,
+   "km": 4.5,
+   "zone_min": [
+    11,
+    14,
+    6,
+    0,
+    0
+   ],
+   "load_tot": 24,
+   "monotonia": 0.38,
+   "strain": 9
+  },
+  {
+   "lun": "2026-06-15",
+   "corse": 0,
+   "min_corsa": 0,
+   "km": 0,
+   "zone_min": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "load_tot": 0,
+   "monotonia": null,
+   "strain": null
+  },
+  {
+   "lun": "2026-06-22",
+   "corse": 1,
+   "min_corsa": 32,
+   "km": 4.0,
+   "zone_min": [
+    19,
+    8,
+    6,
+    0,
+    0
+   ],
+   "load_tot": 22,
+   "monotonia": 0.38,
+   "strain": 8
+  },
+  {
+   "lun": "2026-06-29",
+   "corse": 0,
+   "min_corsa": 0,
+   "km": 0,
+   "zone_min": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "load_tot": 0,
+   "monotonia": null,
+   "strain": null
+  },
+  {
+   "lun": "2026-07-06",
+   "corse": 2,
+   "min_corsa": 62,
+   "km": 8.7,
+   "zone_min": [
+    33,
+    17,
+    12,
+    0,
+    0
+   ],
+   "load_tot": 44,
+   "monotonia": 0.56,
+   "strain": 25
+  },
+  {
+   "lun": "2026-07-13",
+   "corse": 0,
+   "min_corsa": 0,
+   "km": 0,
+   "zone_min": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "load_tot": 0,
+   "monotonia": null,
+   "strain": null
+  },
+  {
+   "lun": "2026-07-20",
+   "corse": 0,
+   "min_corsa": 0,
+   "km": 0,
+   "zone_min": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "load_tot": 0,
+   "monotonia": null,
+   "strain": null
+  },
+  {
+   "lun": "2026-07-27",
+   "corse": 1,
+   "min_corsa": 25,
+   "km": 3.5,
+   "zone_min": [
+    15,
+    8,
+    2,
+    0,
+    0
+   ],
+   "load_tot": 15,
+   "monotonia": 0.38,
+   "strain": 6
+  },
+  {
+   "lun": "2026-08-03",
+   "corse": 0,
+   "min_corsa": 0,
+   "km": 0,
+   "zone_min": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "load_tot": 0,
+   "monotonia": null,
+   "strain": null
+  },
+  {
+   "lun": "2026-08-10",
+   "corse": 0,
+   "min_corsa": 0,
+   "km": 0,
+   "zone_min": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "load_tot": 101,
+   "monotonia": 0.38,
+   "strain": 38
+  },
+  {
+   "lun": "2026-08-17",
+   "corse": 1,
+   "min_corsa": 30,
+   "km": 4.7,
+   "zone_min": [
+    11,
+    14,
+    5,
+    0,
+    0
+   ],
+   "load_tot": 70,
+   "monotonia": 0.55,
+   "strain": 38
+  },
+  {
+   "lun": "2026-08-24",
+   "corse": 1,
+   "min_corsa": 32,
+   "km": 4.9,
+   "zone_min": [
+    8,
+    13,
+    11,
+    0,
+    0
+   ],
+   "load_tot": 28,
+   "monotonia": 0.38,
+   "strain": 11
+  },
+  {
+   "lun": "2026-08-31",
+   "corse": 2,
+   "min_corsa": 65,
+   "km": 10.5,
+   "zone_min": [
+    19,
+    37,
+    9,
+    3,
+    0
+   ],
+   "load_tot": 150,
+   "monotonia": 0.62,
+   "strain": 93
+  },
+  {
+   "lun": "2026-09-07",
+   "corse": 3,
+   "min_corsa": 91,
+   "km": 14.4,
+   "zone_min": [
+    19,
+    61,
+    10,
+    2,
+    0
+   ],
+   "load_tot": 77,
+   "monotonia": 0.8,
+   "strain": 61
+  },
+  {
+   "lun": "2026-09-14",
+   "corse": 0,
+   "min_corsa": 0,
+   "km": 0,
+   "zone_min": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "load_tot": 52,
+   "monotonia": 0.58,
+   "strain": 30
+  },
+  {
+   "lun": "2026-09-21",
+   "corse": 1,
+   "min_corsa": 31,
+   "km": 4.0,
+   "zone_min": [
+    27,
+    5,
+    0,
+    0,
+    0
+   ],
+   "load_tot": 23,
+   "monotonia": null,
+   "strain": null
+  }
+ ],
+ "corse": [
+  {
+   "id": "i185355127",
+   "data": "2026-02-09",
+   "km": 2.62,
+   "min": 21.9,
+   "pace_s": 502,
+   "fc": 114.0,
+   "ef": 17.54,
+   "decoupling": null,
+   "cadenza": 141.0,
+   "zone_min": [
+    18.2,
+    3.9,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355352",
+   "data": "2026-04-06",
+   "km": 3.73,
+   "min": 34.2,
+   "pace_s": 551,
+   "fc": 118.0,
+   "ef": 15.98,
+   "decoupling": null,
+   "cadenza": 139.0,
+   "zone_min": [
+    29.3,
+    5.4,
+    0.6,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355344",
+   "data": "2026-04-14",
+   "km": 2.19,
+   "min": 16.4,
+   "pace_s": 448,
+   "fc": 119.0,
+   "ef": 19.15,
+   "decoupling": null,
+   "cadenza": 146.0,
+   "zone_min": [
+    11.1,
+    5.2,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355335",
+   "data": "2026-04-15",
+   "km": 4.02,
+   "min": 30.6,
+   "pace_s": 457,
+   "fc": 128.0,
+   "ef": 17.46,
+   "decoupling": null,
+   "cadenza": 151.0,
+   "zone_min": [
+    13.8,
+    13.1,
+    3.8,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355328",
+   "data": "2026-04-19",
+   "km": 6.02,
+   "min": 43.6,
+   "pace_s": 434,
+   "fc": 142.0,
+   "ef": 16.69,
+   "decoupling": 6.6,
+   "cadenza": 153.0,
+   "zone_min": [
+    17.0,
+    7.4,
+    19.5,
+    0.1,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355319",
+   "data": "2026-04-22",
+   "km": 3.32,
+   "min": 24.3,
+   "pace_s": 439,
+   "fc": 126.0,
+   "ef": 17.99,
+   "decoupling": null,
+   "cadenza": 152.0,
+   "zone_min": [
+    10.1,
+    13.6,
+    0.8,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355303",
+   "data": "2026-04-25",
+   "km": 6.04,
+   "min": 44.1,
+   "pace_s": 438,
+   "fc": 139.0,
+   "ef": 17.01,
+   "decoupling": 17.7,
+   "cadenza": 154.0,
+   "zone_min": [
+    13.5,
+    17.8,
+    12.7,
+    0.2,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355295",
+   "data": "2026-05-01",
+   "km": 7.12,
+   "min": 50.6,
+   "pace_s": 426,
+   "fc": 140.0,
+   "ef": 17.15,
+   "decoupling": 10.3,
+   "cadenza": 152.0,
+   "zone_min": [
+    16.4,
+    18.6,
+    15.6,
+    0.1,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355287",
+   "data": "2026-05-03",
+   "km": 5.02,
+   "min": 35.4,
+   "pace_s": 422,
+   "fc": 135.0,
+   "ef": 17.61,
+   "decoupling": null,
+   "cadenza": 159.0,
+   "zone_min": [
+    7.3,
+    20.1,
+    8.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355282",
+   "data": "2026-05-06",
+   "km": 4.73,
+   "min": 32.0,
+   "pace_s": 407,
+   "fc": 139.0,
+   "ef": 17.73,
+   "decoupling": null,
+   "cadenza": 160.0,
+   "zone_min": [
+    10.9,
+    11.6,
+    9.1,
+    0.6,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355276",
+   "data": "2026-05-08",
+   "km": 6.09,
+   "min": 42.4,
+   "pace_s": 418,
+   "fc": 134.0,
+   "ef": 17.41,
+   "decoupling": 11.6,
+   "cadenza": 159.0,
+   "zone_min": [
+    10.2,
+    27.6,
+    4.6,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355271",
+   "data": "2026-05-12",
+   "km": 4.01,
+   "min": 24.7,
+   "pace_s": 370,
+   "fc": 146.0,
+   "ef": 18.39,
+   "decoupling": null,
+   "cadenza": 160.0,
+   "zone_min": [
+    6.0,
+    8.3,
+    10.5,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355265",
+   "data": "2026-05-13",
+   "km": 4.62,
+   "min": 28.2,
+   "pace_s": 367,
+   "fc": 147.0,
+   "ef": 18.61,
+   "decoupling": null,
+   "cadenza": 156.0,
+   "zone_min": [
+    8.5,
+    9.2,
+    6.6,
+    3.5,
+    0.6
+   ]
+  },
+  {
+   "id": "i185355259",
+   "data": "2026-05-15",
+   "km": 3.15,
+   "min": 19.6,
+   "pace_s": 373,
+   "fc": 144.0,
+   "ef": 18.25,
+   "decoupling": null,
+   "cadenza": 159.0,
+   "zone_min": [
+    5.5,
+    6.6,
+    7.5,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355252",
+   "data": "2026-05-17",
+   "km": 5.01,
+   "min": 35.1,
+   "pace_s": 420,
+   "fc": 133.0,
+   "ef": 17.95,
+   "decoupling": null,
+   "cadenza": 161.0,
+   "zone_min": [
+    16.7,
+    15.8,
+    2.8,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355234",
+   "data": "2026-05-19",
+   "km": 4.43,
+   "min": 33.1,
+   "pace_s": 448,
+   "fc": 129.0,
+   "ef": 17.32,
+   "decoupling": null,
+   "cadenza": 157.0,
+   "zone_min": [
+    15.2,
+    15.3,
+    3.2,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355227",
+   "data": "2026-05-23",
+   "km": 3.5,
+   "min": 26.3,
+   "pace_s": 450,
+   "fc": 144.0,
+   "ef": 16.19,
+   "decoupling": null,
+   "cadenza": 156.0,
+   "zone_min": [
+    6.4,
+    11.9,
+    8.1,
+    0.1,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355215",
+   "data": "2026-05-24",
+   "km": 7.04,
+   "min": 47.7,
+   "pace_s": 406,
+   "fc": 136.0,
+   "ef": 17.94,
+   "decoupling": 7.8,
+   "cadenza": 158.0,
+   "zone_min": [
+    14.1,
+    31.5,
+    2.5,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355203",
+   "data": "2026-05-27",
+   "km": 6.1,
+   "min": 41.7,
+   "pace_s": 410,
+   "fc": 148.0,
+   "ef": 16.62,
+   "decoupling": 14.0,
+   "cadenza": 158.0,
+   "zone_min": [
+    4.9,
+    15.5,
+    21.3,
+    0.1,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355105",
+   "data": "2026-06-03",
+   "km": 4.81,
+   "min": 318.0,
+   "pace_s": 3968,
+   "fc": 96.0,
+   "ef": 14.8,
+   "decoupling": null,
+   "cadenza": 115.0,
+   "zone_min": [
+    36.6,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355096",
+   "data": "2026-06-10",
+   "km": 4.51,
+   "min": 31.5,
+   "pace_s": 419,
+   "fc": 133.0,
+   "ef": 18.54,
+   "decoupling": null,
+   "cadenza": 153.0,
+   "zone_min": [
+    10.8,
+    14.4,
+    6.0,
+    0.4,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355086",
+   "data": "2026-06-26",
+   "km": 4.02,
+   "min": 32.3,
+   "pace_s": 482,
+   "fc": 132.0,
+   "ef": 15.65,
+   "decoupling": null,
+   "cadenza": 146.0,
+   "zone_min": [
+    19.1,
+    7.8,
+    5.5,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355073",
+   "data": "2026-07-09",
+   "km": 4.25,
+   "min": 30.6,
+   "pace_s": 432,
+   "fc": 118.0,
+   "ef": 19.89,
+   "decoupling": null,
+   "cadenza": 157.0,
+   "zone_min": [
+    26.5,
+    4.2,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355065",
+   "data": "2026-07-11",
+   "km": 4.41,
+   "min": 31.4,
+   "pace_s": 428,
+   "fc": 141.0,
+   "ef": 16.85,
+   "decoupling": null,
+   "cadenza": 158.0,
+   "zone_min": [
+    6.2,
+    13.1,
+    12.3,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355058",
+   "data": "2026-08-02",
+   "km": 3.51,
+   "min": 24.9,
+   "pace_s": 425,
+   "fc": 129.0,
+   "ef": 18.64,
+   "decoupling": null,
+   "cadenza": 157.0,
+   "zone_min": [
+    15.1,
+    8.1,
+    2.1,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355049",
+   "data": "2026-08-21",
+   "km": 4.67,
+   "min": 30.4,
+   "pace_s": 391,
+   "fc": 136.0,
+   "ef": 19.0,
+   "decoupling": null,
+   "cadenza": 159.0,
+   "zone_min": [
+    11.4,
+    14.0,
+    5.2,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355033",
+   "data": "2026-08-30",
+   "km": 4.86,
+   "min": 32.0,
+   "pace_s": 395,
+   "fc": 142.0,
+   "ef": 16.66,
+   "decoupling": null,
+   "cadenza": 160.0,
+   "zone_min": [
+    8.2,
+    12.8,
+    11.3,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355030",
+   "data": "2026-09-02",
+   "km": 4.8,
+   "min": 29.4,
+   "pace_s": 367,
+   "fc": 143.0,
+   "ef": 17.92,
+   "decoupling": null,
+   "cadenza": 159.0,
+   "zone_min": [
+    7.7,
+    17.9,
+    4.6,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185355021",
+   "data": "2026-09-05",
+   "km": 5.74,
+   "min": 35.8,
+   "pace_s": 374,
+   "fc": 142.0,
+   "ef": 17.94,
+   "decoupling": null,
+   "cadenza": 160.0,
+   "zone_min": [
+    11.5,
+    19.5,
+    4.1,
+    2.8,
+    0.0
+   ]
+  },
+  {
+   "id": "i185354997",
+   "data": "2026-09-07",
+   "km": 4.79,
+   "min": 28.8,
+   "pace_s": 360,
+   "fc": 149.0,
+   "ef": 18.02,
+   "decoupling": null,
+   "cadenza": 156.0,
+   "zone_min": [
+    4.9,
+    13.4,
+    9.0,
+    2.2,
+    0.0
+   ]
+  },
+  {
+   "id": "i185354989",
+   "data": "2026-09-09",
+   "km": 4.92,
+   "min": 32.6,
+   "pace_s": 397,
+   "fc": 133.0,
+   "ef": 18.0,
+   "decoupling": null,
+   "cadenza": 158.0,
+   "zone_min": [
+    9.2,
+    23.6,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i185537534",
+   "data": "2026-09-11",
+   "km": 4.66,
+   "min": 30.1,
+   "pace_s": 387,
+   "fc": 144.0,
+   "ef": 17.37,
+   "decoupling": null,
+   "cadenza": 160.0,
+   "zone_min": [
+    4.9,
+    24.3,
+    0.9,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "id": "i189757418",
+   "data": "2026-09-23",
+   "km": 3.99,
+   "min": 31.0,
+   "pace_s": 466,
+   "fc": 116.0,
+   "ef": 18.13,
+   "decoupling": null,
+   "cadenza": 156.0,
+   "zone_min": [
+    27.1,
+    5.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ ],
+ "prestazione": {
+  "fc_riferimento": 145,
+  "ritmo_a_fc_s": 389,
+  "ritmo_a_fc_storia": [
+   {
+    "data": "2026-07-05",
+    "pace_s": 397
+   },
+   {
+    "data": "2026-07-12",
+    "pace_s": 391
+   },
+   {
+    "data": "2026-07-19",
+    "pace_s": 430
+   },
+   {
+    "data": "2026-07-26",
+    "pace_s": null
+   },
+   {
+    "data": "2026-08-02",
+    "pace_s": null
+   },
+   {
+    "data": "2026-08-09",
+    "pace_s": null
+   },
+   {
+    "data": "2026-08-16",
+    "pace_s": null
+   },
+   {
+    "data": "2026-08-23",
+    "pace_s": null
+   },
+   {
+    "data": "2026-08-30",
+    "pace_s": null
+   },
+   {
+    "data": "2026-09-06",
+    "pace_s": 396
+   },
+   {
+    "data": "2026-09-13",
+    "pace_s": 391
+   },
+   {
+    "data": "2026-09-20",
+    "pace_s": 390
+   },
+   {
+    "data": "2026-09-24",
+    "pace_s": 389
+   }
+  ],
+  "vo2max": 51.0,
+  "vo2max_storia": [
+   {
+    "data": "2026-01-11",
+    "vo2max": 53.0
+   },
+   {
+    "data": "2026-02-09",
+    "vo2max": 53.0
+   },
+   {
+    "data": "2026-03-28",
+    "vo2max": 52.0
+   },
+   {
+    "data": "2026-04-15",
+    "vo2max": 52.0
+   },
+   {
+    "data": "2026-04-19",
+    "vo2max": 52.0
+   },
+   {
+    "data": "2026-04-22",
+    "vo2max": 52.0
+   },
+   {
+    "data": "2026-04-25",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-05-01",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-05-03",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-05-06",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-05-08",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-05-12",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-05-13",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-05-15",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-05-17",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-05-19",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-05-23",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-05-24",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-05-27",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-06-10",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-07-11",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-08-02",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-08-21",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-08-30",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-09-02",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-09-05",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-09-07",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-09-09",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-09-11",
+    "vo2max": 51.0
+   },
+   {
+    "data": "2026-09-23",
+    "vo2max": 51.0
+   }
+  ],
+  "mezza_teorica": "1:29:59",
+  "mezza_teorica_s": 5399,
+  "polarizzazione_28": 88,
+  "decoupling_medio_28": null,
+  "cadenza_media_28": 159.0
+ }
+}

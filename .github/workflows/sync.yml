@@ -41,6 +41,9 @@ jobs:
       - name: Genera il piano
         run: python scripts/build_plan.py
 
+      - name: Calcola metriche e recupero
+        run: python scripts/metrics.py
+
       - name: Confronta piano e realta
         run: python scripts/analyze.py
 
