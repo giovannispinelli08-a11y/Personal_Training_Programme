@@ -60,10 +60,12 @@ h1{font-size:19px;font-weight:600;letter-spacing:-.01em;margin:0 0 2px}
 .fact .v{font-size:19px;font-weight:500;letter-spacing:-.02em;margin:0;line-height:1.15}
 .fact .u{font-size:11px;color:var(--ink3);font-weight:400}
 
-nav{display:flex;gap:0;border-bottom:1px solid var(--rule2);margin-bottom:26px}
+nav{display:flex;gap:0;border-bottom:1px solid var(--rule2);margin-bottom:26px;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
 nav button{
   appearance:none;background:none;border:none;border-bottom:2px solid transparent;
-  font:inherit;font-size:13px;color:var(--ink2);padding:12px 15px 10px;cursor:pointer;margin-bottom:-1px;
+  font:inherit;font-size:13px;color:var(--ink2);padding:12px 13px 10px;cursor:pointer;margin-bottom:-1px;
+  white-space:nowrap;flex:none;
 }
 nav button[aria-selected=true]{color:var(--ink);border-bottom-color:var(--ink);font-weight:500}
 nav button:focus-visible{outline:2px solid var(--signal);outline-offset:-2px}
@@ -135,6 +137,44 @@ svg{display:block}
 .warn li{color:var(--signal)}
 .loading{color:var(--ink3);font-size:13px;padding:26px 0}
 .err{color:var(--signal);font-size:13px;padding:16px 0}
+/* ---------- oggi ---------- */
+.oggi-top{display:grid;grid-template-columns:132px 1fr;gap:22px;align-items:center;margin:4px 0 8px}
+.gauge{position:relative;width:132px;height:132px}
+.gauge svg{width:132px;height:132px}
+.gauge .n{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.gauge .n b{font-size:34px;font-weight:600;letter-spacing:-.03em;line-height:1}
+.gauge .n span{font-size:11px;color:var(--ink3);margin-top:3px}
+.oggi-k{font-size:11px;color:var(--ink3);margin:0 0 2px}
+.oggi-liv{font-size:19px;font-weight:600;margin:0 0 6px;letter-spacing:-.01em}
+.liv-verde{color:var(--easy)} .liv-giallo{color:var(--tempo)} .liv-rosso{color:var(--signal)}
+.oggi-cons{font-size:14px;margin:0;max-width:52ch}
+.oggi-note{margin:8px 0 0;padding-left:17px;font-size:12.5px;color:var(--signal)}
+.oggi-note li{margin:2px 0}
+.card{border:1px solid var(--rule);background:var(--panel);padding:4px 14px}
+.card .seduta{border-top:none}
+.comp{display:grid;grid-template-columns:118px 1fr 44px;gap:12px;align-items:center;
+  padding:9px 0;border-bottom:1px solid var(--rule);font-size:13px}
+.comp:last-child{border-bottom:none}
+.comp-n{font-weight:500}
+.comp-d{grid-column:1/4;font-size:11.5px;color:var(--ink3);margin-top:-6px}
+.comp-bar{height:6px;background:var(--grid);position:relative;border-radius:3px;overflow:hidden}
+.comp-bar i{position:absolute;inset:0 auto 0 0;border-radius:3px}
+.comp-p{text-align:right;font-weight:500}
+.facts.small{background:none;border:none;gap:8px}
+.facts.small .fact{background:var(--panel);border:1px solid var(--rule)}
+.facts.small .v{font-size:17px}
+table.corse{border-collapse:collapse;width:100%;font-size:12.5px;min-width:560px}
+table.corse th{text-align:right;font-weight:500;color:var(--ink3);font-size:11px;
+  border-bottom:1px solid var(--rule2);padding:6px 8px}
+table.corse td{text-align:right;padding:6px 8px;border-bottom:1px solid var(--rule)}
+table.corse th:first-child,table.corse td:first-child{text-align:left}
+.tabbox{overflow-x:auto}
+.muted{color:var(--ink3)}
+@media (max-width:520px){
+  .oggi-top{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .oggi-note{text-align:left}
+  .comp{grid-template-columns:96px 1fr 36px}
+}
 footer{border-top:1px solid var(--rule);margin-top:44px;padding-top:14px;
   font-size:11px;color:var(--ink3)}
 </style>
@@ -149,12 +189,16 @@ footer{border-top:1px solid var(--rule);margin-top:44px;padding-top:14px;
 </header>
 
 <nav role="tablist">
-  <button role="tab" aria-selected="true" data-t="piano">Piano</button>
+  <button role="tab" aria-selected="true" data-t="oggi">Oggi</button>
+  <button role="tab" aria-selected="false" data-t="piano">Piano</button>
   <button role="tab" aria-selected="false" data-t="andamento">Andamento</button>
+  <button role="tab" aria-selected="false" data-t="recupero">Recupero</button>
   <button role="tab" aria-selected="false" data-t="stato">Stato</button>
 </nav>
 
-<section id="piano"><div class="loading">Carico il piano…</div></section>
+<section id="oggi"><div class="loading">Carico i dati…</div></section>
+
+<section id="piano" hidden><div class="loading">Carico il piano…</div></section>
 
 <section id="andamento" hidden>
   <h2>Volume settimanale</h2>
@@ -190,6 +234,66 @@ footer{border-top:1px solid var(--rule);margin-top:44px;padding-top:14px;
       <span><i style="background:var(--long)"></i>cronico · forma</span>
       <span><i style="background:var(--hard)"></i>acuto · fatica</span>
     </div>
+  </figure>
+
+  <h2>Distribuzione dell'intensità</h2>
+  <p class="hint">Minuti di corsa per zona cardiaca, settimana per settimana, calcolati secondo
+     per secondo dalle registrazioni. In fase di base quasi tutto deve stare in Z1–Z2:
+     la regola pratica è almeno l'80% del tempo sotto la soglia.</p>
+  <figure>
+    <div class="chartbox"><svg id="c-zone" viewBox="0 0 900 230" width="900" height="230"></svg></div>
+    <div class="readout" id="r-zone"></div>
+    <div class="legend" id="l-zone"></div>
+  </figure>
+
+  <h2>Ritmo a parità di cuore</h2>
+  <p class="hint">Il ritmo che tieni a <span id="fc-rif">una frequenza cardiaca fissa</span>, stimato con una regressione
+     su tutte le corse delle sei settimane precedenti (ritmo corretto per la pendenza).
+     Se la linea scende, a parità di battiti vai più forte: la base aerobica cresce.</p>
+  <figure>
+    <div class="chartbox"><svg id="c-ritmo" viewBox="0 0 900 200" width="900" height="200"></svg></div>
+    <div class="readout" id="r-ritmo"></div>
+  </figure>
+
+  <h2>Ultime corse</h2>
+  <p class="hint">La deriva cardiaca confronta l'efficienza della prima e della seconda metà
+     (esclusi i primi 10′): sotto il 5% la seduta è stata davvero aerobica.
+     Si misura solo sulle corse di almeno 40′.</p>
+  <div class="tabbox" id="t-corse"></div>
+</section>
+
+<section id="recupero" hidden>
+  <h2>Prontezza</h2>
+  <p class="hint">Punteggio giornaliero da 0 a 100 che combina HRV (35%), FC a riposo (20%),
+     sonno (25%) e rapporto fatica/forma (20%), ognuno confrontato con la tua baseline personale.
+     Verde sopra 65, giallo fra 45 e 65, rosso sotto 45.</p>
+  <figure>
+    <div class="chartbox"><svg id="c-pront" viewBox="0 0 900 200" width="900" height="200"></svg></div>
+    <div class="readout" id="r-pront"></div>
+  </figure>
+
+  <h2>Variabilità cardiaca (HRV)</h2>
+  <p class="hint">I punti sono le misure notturne, la linea è la media degli ultimi sette giorni,
+     la banda è la tua normalità (media dei 60 giorni precedenti ± mezza deviazione standard).
+     Conta la linea, non il singolo punto: sotto la banda per più giorni significa recupero in affanno.</p>
+  <figure>
+    <div class="chartbox"><svg id="c-hrv" viewBox="0 0 900 230" width="900" height="230"></svg></div>
+    <div class="readout" id="r-hrv"></div>
+  </figure>
+
+  <h2>Frequenza cardiaca a riposo</h2>
+  <p class="hint">Una FC a riposo 5 o più battiti sopra la media è uno dei segnali più precoci
+     di fatica, malanno in arrivo o sonno scarso.</p>
+  <figure>
+    <div class="chartbox"><svg id="c-rhr" viewBox="0 0 900 200" width="900" height="200"></svg></div>
+    <div class="readout" id="r-rhr"></div>
+  </figure>
+
+  <h2>Sonno</h2>
+  <p class="hint">Ore dormite per notte. La linea tratteggiata è l'obiettivo delle 8 ore.</p>
+  <figure>
+    <div class="chartbox"><svg id="c-sonno" viewBox="0 0 900 200" width="900" height="200"></svg></div>
+    <div class="readout" id="r-sonno"></div>
   </figure>
 </section>
 
@@ -269,11 +373,12 @@ async function testo(url){
   return r.text();
 }
 
-const S={corse:[],altre:[],piano:[],digest:""};
+const S={corse:[],altre:[],piano:[],digest:"",M:null};
 
 async function carica(){
   const esiti=await Promise.allSettled([
-    testo("data/summary.csv"), testo("plan/sessions.csv"), testo("data/digest.md")
+    testo("data/summary.csv"), testo("plan/sessions.csv"), testo("data/digest.md"),
+    testo("data/metrics.json")
   ]);
   if(esiti[0].status==="fulfilled"){
     for(const r of parseCSV(esiti[0].value)){
@@ -293,6 +398,7 @@ async function carica(){
   }
   if(esiti[1].status==="fulfilled") S.piano=parseCSV(esiti[1].value);
   if(esiti[2].status==="fulfilled") S.digest=esiti[2].value;
+  if(esiti[3].status==="fulfilled"){ try{ S.M=JSON.parse(esiti[3].value); }catch(e){ console.error(e); } }
   return esiti;
 }
 
@@ -308,7 +414,9 @@ function renderFacts(){
   const lungo=l28.length?Math.max(...l28.map(c=>c.km)):0;
   const ult=S.corse[S.corse.length-1];
   const f=document.getElementById("facts");
+  const pr=S.M&&S.M.oggi&&S.M.oggi.prontezza;
   const dati=[
+    ["Prontezza oggi", pr!=null?`<span class="liv-${S.M.oggi.livello}">${pr}</span>`:"—", "/100"],
     ["Alla gara", giorni, "giorni"],
     ["Settimana", nSett, `di 30 · ${blocco}`],
     ["Ultimi 28 giorni", km28.toFixed(1), `km · ${l28.length} corse`],
@@ -376,8 +484,6 @@ function renderPiano(){
     h.addEventListener("click",toggle);
     h.addEventListener("keydown",e=>{ if(e.key==="Enter"||e.key===" "){e.preventDefault();toggle();} });
   });
-  const now=box.querySelector(".sett.now");
-  if(now) now.scrollIntoView({block:"center"});
 }
 
 function seduta(r){
@@ -536,7 +642,12 @@ function chartCarico(){
   const W=900,H=230,M={t:14,r:16,b:30,l:44};
   const iw=W-M.l-M.r, ih=H-M.t-M.b;
   const dal=new Date(OGGI-150*864e5);
-  const tutte=[...S.corse,...S.altre].filter(a=>a.ctl!=null&&a.atl!=null&&a.data>=dal)
+  // Serie giornaliera da metrics.json se c'è (un punto al giorno, anche nei
+  // giorni di riposo); altrimenti i valori registrati nelle attività.
+  const tutte=(S.M&&S.M.giornaliero&&S.M.giornaliero.length
+    ? S.M.giornaliero.map(g=>({data:dLoc(g.data),ctl:g.ctl,atl:g.atl}))
+    : [...S.corse,...S.altre])
+    .filter(a=>a.ctl!=null&&a.atl!=null&&a.data>=dal)
     .sort((a,b)=>a.data-b.data);
   svg.innerHTML="";
   if(tutte.length<3){
@@ -574,7 +685,305 @@ function chartCarico(){
   interattivo(svg,tutte.map(a=>({cx:x(a.data.getTime()),a})),(o)=>
     `<span><b>${fmtD(o.a.data)}</b></span><span>forma <b>${o.a.ctl.toFixed(1)}</b></span>
      <span>fatica <b>${o.a.atl.toFixed(1)}</b></span>
+     <span>freschezza <b>${(o.a.ctl-o.a.atl).toFixed(1)}</b></span>
      <span>rapporto <b>${(o.a.atl/(o.a.ctl||1)).toFixed(2)}</b></span>`,"r-load",M,ih);
+}
+
+/* ---------- scheda oggi ---------- */
+const LIVELLO={verde:"Recupero buono",giallo:"Recupero parziale",rosso:"Recupero scarso"};
+const COLORE_LIV={verde:"var(--easy)",giallo:"var(--tempo)",rosso:"var(--signal)"};
+const livDi=s=>s==null?null:(s>=65?"verde":s>=45?"giallo":"rosso");
+const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;");
+
+function renderOggi(){
+  const box=document.getElementById("oggi");
+  const M=S.M;
+  if(!M||!M.oggi){
+    box.innerHTML='<p class="err">data/metrics.json non trovato: esegui scripts/metrics.py.</p>';
+    return;
+  }
+  const o=M.oggi, c=o.componenti||{}, P=M.prestazione||{};
+  let html="";
+
+  // anello della prontezza
+  const R=56, C=2*Math.PI*R, sc=o.prontezza;
+  const frac=sc!=null?sc/100:0;
+  const delta=(sc!=null&&o.ieri!=null)?sc-o.ieri:null;
+  html+=`<div class="oggi-top">
+    <div class="gauge">
+      <svg viewBox="0 0 132 132" aria-hidden="true">
+        <circle cx="66" cy="66" r="${R}" fill="none" stroke="var(--grid)" stroke-width="10"/>
+        <circle cx="66" cy="66" r="${R}" fill="none" stroke="${COLORE_LIV[o.livello]||"var(--ink3)"}"
+          stroke-width="10" stroke-linecap="round" stroke-dasharray="${(C*frac).toFixed(1)} ${C.toFixed(1)}"
+          transform="rotate(-90 66 66)"/>
+      </svg>
+      <div class="n"><b>${sc??"—"}</b><span>${delta!=null?(delta>=0?"+":"")+delta+" da ieri":"su 100"}</span></div>
+    </div>
+    <div>
+      <p class="oggi-k">Prontezza · ${fmtDG(OGGI)}</p>
+      <p class="oggi-liv liv-${o.livello||""}">${LIVELLO[o.livello]||"Dati insufficienti"}</p>
+      <p class="oggi-cons">${esc(o.consiglio)}</p>
+      ${o.note&&o.note.length?`<ul class="oggi-note">${o.note.map(n=>`<li>${esc(n)}</li>`).join("")}</ul>`:""}
+    </div>
+  </div>`;
+
+  // seduta di oggi, oppure la prossima
+  const oggiK=chiave(OGGI);
+  const prossime=S.piano.filter(r=>r.data>=oggiK).sort((a,b)=>a.data<b.data?-1:1);
+  const diOggi=prossime.filter(r=>r.data===oggiK);
+  html+=`<h2>${diOggi.length?"In programma oggi":"Oggi riposo · prossima seduta"}</h2><div class="card">`;
+  html+=(diOggi.length?diOggi:prossime.slice(0,1)).map(seduta).join("")||'<p class="muted">Nessuna seduta in programma.</p>';
+  html+=`</div>`;
+
+  // componenti
+  const righe=[];
+  if(c.hrv) righe.push(["HRV", c.hrv.punti, `${c.hrv.valore} ms · la tua media ${c.hrv.baseline} ms`]);
+  if(c.rhr) righe.push(["FC a riposo", c.rhr.punti, `${c.rhr.valore} bpm · ${c.rhr.delta>=0?"+":""}${c.rhr.delta} sulla media di ${c.rhr.baseline}`]);
+  if(c.sonno) righe.push(["Sonno", c.sonno.punti, `${c.sonno.ore} ore${c.sonno.score!=null?` · punteggio Garmin ${c.sonno.score}`:""}`]);
+  if(c.carico) righe.push(["Carico", c.carico.punti, `fatica/forma ${c.carico.rapporto} · freschezza ${c.carico.tsb>=0?"+":""}${c.carico.tsb}`]);
+  if(righe.length){
+    html+=`<h2>Da cosa dipende</h2><p class="hint">Ogni componente vale 70 quando sei nella tua media,
+      di più quando sei meglio del solito, di meno quando sei peggio.</p><div class="card">`;
+    html+=righe.map(([n,p,d])=>`<div class="comp"><span class="comp-n">${n}</span>
+      <span class="comp-bar"><i style="width:${p}%;background:${COLORE_LIV[livDi(p)]}"></i></span>
+      <span class="comp-p">${Math.round(p)}</span><span class="comp-d">${esc(d)}</span></div>`).join("");
+    html+=`</div>`;
+  }
+
+  // numeri chiave
+  const h7=o.hrv_settimana;
+  const ultimoG=(M.giornaliero||[]).filter(g=>g.tsb!=null).slice(-1)[0];
+  const k=[];
+  if(h7) k.push(["HRV 7 giorni", h7.media7, `ms · ${h7.stato==="normale"?"nella norma":h7.stato==="sotto"?"sotto la norma":"sopra la norma"}`]);
+  if(ultimoG) k.push(["Freschezza", (ultimoG.tsb>=0?"+":"")+ultimoG.tsb.toFixed(1), "forma − fatica"]);
+  if(P.ritmo_a_fc_s) k.push([`Ritmo a FC ${P.fc_riferimento}`, pace(P.ritmo_a_fc_s), "/km"]);
+  if(P.polarizzazione_28!=null) k.push(["Tempo in Z1–Z2", P.polarizzazione_28, "% · 28 giorni"]);
+  if(P.cadenza_media_28) k.push(["Cadenza", P.cadenza_media_28, "passi/min"]);
+  if(P.vo2max) k.push(["VO2max Garmin", P.vo2max, "ml/kg/min"]);
+  if(P.mezza_teorica) k.push(["Mezza teorica", P.mezza_teorica.replace(/^0:/,""), "dal VO2max"]);
+  if(k.length){
+    html+=`<h2>Numeri chiave</h2><div class="facts small">`+k.map(([a,v,u])=>
+      `<div class="fact"><p class="k">${a}</p><p class="v">${v} <span class="u">${u}</span></p></div>`).join("")+`</div>
+      <p class="hint" style="margin-top:10px">La mezza teorica è il potenziale che il VO2max stimato dall'orologio
+      promette con l'allenamento specifico fatto: oggi è un tetto, non una previsione.
+      Il ritmo a FC ${P.fc_riferimento||""} è il numero da guardare per capire se la base cresce.</p>`;
+  }
+  box.innerHTML=html;
+}
+
+/* ---------- assi comuni per i grafici a tempo ---------- */
+function assiTempo(svg,{W,H,M,t0,t1,yLo,yHi,nY=4,yFmt=v=>v.toFixed(0),nX=5}){
+  const iw=W-M.l-M.r, ih=H-M.t-M.b;
+  const x=t=>M.l+((t-t0)/Math.max(t1-t0,1))*iw;
+  const y=v=>M.t+ih-((v-yLo)/(yHi-yLo||1))*ih;
+  svg.innerHTML="";
+  const g=el("g",{class:"grid"},svg);
+  for(let i=0;i<=nY;i++){
+    const v=yLo+(yHi-yLo)*i/nY;
+    el("line",{x1:M.l,x2:W-M.r,y1:y(v),y2:y(v)},g);
+    el("text",{x:M.l-8,y:y(v)+3.5,"text-anchor":"end",fill:"currentColor",class:"axis"},svg).textContent=yFmt(v);
+  }
+  const ax=el("g",{class:"axis"},svg);
+  el("line",{x1:M.l,x2:W-M.r,y1:M.t+ih,y2:M.t+ih},ax);
+  for(let i=0;i<=nX;i++){
+    const t=t0+(t1-t0)*i/nX;
+    el("text",{x:x(t),y:H-11,"text-anchor":"middle",fill:"currentColor"},ax).textContent=fmtD(new Date(t));
+  }
+  return {x,y,iw,ih};
+}
+function vuoto(svg,W,H,msg){
+  svg.innerHTML="";
+  el("text",{x:W/2,y:H/2,"text-anchor":"middle",fill:"currentColor",class:"axis"},svg).textContent=msg;
+}
+function giorniM(n){
+  if(!S.M||!S.M.giornaliero) return [];
+  const dal=OGGI.getTime()-n*864e5;
+  return S.M.giornaliero.map(g=>({...g,t:dLoc(g.data).getTime()})).filter(g=>g.t>=dal);
+}
+/* segmenti continui di una serie con buchi */
+function tratti(punti){
+  const out=[]; let cur=[];
+  for(const p of punti){ if(p) cur.push(p); else if(cur.length){ out.push(cur); cur=[]; } }
+  if(cur.length) out.push(cur);
+  return out;
+}
+
+/* ---------- grafico: prontezza ---------- */
+function chartProntezza(){
+  const svg=document.getElementById("c-pront");
+  const W=900,H=200,M={t:14,r:16,b:30,l:44};
+  const dati=giorniM(60);
+  if(dati.filter(d=>d.prontezza!=null).length<3) return vuoto(svg,W,H,"Servono più giorni con dati HRV, FC e sonno.");
+  const t0=dati[0].t, t1=dati[dati.length-1].t;
+  const {x,y,iw,ih}=assiTempo(svg,{W,H,M,t0,t1,yLo:0,yHi:100,nY:4});
+  const bw=Math.max(2,iw/dati.length*0.62);
+  for(const v of [45,65]) el("line",{x1:M.l,x2:W-M.r,y1:y(v),y2:y(v),stroke:"var(--ink3)",
+    "stroke-dasharray":"2 3","stroke-opacity":".5"},svg);
+  for(const d of dati){
+    if(d.prontezza==null) continue;
+    el("rect",{x:x(d.t)-bw/2,y:y(d.prontezza),width:bw,height:M.t+ih-y(d.prontezza),
+      fill:COLORE_LIV[livDi(d.prontezza)],"fill-opacity":".75",rx:1},svg);
+  }
+  interattivo(svg,dati.map(d=>({cx:x(d.t),d})),({d})=>
+    `<span><b>${fmtDG(dLoc(d.data))}</b></span><span>prontezza <b>${d.prontezza??"—"}</b></span>
+     <span>HRV <b>${d.hrv??"—"}</b></span><span>FC riposo <b>${d.rhr??"—"}</b></span>
+     <span>sonno <b>${d.sonno_h!=null?d.sonno_h.toFixed(1)+" h":"—"}</b></span>`,"r-pront",M,ih);
+}
+
+/* ---------- grafico: HRV ---------- */
+function chartHRV(){
+  const svg=document.getElementById("c-hrv");
+  const W=900,H=230,M={t:14,r:16,b:30,l:44};
+  const dati=giorniM(90);
+  const vals=dati.flatMap(d=>[d.hrv,d.hrv7,...(d.hrv_banda||[])]).filter(v=>v!=null);
+  if(vals.length<5) return vuoto(svg,W,H,"Dati HRV insufficienti.");
+  const lo=Math.min(...vals), hi=Math.max(...vals), pad=(hi-lo)*0.12||5;
+  const t0=dati[0].t, t1=dati[dati.length-1].t;
+  const {x,y,ih}=assiTempo(svg,{W,H,M,t0,t1,yLo:Math.max(0,Math.floor(lo-pad)),yHi:Math.ceil(hi+pad)});
+  for(const seg of tratti(dati.map(d=>d.hrv_banda?d:null))){
+    const su=seg.map(d=>`${x(d.t).toFixed(1)},${y(d.hrv_banda[1]).toFixed(1)}`);
+    const giu=seg.slice().reverse().map(d=>`${x(d.t).toFixed(1)},${y(d.hrv_banda[0]).toFixed(1)}`);
+    el("path",{d:"M"+su.join("L")+"L"+giu.join("L")+"Z",fill:"var(--band)",stroke:"none"},svg);
+  }
+  for(const d of dati) if(d.hrv!=null)
+    el("circle",{cx:x(d.t),cy:y(d.hrv),r:2.3,fill:"var(--paper)",stroke:"var(--ink3)","stroke-width":1},svg);
+  for(const seg of tratti(dati.map(d=>d.hrv7!=null?[x(d.t),y(d.hrv7)]:null)))
+    el("path",{d:curva(seg),fill:"none",stroke:"var(--long)","stroke-width":2,"stroke-linecap":"round"},svg);
+  interattivo(svg,dati.map(d=>({cx:x(d.t),d})),({d})=>{
+    const b=d.hrv_banda, st=(b&&d.hrv7!=null)?(d.hrv7<b[0]?"sotto la norma":d.hrv7>b[1]?"sopra la norma":"nella norma"):"";
+    return `<span><b>${fmtDG(dLoc(d.data))}</b></span><span>notte <b>${d.hrv??"—"} ms</b></span>
+      <span>media 7gg <b>${d.hrv7??"—"}</b></span>${b?`<span>norma ${b[0]}–${b[1]}</span>`:""}
+      ${st?`<span><b>${st}</b></span>`:""}`;
+  },"r-hrv",M,ih);
+}
+
+/* ---------- grafico: FC a riposo ---------- */
+function chartRHR(){
+  const svg=document.getElementById("c-rhr");
+  const W=900,H=200,M={t:14,r:16,b:30,l:44};
+  const dati=giorniM(90);
+  const vals=dati.flatMap(d=>[d.rhr,d.rhr_base]).filter(v=>v!=null);
+  if(vals.length<5) return vuoto(svg,W,H,"Dati di FC a riposo insufficienti.");
+  const t0=dati[0].t, t1=dati[dati.length-1].t;
+  const {x,y,ih}=assiTempo(svg,{W,H,M,t0,t1,yLo:Math.floor(Math.min(...vals)-3),yHi:Math.ceil(Math.max(...vals)+3)});
+  for(const seg of tratti(dati.map(d=>d.rhr_base!=null?[x(d.t),y(d.rhr_base)]:null)))
+    el("path",{d:curva(seg),fill:"none",stroke:"var(--ink3)","stroke-width":1.2,"stroke-dasharray":"4 3"},svg);
+  for(const seg of tratti(dati.map(d=>d.rhr!=null?[x(d.t),y(d.rhr)]:null)))
+    el("path",{d:"M"+seg.map(p=>`${p[0].toFixed(1)},${p[1].toFixed(1)}`).join("L"),fill:"none",
+      stroke:"var(--hard)","stroke-width":1.5,"stroke-linejoin":"round"},svg);
+  for(const d of dati) if(d.rhr!=null&&d.rhr_base!=null&&d.rhr-d.rhr_base>=5)
+    el("circle",{cx:x(d.t),cy:y(d.rhr),r:3.2,fill:"var(--signal)"},svg);
+  interattivo(svg,dati.map(d=>({cx:x(d.t),d})),({d})=>
+    `<span><b>${fmtDG(dLoc(d.data))}</b></span><span>FC riposo <b>${d.rhr??"—"}</b></span>
+     <span>media 30gg <b>${d.rhr_base??"—"}</b></span>
+     ${d.rhr!=null&&d.rhr_base!=null?`<span>scarto <b>${(d.rhr-d.rhr_base>=0?"+":"")+(d.rhr-d.rhr_base).toFixed(1)}</b></span>`:""}`,"r-rhr",M,ih);
+}
+
+/* ---------- grafico: sonno ---------- */
+function chartSonno(){
+  const svg=document.getElementById("c-sonno");
+  const W=900,H=200,M={t:14,r:16,b:30,l:44};
+  const dati=giorniM(60);
+  if(dati.filter(d=>d.sonno_h!=null).length<3) return vuoto(svg,W,H,"Dati sul sonno insufficienti.");
+  const t0=dati[0].t, t1=dati[dati.length-1].t;
+  const yHi=Math.max(10,Math.ceil(Math.max(...dati.map(d=>d.sonno_h||0))));
+  const {x,y,iw,ih}=assiTempo(svg,{W,H,M,t0,t1,yLo:0,yHi,nY:yHi/2,yFmt:v=>v.toFixed(0)+"h"});
+  const bw=Math.max(2,iw/dati.length*0.62);
+  for(const d of dati){
+    if(d.sonno_h==null) continue;
+    el("rect",{x:x(d.t)-bw/2,y:y(d.sonno_h),width:bw,height:M.t+ih-y(d.sonno_h),rx:1,
+      fill:d.sonno_h<6?"var(--signal)":"var(--long)","fill-opacity":d.sonno_h<6?".7":".55"},svg);
+  }
+  el("line",{x1:M.l,x2:W-M.r,y1:y(8),y2:y(8),stroke:"var(--ink2)","stroke-dasharray":"4 3"},svg);
+  const ult7=dati.slice(-7).map(d=>d.sonno_h).filter(v=>v!=null);
+  interattivo(svg,dati.map(d=>({cx:x(d.t),d})),({d})=>
+    `<span><b>${fmtDG(dLoc(d.data))}</b></span><span>sonno <b>${d.sonno_h!=null?d.sonno_h.toFixed(1)+" h":"—"}</b></span>
+     <span>punteggio <b>${d.sonno_score??"—"}</b></span>
+     ${ult7.length?`<span>media 7gg <b>${media(ult7).toFixed(1)} h</b></span>`:""}`,"r-sonno",M,ih);
+}
+
+/* ---------- grafico: zone per settimana ---------- */
+const COLORE_ZONA=["var(--long)","var(--easy)","var(--tempo)","var(--hard)","var(--signal)"];
+function chartZone(){
+  const svg=document.getElementById("c-zone");
+  const W=900,H=230,M={t:14,r:16,b:30,l:44};
+  const iw=W-M.l-M.r, ih=H-M.t-M.b;
+  const sett=(S.M&&S.M.settimane)||[];
+  const zn=(S.M&&S.M.zone)||[], zb=(S.M&&S.M.zone_bpm)||[];
+  if(!sett.length) return vuoto(svg,W,H,"Nessun dato sulle zone.");
+  document.getElementById("l-zone").innerHTML=zn.map((z,i)=>
+    `<span><i style="background:${COLORE_ZONA[i]}"></i>${z} · ${zb[i]?zb[i][0]+"–"+zb[i][1]:""}</span>`).join("");
+  const tot=s=>s.zone_min.reduce((a,b)=>a+b,0);
+  const yMax=Math.max(60,Math.ceil(Math.max(...sett.map(tot))/60)*60);
+  const x=i=>M.l+(i+0.5)*iw/sett.length;
+  const y=v=>M.t+ih-(v/yMax)*ih;
+  svg.innerHTML="";
+  const g=el("g",{class:"grid"},svg);
+  for(let v=0;v<=yMax;v+=yMax>180?60:30){
+    el("line",{x1:M.l,x2:W-M.r,y1:y(v),y2:y(v)},g);
+    el("text",{x:M.l-8,y:y(v)+3.5,"text-anchor":"end",fill:"currentColor",class:"axis"},svg).textContent=v;
+  }
+  const bw=Math.min(28,iw/sett.length*0.6);
+  sett.forEach((s,i)=>{
+    let acc=0;
+    s.zone_min.forEach((m,k)=>{
+      if(!m) return;
+      el("rect",{x:x(i)-bw/2,y:y(acc+m),width:bw,height:y(acc)-y(acc+m),fill:COLORE_ZONA[k],"fill-opacity":".8"},svg);
+      acc+=m;
+    });
+  });
+  const ax=el("g",{class:"axis"},svg);
+  el("line",{x1:M.l,x2:W-M.r,y1:M.t+ih,y2:M.t+ih},ax);
+  sett.forEach((s,i)=>{ if(i%3===sett.length%3) return;
+    el("text",{x:x(i),y:H-11,"text-anchor":"middle",fill:"currentColor"},ax).textContent=fmtD(dLoc(s.lun)); });
+  interattivo(svg,sett.map((s,i)=>({cx:x(i),s})),({s})=>{
+    const t=tot(s);
+    const facile=t?Math.round((s.zone_min[0]+s.zone_min[1])/t*100):null;
+    return `<span>settimana del <b>${fmtD(dLoc(s.lun))}</b></span><span>${s.corse} corse · ${s.km} km</span>
+      ${s.zone_min.map((m,k)=>`<span>${zn[k]} <b>${m}′</b></span>`).join("")}
+      ${facile!=null?`<span>Z1–Z2 <b>${facile}%</b></span>`:""}
+      ${s.monotonia!=null?`<span>monotonia <b>${s.monotonia}</b></span>`:""}`;
+  },"r-zone",M,ih);
+}
+
+/* ---------- grafico: ritmo a FC fissa ---------- */
+function chartRitmo(){
+  const svg=document.getElementById("c-ritmo");
+  const W=900,H=200,M={t:14,r:16,b:30,l:48};
+  const P=(S.M&&S.M.prestazione)||{};
+  const st=(P.ritmo_a_fc_storia||[]).map(s=>({...s,t:dLoc(s.data).getTime()}));
+  const ok=st.filter(s=>s.pace_s);
+  if(ok.length<2) return vuoto(svg,W,H,"Servono più corse con dati cardio nelle ultime settimane.");
+  document.getElementById("fc-rif").textContent=`FC ${P.fc_riferimento}`;
+  const v=ok.map(s=>s.pace_s), pad=Math.max(8,(Math.max(...v)-Math.min(...v))*0.25);
+  // asse invertito: più in alto = più veloce
+  const {x,y,ih}=assiTempo(svg,{W,H,M,t0:st[0].t,t1:st[st.length-1].t,
+    yLo:Math.max(...v)+pad,yHi:Math.min(...v)-pad,yFmt:pace});
+  for(const seg of tratti(st.map(s=>s.pace_s?[x(s.t),y(s.pace_s)]:null))){
+    el("path",{d:"M"+seg.map(p=>`${p[0].toFixed(1)},${p[1].toFixed(1)}`).join("L"),fill:"none",
+      stroke:"var(--easy)","stroke-width":2,"stroke-linejoin":"round"},svg);
+  }
+  for(const s of ok) el("circle",{cx:x(s.t),cy:y(s.pace_s),r:3,fill:"var(--paper)",stroke:"var(--easy)","stroke-width":1.5},svg);
+  interattivo(svg,st.map(s=>({cx:x(s.t),s})),({s})=>
+    `<span>fino al <b>${fmtD(dLoc(s.data))}</b></span>
+     <span>ritmo a FC ${P.fc_riferimento} <b>${s.pace_s?pace(s.pace_s)+" /km":"dati insufficienti"}</b></span>`,"r-ritmo",M,ih);
+}
+
+/* ---------- tabella: ultime corse ---------- */
+function tabellaCorse(){
+  const box=document.getElementById("t-corse");
+  const corse=((S.M&&S.M.corse)||[]).slice(-12).reverse();
+  if(!corse.length){ box.innerHTML='<p class="muted">Nessuna corsa.</p>'; return; }
+  const dec=v=>v==null?'<span class="muted">—</span>':
+    `<span style="color:${v<5?"var(--easy)":v<10?"var(--tempo)":"var(--signal)"}">${v.toFixed(1)}%</span>`;
+  box.innerHTML=`<table class="corse"><thead><tr><th>Data</th><th>km</th><th>tempo</th><th>ritmo</th>
+    <th>FC</th><th>efficienza</th><th>cadenza</th><th>Z1–Z2</th><th>deriva</th></tr></thead><tbody>`+
+    corse.map(c=>{
+      const z=c.zone_min, t=z?z.reduce((a,b)=>a+b,0):0;
+      return `<tr><td>${fmtDG(dLoc(c.data))}</td><td>${c.km.toFixed(1)}</td><td>${Math.round(c.min)}′</td>
+        <td>${pace(c.pace_s)}</td><td>${c.fc??"—"}</td><td>${c.ef!=null?c.ef.toFixed(1):"—"}</td>
+        <td>${c.cadenza??"—"}</td><td>${t?Math.round((z[0]+z[1])/t*100)+"%":"—"}</td><td>${dec(c.decoupling)}</td></tr>`;
+    }).join("")+"</tbody></table>";
 }
 
 /* ---------- interazione comune ai grafici ---------- */
@@ -604,7 +1013,6 @@ function interattivo(svg,punti,fmt,outId,M,ih){
 function renderStato(){
   const box=document.getElementById("stato");
   if(!S.digest){ box.innerHTML='<p class="err">data/digest.md non trovato.</p>'; return; }
-  const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
   const righe=S.digest.split("\n");
   let html='<div class="md">', lista=null, tab=null, sez="";
   const chiudi=()=>{ if(lista){html+=`</ul>`;lista=null;} if(tab){html+="</tbody></table>";tab=null;} };
@@ -637,10 +1045,15 @@ function renderStato(){
 document.querySelectorAll("nav button").forEach(b=>{
   b.addEventListener("click",()=>{
     document.querySelectorAll("nav button").forEach(o=>o.setAttribute("aria-selected",String(o===b)));
-    ["piano","andamento","stato"].forEach(id=>{
+    ["oggi","piano","andamento","recupero","stato"].forEach(id=>{
       document.getElementById(id).hidden = (id!==b.dataset.t);
     });
     if(b.dataset.t==="andamento") disegna();
+    if(b.dataset.t==="recupero") disegnaRecupero();
+    if(b.dataset.t==="piano"){
+      const now=document.querySelector("#piano .sett.now");
+      if(now) now.scrollIntoView({block:"center"});
+    }
   });
 });
 
@@ -648,19 +1061,28 @@ let disegnato=false;
 function disegna(){
   if(disegnato) return;
   disegnato=true;
-  try{ chartVolume(); chartEfficienza(); chartCarico(); }
-  catch(e){ console.error(e); }
+  for(const f of [chartVolume,chartEfficienza,chartCarico,chartZone,chartRitmo,tabellaCorse]){
+    try{ f(); }catch(e){ console.error(e); }
+  }
+}
+let disegnatoRec=false;
+function disegnaRecupero(){
+  if(disegnatoRec) return;
+  disegnatoRec=true;
+  for(const f of [chartProntezza,chartHRV,chartRHR,chartSonno]){
+    try{ f(); }catch(e){ console.error(e); }
+  }
 }
 
 carica().then(()=>{
-  renderFacts(); renderPiano(); renderStato();
+  renderFacts(); renderOggi(); renderPiano(); renderStato();
   const ult=S.corse[S.corse.length-1];
   document.getElementById("foot").textContent =
     `${S.corse.length} corse nei dati` +
     (ult?` · ultimo aggiornamento ${fmtD(ult.data)}`:"") +
     " · dati da Garmin via Intervals.icu";
 }).catch(e=>{
-  document.getElementById("piano").innerHTML=`<p class="err">Errore nel caricamento: ${e.message}</p>`;
+  document.getElementById("oggi").innerHTML=`<p class="err">Errore nel caricamento: ${e.message}</p>`;
 });
 if("serviceWorker" in navigator){
   window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));

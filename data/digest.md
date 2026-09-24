@@ -9,6 +9,15 @@
 - Lungo più lungo (28gg): 5.7 km
 - Carico: CTL 7.9 / ATL 8.3 (rapporto 1.05)
 
+## Recupero
+
+- Prontezza oggi: 83/100 (verde)
+- HRV: 109 ms (baseline 100)
+- HRV media 7 giorni: 105 ms, banda normale 92-106 (normale)
+- FC a riposo: 44 bpm (-0.8 sulla media)
+- Sonno: 8.2 h
+- Consiglio: Via libera: seduta come da piano.
+
 ## Piano vs reale (ultime 4 settimane)
 
 | Settimana | Piano min | Reale min | % | Lungo piano | Lungo reale |

@@ -9,6 +9,7 @@ Scrive: data/digest.md
 """
 
 import csv
+import json
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
@@ -17,6 +18,7 @@ DATA = ROOT / "data"
 SUMMARY = DATA / "summary.csv"
 WELLNESS = DATA / "wellness.csv"
 PLAN = ROOT / "plan" / "sessions.csv"
+METRICS = DATA / "metrics.json"
 OUT = DATA / "digest.md"
 
 OGGI = date.today()
@@ -143,6 +145,26 @@ def main():
         A(f"- Carico: CTL {ultima['ctl']:.1f} / ATL {ultima['atl']:.1f} (rapporto {rapporto:.2f})")
     A("")
 
+    # ---------------- recupero ----------------
+    metriche = json.loads(METRICS.read_text(encoding="utf-8")) if METRICS.exists() else {}
+    oggi = metriche.get("oggi") or {}
+    if oggi.get("prontezza") is not None:
+        comp = oggi.get("componenti", {})
+        A("## Recupero")
+        A("")
+        A(f"- Prontezza oggi: {oggi['prontezza']}/100 ({oggi['livello']})")
+        if "hrv" in comp:
+            A(f"- HRV: {comp['hrv']['valore']:.0f} ms (baseline {comp['hrv']['baseline']:.0f})")
+        h7 = oggi.get("hrv_settimana")
+        if h7:
+            A(f"- HRV media 7 giorni: {h7['media7']} ms, banda normale {h7['banda'][0]}-{h7['banda'][1]} ({h7['stato']})")
+        if "rhr" in comp:
+            A(f"- FC a riposo: {comp['rhr']['valore']:.0f} bpm ({comp['rhr']['delta']:+.1f} sulla media)")
+        if "sonno" in comp:
+            A(f"- Sonno: {comp['sonno']['ore']:.1f} h")
+        A(f"- Consiglio: {oggi['consiglio']}")
+        A("")
+
     # ---------------- piano vs reale ----------------
     A("## Piano vs reale (ultime 4 settimane)")
     A("")
@@ -263,6 +285,12 @@ def main():
     if p_prec > 0 and r_prec < p_prec * 0.6:
         segn.append(f"Settimana scorsa al {r_prec / p_prec * 100:.0f}% del piano: "
                     f"se si ripete, il piano va riscalato invece di accumulare arretrato.")
+
+    # recupero
+    if oggi.get("livello") == "rosso":
+        segn.append(f"Prontezza bassa oggi ({oggi['prontezza']}/100): {oggi['consiglio']}")
+    for n in oggi.get("note", []):
+        segn.append(n)
 
     if segn:
         for s in segn:

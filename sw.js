@@ -1,4 +1,4 @@
-const CACHE = "mezza-v1";
+const CACHE = "mezza-v2";
 const SHELL = ["./", "./index.html", "./manifest.webmanifest",
                "./assets/icon.svg", "./assets/apple-touch-icon.png"];
 
