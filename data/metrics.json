@@ -31,7 +31,7 @@
  ],
  "oggi": {
   "data": "2026-09-25",
-  "prontezza": 84,
+  "prontezza": 77,
   "livello": "verde",
   "ieri": 81,
   "componenti": {
@@ -57,9 +57,9 @@
     "peso": 0.25
    },
    "carico": {
-    "rapporto": 1.2,
-    "tsb": -1.6,
-    "punti": 69.0,
+    "rapporto": 1.6,
+    "tsb": -5.4,
+    "punti": 33.0,
     "peso": 0.2
    }
   },
@@ -2230,11 +2230,11 @@
    "rhr_base": 44.9,
    "sonno_h": 8.63,
    "sonno_score": 96.0,
-   "prontezza": 84,
-   "ctl": 8.3,
-   "atl": 9.9,
-   "tsb": -1.6,
-   "load": 8.0
+   "prontezza": 77,
+   "ctl": 9.1,
+   "atl": 14.5,
+   "tsb": -5.4,
+   "load": 43.0
   }
  ],
  "settimane": [
@@ -2480,17 +2480,17 @@
   },
   {
    "lun": "2026-09-21",
-   "corse": 1,
-   "min_corsa": 31,
-   "km": 4.0,
+   "corse": 2,
+   "min_corsa": 65,
+   "km": 8.8,
    "zone_min": [
-    27,
-    5,
-    0,
+    40,
+    26,
+    1,
     0,
     0
    ],
-   "load_tot": 44,
+   "load_tot": 79,
    "monotonia": null,
    "strain": null
   }
@@ -3089,11 +3089,29 @@
     0.0,
     0.0
    ]
+  },
+  {
+   "id": "i190362729",
+   "data": "2026-09-25",
+   "km": 4.85,
+   "min": 34.5,
+   "pace_s": 427,
+   "fc": 134.0,
+   "ef": 16.84,
+   "decoupling": null,
+   "cadenza": 157.0,
+   "zone_min": [
+    12.9,
+    21.0,
+    1.0,
+    0.0,
+    0.0
+   ]
   }
  ],
  "prestazione": {
   "fc_riferimento": 145,
-  "ritmo_a_fc_s": 389,
+  "ritmo_a_fc_s": 390,
   "ritmo_a_fc_storia": [
    {
     "data": "2026-07-05",
@@ -3145,7 +3163,7 @@
    },
    {
     "data": "2026-09-25",
-    "pace_s": 389
+    "pace_s": 390
    }
   ],
   "vo2max": 51.0,
@@ -3269,12 +3287,16 @@
    {
     "data": "2026-09-23",
     "vo2max": 51.0
+   },
+   {
+    "data": "2026-09-25",
+    "vo2max": 51.0
    }
   ],
   "mezza_teorica": "1:29:59",
   "mezza_teorica_s": 5399,
-  "polarizzazione_28": 88,
+  "polarizzazione_28": 89,
   "decoupling_medio_28": null,
-  "cadenza_media_28": 159.0
+  "cadenza_media_28": 158.0
  }
 }

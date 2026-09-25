@@ -1,5 +1,5 @@
 ﻿date,weight,restingHR,hrv,hrvSDNN,readiness,menstrualPhase,menstrualPhasePredicted,kcalConsumed,sleepSecs,sleepScore,sleepQuality,avgSleepingHR,soreness,fatigue,stress,mood,motivation,spO2,systolic,diastolic,hydration,hydrationVolume,bloodGlucose,lactate,bodyFat,abdomen,comments,injury,baevskySI,vo2max,steps,bedTime,wakeUpTime,respiration,carbohydrates,protein,fatTotal,locked,ctl,atl,rampRate,ctlLoad,atlLoad,Ride_eftp
-2026-09-25,,43,112.0,,,,,,31064,96.0,1,,,,,,,,,,,,,,,,,,,,1868,,,,,,,,8.263529,9.875377,-0.30816174,8.0,8.0,
+2026-09-25,,43,112.0,,,,,,31064,96.0,1,,,,,,,,,,,,,,,,,,,51.0,10440,,,,,,,,9.08702,14.534651,0.51532936,43.0,43.0,
 2026-09-24,,44,109.0,,,,,,29700,97.0,1,,,,,,,,,,,,,,,,,,,,5333,,,,,,,,8.269878,10.163369,0.21450806,22.0,22.0,
 2026-09-23,,43,116.0,,,,,,32236,97.0,1,,,,,,,,,,,,,,,,,,,51.0,11545,,,,,,,,7.9390483,8.345677,0.21967697,14.0,14.0,
 2026-09-22,,44,119.0,,,,,,12240,38.0,4,,,,,,,,,,,,,,,,,,,,9437,,,,,,,,7.7930083,7.4773717,-0.11236286,0.0,0.0,
