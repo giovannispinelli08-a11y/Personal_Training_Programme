@@ -107,6 +107,11 @@ def settimana_piano(piano, lunedi):
     return out
 
 
+def di_corsa(r):
+    """Le sedute di supporto (mobilità, potenziamento) non sono volume di corsa."""
+    return (r.get("disciplina") or "corsa") == "corsa"
+
+
 def main():
     corse = carica_corse()
     altre = carica_altro_sport()
@@ -173,7 +178,7 @@ def main():
     for k in range(3, -1, -1):
         lun = lunedi_di(OGGI) - timedelta(weeks=k)
         p = settimana_piano(piano, lun)
-        p_min = sum(f(r["minuti"], 0) for r in p)
+        p_min = sum(f(r["minuti"], 0) for r in p if di_corsa(r))
         p_lungo = max([f(r["minuti"], 0) for r in p if r["tipo"] in ("lungo", "ritmo_gara")] or [0])
         reali = [c for c in corse if lun <= c["data"] < lun + timedelta(days=7)]
         r_min = sum(c["min"] for c in reali)
@@ -280,7 +285,7 @@ def main():
 
     # aderenza bassa
     lun_prec = lunedi_di(OGGI) - timedelta(weeks=1)
-    p_prec = sum(f(r["minuti"], 0) for r in settimana_piano(piano, lun_prec))
+    p_prec = sum(f(r["minuti"], 0) for r in settimana_piano(piano, lun_prec) if di_corsa(r))
     r_prec = sum(c["min"] for c in corse if lun_prec <= c["data"] < lun_prec + timedelta(days=7))
     if p_prec > 0 and r_prec < p_prec * 0.6:
         segn.append(f"Settimana scorsa al {r_prec / p_prec * 100:.0f}% del piano: "

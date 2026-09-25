@@ -101,8 +101,11 @@ def main():
 
             # Il lungo prende la sua quota; il resto si divide fra le altre
             # in proporzione al peso di ciascun tipo (le sedute di qualità
-            # pesano più di quelle facili).
-            altre = [s for s in schema if s not in ("lungo", "ritmo_gara", "riposo")]
+            # pesano più di quelle facili). I tipi a durata fissa (mobilità,
+            # potenziamento) restano fuori dal volume settimanale.
+            altre = [s for s in schema
+                     if s not in ("lungo", "ritmo_gara", "riposo")
+                     and "minuti_fissi" not in tipi[s]]
             pesi = {s: tipi[s].get("quota_volume", 1.0) for s in set(altre)}
             peso_tot = sum(pesi[s] for s in altre) or 1.0
             resto = max(vol - lungo, 0)
@@ -135,7 +138,10 @@ def main():
                 spec = tipi[tipo]
                 data = w_start + timedelta(days=giorno_di[j])
 
-                if tipo in ("lungo", "ritmo_gara"):
+                disciplina = spec.get("disciplina", "corsa")
+                if "minuti_fissi" in spec:
+                    minuti = spec["minuti_fissi"]
+                elif tipo in ("lungo", "ritmo_gara"):
                     minuti = lungo
                 else:
                     minuti = resto * pesi[tipo] / peso_tot
@@ -151,6 +157,7 @@ def main():
                         "blocco": blocco["id"],
                         "scarico": "",
                         "tipo": "gara",
+                        "disciplina": "corsa",
                         "minuti": "",
                         "km_indicativi": gara["distanza_km"],
                         "fc_min": "",
@@ -171,8 +178,9 @@ def main():
                     "blocco": blocco["id"],
                     "scarico": "si" if scarico else "",
                     "tipo": tipo,
+                    "disciplina": disciplina,
                     "minuti": round(minuti),
-                    "km_indicativi": round(minuti * 60 / pace_s, 1),
+                    "km_indicativi": round(minuti * 60 / pace_s, 1) if disciplina == "corsa" else "",
                     "fc_min": fmin or "",
                     "fc_max": fmax or "",
                     "note": note,
@@ -188,6 +196,7 @@ def main():
                 "blocco": "",
                 "scarico": "",
                 "tipo": "gara",
+                "disciplina": "corsa",
                 "minuti": "",
                 "km_indicativi": g["distanza_km"],
                 "fc_min": "",
@@ -197,7 +206,7 @@ def main():
 
     righe.sort(key=lambda r: r["data"])
 
-    campi = ["data", "settimana", "blocco", "scarico", "tipo",
+    campi = ["data", "settimana", "blocco", "scarico", "tipo", "disciplina",
              "minuti", "km_indicativi", "fc_min", "fc_max", "note"]
     with OUT.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=campi)
