@@ -22,11 +22,10 @@ gara_obiettivo:
   distanza_km: 21.1
 
 gare_intermedie:
-  - nome: "Pfäffikersee-Lauf"
-    data: 2026-10-04
-    distanza_km: 12.2
-    dislivello_m: 108
-    modalita: controllata   # non a cronometro: lungo con pettorale
+  - nome: "Test 5 km"
+    data: 2026-12-06
+    distanza_km: 5
+    modalita: test    # sforzo costante e massimale per calibrare i ritmi
 
 # ------------------------------------------------------------
 # Zone di frequenza cardiaca, come % della FC max.
@@ -43,13 +42,18 @@ zone_fc:
 # si va a durata e sforzo percepito (vedi nota sensore ottico).
 # ------------------------------------------------------------
 tipi_seduta:
-  facile:        { hr_zone: Z2, quota_volume: 1.0 }
-  facile_allunghi: { hr_zone: Z2, quota_volume: 1.0, extra: "5x100m in scioltezza a fine seduta, recupero camminando" }
-  lungo:         { hr_zone: Z2, quota_volume: 1.0, nota: "tenere la FC nella metà bassa della zona" }
-  tempo:         { hr_zone: Z3, quota_volume: 1.45, nota: "blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento" }
-  ripetute:      { hr_zone: null, quota_volume: 1.45, nota: "sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico" }
-  ritmo_gara:    { hr_zone: null, quota_volume: 1.0, nota: "ultimi km del lungo al ritmo gara previsto" }
-  riposo:        { hr_zone: null, quota_volume: 0.0 }
+  facile:        { hr_zone: Z2, quota_volume: 1.0, disciplina: corsa }
+  facile_allunghi: { hr_zone: Z2, quota_volume: 1.0, disciplina: corsa, extra: "5x100m in scioltezza a fine seduta, recupero camminando" }
+  lungo:         { hr_zone: Z2, quota_volume: 1.0, disciplina: corsa, nota: "tenere la FC nella metà bassa della zona" }
+  tempo:         { hr_zone: Z3, quota_volume: 1.45, disciplina: corsa, nota: "blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento" }
+  ripetute:      { hr_zone: null, quota_volume: 1.45, disciplina: corsa, nota: "sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico" }
+  ritmo_gara:    { hr_zone: null, quota_volume: 1.0, disciplina: corsa, nota: "ultimi km del lungo al ritmo gara previsto" }
+  riposo:        { hr_zone: null, quota_volume: 0.0, disciplina: corsa }
+  # Sedute di supporto: durata fissa, fuori dal volume di corsa settimanale.
+  mobilita:      { hr_zone: null, minuti_fissi: 15, disciplina: supporto,
+                   nota: "mobilità caviglia e allungamento fascia plantare" }
+  potenziamento: { hr_zone: null, minuti_fissi: 20, disciplina: supporto,
+                   nota: "calf raise: due gambe, poi gamba singola, poi con carico" }
 
 # ------------------------------------------------------------
 # BLOCCHI. minuti_settimana e lungo_minuti sono i due numeri che
@@ -59,61 +63,58 @@ tipi_seduta:
 # ------------------------------------------------------------
 blocchi:
 
-  - id: base-1
-    nome: "Base — ripresa del volume"
-    dal: 2026-09-14
-    al: 2026-10-04
-    minuti_settimana: [135, 170]
-    lungo_minuti: [45, 70]
-    schema: [lungo, facile, facile, facile_allunghi]
+  - id: rientro
+    nome: "Rientro dopo infortunio"
+    dal: 2026-09-28
+    al: 2026-10-25
+    minuti_settimana: [95, 115]
+    lungo_minuti: [33, 45]
+    schema: [lungo, facile, facile, mobilita, potenziamento, mobilita]
     note: >
-      Si riparte dal volume attuale. Nessun lavoro di qualità:
-      l'unica variabile che si muove è la durata del lungo.
-      Il blocco chiude con il Pfäffikersee corso in modo controllato.
+      Tre corse brevi ed equivalenti: in questa fase la frequenza di esposizione
+      conta più della durata della singola seduta. Ritmo molto lento, camminare
+      quando serve. Se compare fastidio si rallenta, non ci si ferma.
+
+  - id: base-1
+    nome: "Base — ricostruzione"
+    dal: 2026-10-26
+    al: 2026-12-06
+    minuti_settimana: [120, 165]
+    lungo_minuti: [50, 75]
+    schema: [lungo, facile, facile, facile_allunghi, potenziamento, mobilita]
+    note: >
+      Rientra un lungo vero e crescono le sedute facili. Il blocco chiude
+      con il test da 5 km per calibrare i ritmi.
 
   - id: base-2
-    nome: "Base — costruzione"
-    dal: 2026-10-05
-    al: 2026-11-15
-    minuti_settimana: [150, 215]
-    lungo_minuti: [55, 90]
-    schema: [lungo, facile, facile_allunghi, facile]
+    nome: "Base — volume"
+    dal: 2026-12-07
+    al: 2027-01-17
+    minuti_settimana: [170, 215]
+    lungo_minuti: [80, 100]
+    schema: [lungo, facile, tempo, facile, potenziamento]
     note: >
-      Ancora tutto aerobico. A fine blocco, se il volume ha retto
-      senza fastidi, si valuta il test da 5 km per calibrare i ritmi.
-
-  - id: base-3
-    nome: "Base — introduzione della soglia"
-    dal: 2026-11-16
-    al: 2026-12-27
-    minuti_settimana: [200, 265]
-    lungo_minuti: [85, 110]
-    schema: [lungo, facile, tempo, facile]
-    note: >
-      Entra una seduta di soglia a settimana. Il lungo supera
-      l'ora e mezza: è qui che si costruisce la mezza.
+      Entra la soglia. Il lungo supera l'ora e un quarto.
 
   - id: build
     nome: "Build — qualità"
-    dal: 2026-12-28
-    al: 2027-02-07
-    minuti_settimana: [250, 310]
-    lungo_minuti: [105, 130]
-    schema: [lungo, facile, tempo, ripetute, facile]
+    dal: 2027-01-18
+    al: 2027-02-28
+    minuti_settimana: [220, 270]
+    lungo_minuti: [100, 125]
+    schema: [lungo, facile, tempo, ripetute, facile, potenziamento]
     note: >
-      Cinque uscite. Ripetute e soglia nella stessa settimana:
-      tenerle separate da almeno 48 ore.
+      Ripetute e soglia nella stessa settimana, separate da almeno 48 ore.
 
   - id: specifico
     nome: "Specifico — ritmo gara"
-    dal: 2027-02-08
+    dal: 2027-03-01
     al: 2027-03-28
-    minuti_settimana: [270, 330]
-    lungo_minuti: [125, 150]
+    minuti_settimana: [275, 310]
+    lungo_minuti: [130, 150]
     schema: [ritmo_gara, facile, tempo, ripetute, facile]
     note: >
       Il lungo diventa specifico: ultima parte al ritmo gara.
-      Volume al picco, poi si scarica.
 
   - id: taper
     nome: "Taper e gara"
@@ -123,12 +124,9 @@ blocchi:
     lungo_minuti: [75, 0]
     schema: [facile_allunghi, facile, facile, riposo]
     note: >
-      Volume giù, intensità appena accennata. Ultima settimana:
-      solo sciogliere le gambe. Gara la domenica.
+      Volume giù, intensità appena accennata. Gara la domenica.
 
-# Settimane (indice globale, 1 = prima settimana del piano) in cui
-# il volume viene ridotto per scaricare.
-settimane_scarico: [6, 10, 14, 18, 22, 26]
+settimane_scarico: [4, 8, 12, 16, 20, 24]
 fattore_scarico: 0.65
 
 # Giorno preferito per tipo di seduta. Serve a tenere le sedute

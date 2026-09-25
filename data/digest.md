@@ -24,15 +24,17 @@
 |---|---|---|---|---|---|
 | 2026-08-31 | 0 | 65 | — | 0 | 36 |
 | 2026-09-07 | 0 | 91 | — | 0 | 33 |
-| 2026-09-14 | 135 | 0 | 0% | 45 | 0 |
-| 2026-09-21 | 154 | 65 | 43% | 58 | 34 |
+| 2026-09-14 | 0 | 0 | — | 0 | 0 |
+| 2026-09-21 | 0 | 65 | — | 0 | 34 |
 
 ## In programma (settimana dal 2026-09-28)
 
-- 2026-09-29 · facile 33' — FC 136-156
-- 2026-10-01 · facile 33' — FC 136-156
-- 2026-10-03 · facile_allunghi 33' — FC 136-156
-- 2026-10-04 · gara 
+- 2026-09-29 · facile 31' — FC 136-156
+- 2026-09-30 · potenziamento 20'
+- 2026-10-01 · facile 31' — FC 136-156
+- 2026-10-02 · mobilita 15'
+- 2026-10-03 · mobilita 15'
+- 2026-10-04 · lungo 33' — FC 136-156
 
 ## Efficienza aerobica
 
@@ -59,4 +61,3 @@ Trend ultime 3 vs 3 precedenti: -3.0%
 ## Segnalazioni
 
 - Salto di volume: settimana del 2026-09-07 91 min contro 65 della precedente (+40%).
-- Settimana scorsa al 0% del piano: se si ripete, il piano va riscalato invece di accumulare arretrato.

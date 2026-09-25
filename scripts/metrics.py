@@ -250,6 +250,12 @@ def consiglio(score, comp, hrv7, seduta):
 
     if liv is None:
         testo = "Dati di recupero insufficienti: segui il piano e le sensazioni."
+    elif seduta and (seduta.get("disciplina") or "corsa") != "corsa":
+        testo = {
+            "verde": "Seduta di supporto come da piano.",
+            "giallo": "Seduta di supporto come da piano, senza aggiungere corsa.",
+            "rosso": "Recupero scarso: solo la mobilità, leggera. Il potenziamento si rimanda.",
+        }[liv]
     elif not seduta:
         testo = {
             "verde": "Giorno di riposo da piano. Recupero buono: una camminata o mobilità vanno benissimo.",
@@ -511,7 +517,7 @@ def main():
         "ieri": ieri,
         "componenti": comp,
         "hrv_settimana": hrv7,
-        "seduta": {k: seduta[k] for k in ("tipo", "minuti", "fc_min", "fc_max", "note")} if seduta else None,
+        "seduta": {k: seduta.get(k, "") for k in ("tipo", "disciplina", "minuti", "fc_min", "fc_max", "note")} if seduta else None,
         "consiglio": testo,
         "note": note,
     }

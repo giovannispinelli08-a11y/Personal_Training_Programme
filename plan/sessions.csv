@@ -1,133 +1,154 @@
-data,settimana,blocco,scarico,tipo,minuti,km_indicativi,fc_min,fc_max,note
-2026-09-15,1,base-1,,facile,30,4.4,136,156,
-2026-09-17,1,base-1,,facile,30,4.4,136,156,
-2026-09-19,1,base-1,,facile_allunghi,30,4.4,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
-2026-09-20,1,base-1,,lungo,45,6.6,136,156,tenere la FC nella metà bassa della zona
-2026-09-22,2,base-1,,facile,32,4.6,136,156,
-2026-09-24,2,base-1,,facile,32,4.6,136,156,
-2026-09-26,2,base-1,,facile_allunghi,32,4.6,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
-2026-09-27,2,base-1,,lungo,58,8.4,136,156,tenere la FC nella metà bassa della zona
-2026-09-29,3,base-1,,facile,33,4.9,136,156,
-2026-10-01,3,base-1,,facile,33,4.9,136,156,
-2026-10-03,3,base-1,,facile_allunghi,33,4.9,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
-2026-10-04,3,base-1,,gara,,12.2,,,Pfäffikersee-Lauf — modalita: controllata
-2026-10-06,4,base-2,,facile,32,4.6,136,156,
-2026-10-08,4,base-2,,facile_allunghi,32,4.6,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
-2026-10-10,4,base-2,,facile,32,4.6,136,156,
-2026-10-11,4,base-2,,lungo,55,8.0,136,156,tenere la FC nella metà bassa della zona
-2026-10-13,5,base-2,,facile,34,4.9,136,156,
-2026-10-15,5,base-2,,facile_allunghi,34,4.9,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
-2026-10-17,5,base-2,,facile,34,4.9,136,156,
-2026-10-18,5,base-2,,lungo,62,9.1,136,156,tenere la FC nella metà bassa della zona
-2026-10-20,6,base-2,si,facile,23,3.4,136,156,
-2026-10-22,6,base-2,si,facile_allunghi,23,3.4,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
-2026-10-24,6,base-2,si,facile,23,3.4,136,156,
-2026-10-25,6,base-2,si,lungo,45,6.6,136,156,tenere la FC nella metà bassa della zona
-2026-10-27,7,base-2,,facile,38,5.5,136,156,
-2026-10-29,7,base-2,,facile_allunghi,38,5.5,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
-2026-10-31,7,base-2,,facile,38,5.5,136,156,
-2026-11-01,7,base-2,,lungo,76,11.1,136,156,tenere la FC nella metà bassa della zona
-2026-11-03,8,base-2,,facile,40,5.8,136,156,
-2026-11-05,8,base-2,,facile_allunghi,40,5.8,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
-2026-11-07,8,base-2,,facile,40,5.8,136,156,
-2026-11-08,8,base-2,,lungo,83,12.1,136,156,tenere la FC nella metà bassa della zona
-2026-11-10,9,base-2,,facile,42,6.1,136,156,
-2026-11-12,9,base-2,,facile_allunghi,42,6.1,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
-2026-11-14,9,base-2,,facile,42,6.1,136,156,
-2026-11-15,9,base-2,,lungo,90,13.2,136,156,tenere la FC nella metà bassa della zona
-2026-11-17,10,base-3,si,facile,22,3.2,136,156,
-2026-11-19,10,base-3,si,tempo,31,4.6,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2026-11-21,10,base-3,si,facile,22,3.2,136,156,
-2026-11-22,10,base-3,si,lungo,55,8.1,136,156,tenere la FC nella metà bassa della zona
-2026-11-24,11,base-3,,facile,36,5.2,136,156,
-2026-11-26,11,base-3,,tempo,52,7.6,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2026-11-28,11,base-3,,facile,36,5.2,136,156,
-2026-11-29,11,base-3,,lungo,90,13.2,136,156,tenere la FC nella metà bassa della zona
-2026-12-01,12,base-3,,facile,38,5.6,136,156,
-2026-12-03,12,base-3,,tempo,55,8.1,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2026-12-05,12,base-3,,facile,38,5.6,136,156,
-2026-12-06,12,base-3,,lungo,95,13.9,136,156,tenere la FC nella metà bassa della zona
-2026-12-08,13,base-3,,facile,40,5.9,136,156,
-2026-12-10,13,base-3,,tempo,58,8.5,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2026-12-12,13,base-3,,facile,40,5.9,136,156,
-2026-12-13,13,base-3,,lungo,100,14.6,136,156,tenere la FC nella metà bassa della zona
-2026-12-15,14,base-3,si,facile,28,4.1,136,156,
-2026-12-17,14,base-3,si,tempo,40,5.9,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2026-12-19,14,base-3,si,facile,28,4.1,136,156,
-2026-12-20,14,base-3,si,lungo,68,10.0,136,156,tenere la FC nella metà bassa della zona
-2026-12-22,15,base-3,,facile,45,6.6,136,156,
-2026-12-24,15,base-3,,tempo,65,9.5,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2026-12-26,15,base-3,,facile,45,6.6,136,156,
-2026-12-27,15,base-3,,lungo,110,16.1,136,156,tenere la FC nella metà bassa della zona
-2026-12-29,16,build,,ripetute,43,6.3,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
-2026-12-30,16,build,,facile,30,4.3,136,156,
-2026-12-31,16,build,,tempo,43,6.3,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2027-01-02,16,build,,facile,30,4.3,136,156,
-2027-01-03,16,build,,lungo,105,15.4,136,156,tenere la FC nella metà bassa della zona
-2027-01-05,17,build,,ripetute,45,6.6,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
-2027-01-06,17,build,,facile,31,4.5,136,156,
-2027-01-07,17,build,,tempo,45,6.6,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2027-01-09,17,build,,facile,31,4.5,136,156,
-2027-01-10,17,build,,lungo,110,16.1,136,156,tenere la FC nella metà bassa della zona
-2027-01-12,18,build,si,ripetute,31,4.5,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
-2027-01-13,18,build,si,facile,21,3.1,136,156,
-2027-01-14,18,build,si,tempo,31,4.5,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2027-01-16,18,build,si,facile,21,3.1,136,156,
-2027-01-17,18,build,si,lungo,75,10.9,136,156,tenere la FC nella metà bassa della zona
-2027-01-19,19,build,,ripetute,49,7.2,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
-2027-01-20,19,build,,facile,34,5.0,136,156,
-2027-01-21,19,build,,tempo,49,7.2,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2027-01-23,19,build,,facile,34,5.0,136,156,
-2027-01-24,19,build,,lungo,120,17.6,136,156,tenere la FC nella metà bassa della zona
-2027-01-26,20,build,,ripetute,51,7.5,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
-2027-01-27,20,build,,facile,35,5.2,136,156,
-2027-01-28,20,build,,tempo,51,7.5,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2027-01-30,20,build,,facile,35,5.2,136,156,
-2027-01-31,20,build,,lungo,125,18.3,136,156,tenere la FC nella metà bassa della zona
-2027-02-02,21,build,,ripetute,53,7.8,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
-2027-02-03,21,build,,facile,37,5.4,136,156,
-2027-02-04,21,build,,tempo,53,7.8,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2027-02-06,21,build,,facile,37,5.4,136,156,
-2027-02-07,21,build,,lungo,130,19.0,136,156,tenere la FC nella metà bassa della zona
-2027-02-09,22,specifico,si,ripetute,28,4.1,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
-2027-02-10,22,specifico,si,facile,19,2.8,136,156,
-2027-02-11,22,specifico,si,tempo,28,4.1,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2027-02-13,22,specifico,si,facile,19,2.8,136,156,
-2027-02-14,22,specifico,si,ritmo_gara,81,11.9,,,ultimi km del lungo al ritmo gara previsto
-2027-02-16,23,specifico,,ripetute,45,6.5,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
-2027-02-17,23,specifico,,facile,31,4.5,136,156,
-2027-02-18,23,specifico,,tempo,45,6.5,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2027-02-20,23,specifico,,facile,31,4.5,136,156,
-2027-02-21,23,specifico,,ritmo_gara,129,18.9,,,ultimi km del lungo al ritmo gara previsto
-2027-02-23,24,specifico,,ripetute,46,6.8,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
-2027-02-24,24,specifico,,facile,32,4.7,136,156,
-2027-02-25,24,specifico,,tempo,46,6.8,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2027-02-27,24,specifico,,facile,32,4.7,136,156,
-2027-02-28,24,specifico,,ritmo_gara,133,19.5,,,ultimi km del lungo al ritmo gara previsto
-2027-03-02,25,specifico,,ripetute,48,7.0,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
-2027-03-03,25,specifico,,facile,33,4.9,136,156,
-2027-03-04,25,specifico,,tempo,48,7.0,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2027-03-06,25,specifico,,facile,33,4.9,136,156,
-2027-03-07,25,specifico,,ritmo_gara,138,20.1,,,ultimi km del lungo al ritmo gara previsto
-2027-03-09,26,specifico,si,ripetute,32,4.7,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
-2027-03-10,26,specifico,si,facile,22,3.3,136,156,
-2027-03-11,26,specifico,si,tempo,32,4.7,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2027-03-13,26,specifico,si,facile,22,3.3,136,156,
-2027-03-14,26,specifico,si,ritmo_gara,92,13.5,,,ultimi km del lungo al ritmo gara previsto
-2027-03-16,27,specifico,,ripetute,52,7.5,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
-2027-03-17,27,specifico,,facile,36,5.2,136,156,
-2027-03-18,27,specifico,,tempo,52,7.5,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2027-03-20,27,specifico,,facile,36,5.2,136,156,
-2027-03-21,27,specifico,,ritmo_gara,146,21.3,,,ultimi km del lungo al ritmo gara previsto
-2027-03-23,28,specifico,,ripetute,53,7.8,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
-2027-03-24,28,specifico,,facile,37,5.4,136,156,
-2027-03-25,28,specifico,,tempo,53,7.8,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
-2027-03-27,28,specifico,,facile,37,5.4,136,156,
-2027-03-28,28,specifico,,ritmo_gara,150,22.0,,,ultimi km del lungo al ritmo gara previsto
-2027-03-30,29,taper,,facile_allunghi,32,4.6,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
-2027-04-01,29,taper,,facile,32,4.6,136,156,
-2027-04-03,29,taper,,facile,32,4.6,136,156,
-2027-04-06,30,taper,,facile_allunghi,32,4.6,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
-2027-04-08,30,taper,,facile,32,4.6,136,156,
-2027-04-10,30,taper,,facile,32,4.6,136,156,
-2027-04-11,,,,gara,,21.1,,,Zurich Marathon — Halbmarathon — modalita: gara
+data,settimana,blocco,scarico,tipo,disciplina,minuti,km_indicativi,fc_min,fc_max,note
+2026-09-29,1,rientro,,facile,corsa,31,4.5,136,156,
+2026-09-30,1,rientro,,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2026-10-01,1,rientro,,facile,corsa,31,4.5,136,156,
+2026-10-02,1,rientro,,mobilita,supporto,15,,,,mobilità caviglia e allungamento fascia plantare
+2026-10-03,1,rientro,,mobilita,supporto,15,,,,mobilità caviglia e allungamento fascia plantare
+2026-10-04,1,rientro,,lungo,corsa,33,4.8,136,156,tenere la FC nella metà bassa della zona
+2026-10-06,2,rientro,,facile,corsa,32,4.7,136,156,
+2026-10-07,2,rientro,,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2026-10-08,2,rientro,,facile,corsa,32,4.7,136,156,
+2026-10-09,2,rientro,,mobilita,supporto,15,,,,mobilità caviglia e allungamento fascia plantare
+2026-10-10,2,rientro,,mobilita,supporto,15,,,,mobilità caviglia e allungamento fascia plantare
+2026-10-11,2,rientro,,lungo,corsa,37,5.4,136,156,tenere la FC nella metà bassa della zona
+2026-10-13,3,rientro,,facile,corsa,34,4.9,136,156,
+2026-10-14,3,rientro,,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2026-10-15,3,rientro,,facile,corsa,34,4.9,136,156,
+2026-10-16,3,rientro,,mobilita,supporto,15,,,,mobilità caviglia e allungamento fascia plantare
+2026-10-17,3,rientro,,mobilita,supporto,15,,,,mobilità caviglia e allungamento fascia plantare
+2026-10-18,3,rientro,,lungo,corsa,41,6.0,136,156,tenere la FC nella metà bassa della zona
+2026-10-20,4,rientro,si,facile,corsa,23,3.3,136,156,
+2026-10-21,4,rientro,si,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2026-10-22,4,rientro,si,facile,corsa,23,3.3,136,156,
+2026-10-23,4,rientro,si,mobilita,supporto,15,,,,mobilità caviglia e allungamento fascia plantare
+2026-10-24,4,rientro,si,mobilita,supporto,15,,,,mobilità caviglia e allungamento fascia plantare
+2026-10-25,4,rientro,si,lungo,corsa,29,4.3,136,156,tenere la FC nella metà bassa della zona
+2026-10-27,5,base-1,,facile,corsa,23,3.4,136,156,
+2026-10-28,5,base-1,,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2026-10-29,5,base-1,,facile,corsa,23,3.4,136,156,
+2026-10-30,5,base-1,,mobilita,supporto,15,,,,mobilità caviglia e allungamento fascia plantare
+2026-10-31,5,base-1,,facile_allunghi,corsa,23,3.4,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
+2026-11-01,5,base-1,,lungo,corsa,50,7.3,136,156,tenere la FC nella metà bassa della zona
+2026-11-03,6,base-1,,facile,corsa,25,3.6,136,156,
+2026-11-04,6,base-1,,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2026-11-05,6,base-1,,facile,corsa,25,3.6,136,156,
+2026-11-06,6,base-1,,mobilita,supporto,15,,,,mobilità caviglia e allungamento fascia plantare
+2026-11-07,6,base-1,,facile_allunghi,corsa,25,3.6,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
+2026-11-08,6,base-1,,lungo,corsa,55,8.0,136,156,tenere la FC nella metà bassa della zona
+2026-11-10,7,base-1,,facile,corsa,26,3.8,136,156,
+2026-11-11,7,base-1,,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2026-11-12,7,base-1,,facile,corsa,26,3.8,136,156,
+2026-11-13,7,base-1,,mobilita,supporto,15,,,,mobilità caviglia e allungamento fascia plantare
+2026-11-14,7,base-1,,facile_allunghi,corsa,26,3.8,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
+2026-11-15,7,base-1,,lungo,corsa,60,8.8,136,156,tenere la FC nella metà bassa della zona
+2026-11-17,8,base-1,si,facile,corsa,18,2.6,136,156,
+2026-11-18,8,base-1,si,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2026-11-19,8,base-1,si,facile,corsa,18,2.6,136,156,
+2026-11-20,8,base-1,si,mobilita,supporto,15,,,,mobilità caviglia e allungamento fascia plantare
+2026-11-21,8,base-1,si,facile_allunghi,corsa,18,2.6,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
+2026-11-22,8,base-1,si,lungo,corsa,42,6.2,136,156,tenere la FC nella metà bassa della zona
+2026-11-24,9,base-1,,facile,corsa,29,4.2,136,156,
+2026-11-25,9,base-1,,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2026-11-26,9,base-1,,facile,corsa,29,4.2,136,156,
+2026-11-27,9,base-1,,mobilita,supporto,15,,,,mobilità caviglia e allungamento fascia plantare
+2026-11-28,9,base-1,,facile_allunghi,corsa,29,4.2,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
+2026-11-29,9,base-1,,lungo,corsa,70,10.2,136,156,tenere la FC nella metà bassa della zona
+2026-12-01,10,base-1,,facile,corsa,30,4.4,136,156,
+2026-12-02,10,base-1,,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2026-12-03,10,base-1,,facile,corsa,30,4.4,136,156,
+2026-12-04,10,base-1,,mobilita,supporto,15,,,,mobilità caviglia e allungamento fascia plantare
+2026-12-05,10,base-1,,facile_allunghi,corsa,30,4.4,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
+2026-12-06,10,base-1,,gara,corsa,,5,,,Test 5 km — modalita: test
+2026-12-08,11,base-2,,facile,corsa,26,3.8,136,156,
+2026-12-09,11,base-2,,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2026-12-10,11,base-2,,tempo,corsa,38,5.5,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
+2026-12-12,11,base-2,,facile,corsa,26,3.8,136,156,
+2026-12-13,11,base-2,,lungo,corsa,80,11.7,136,156,tenere la FC nella metà bassa della zona
+2026-12-15,12,base-2,si,facile,corsa,18,2.6,136,156,
+2026-12-16,12,base-2,si,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2026-12-17,12,base-2,si,tempo,corsa,26,3.8,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
+2026-12-19,12,base-2,si,facile,corsa,18,2.6,136,156,
+2026-12-20,12,base-2,si,lungo,corsa,55,8.0,136,156,tenere la FC nella metà bassa della zona
+2026-12-22,13,base-2,,facile,corsa,29,4.2,136,156,
+2026-12-23,13,base-2,,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2026-12-24,13,base-2,,tempo,corsa,42,6.2,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
+2026-12-26,13,base-2,,facile,corsa,29,4.2,136,156,
+2026-12-27,13,base-2,,lungo,corsa,88,12.9,136,156,tenere la FC nella metà bassa della zona
+2026-12-29,14,base-2,,facile,corsa,30,4.5,136,156,
+2026-12-30,14,base-2,,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2026-12-31,14,base-2,,tempo,corsa,44,6.5,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
+2027-01-02,14,base-2,,facile,corsa,30,4.5,136,156,
+2027-01-03,14,base-2,,lungo,corsa,92,13.5,136,156,tenere la FC nella metà bassa della zona
+2027-01-05,15,base-2,,facile,corsa,32,4.7,136,156,
+2027-01-06,15,base-2,,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2027-01-07,15,base-2,,tempo,corsa,46,6.8,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
+2027-01-09,15,base-2,,facile,corsa,32,4.7,136,156,
+2027-01-10,15,base-2,,lungo,corsa,96,14.0,136,156,tenere la FC nella metà bassa della zona
+2027-01-12,16,base-2,si,facile,corsa,22,3.2,136,156,
+2027-01-13,16,base-2,si,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2027-01-14,16,base-2,si,tempo,corsa,31,4.6,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
+2027-01-16,16,base-2,si,facile,corsa,22,3.2,136,156,
+2027-01-17,16,base-2,si,lungo,corsa,65,9.5,136,156,tenere la FC nella metà bassa della zona
+2027-01-19,17,build,,ripetute,corsa,36,5.2,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
+2027-01-20,17,build,,facile,corsa,24,3.6,136,156,
+2027-01-21,17,build,,tempo,corsa,36,5.2,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
+2027-01-22,17,build,,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2027-01-23,17,build,,facile,corsa,24,3.6,136,156,
+2027-01-24,17,build,,lungo,corsa,100,14.6,136,156,tenere la FC nella metà bassa della zona
+2027-01-26,18,build,,ripetute,corsa,37,5.4,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
+2027-01-27,18,build,,facile,corsa,26,3.7,136,156,
+2027-01-28,18,build,,tempo,corsa,37,5.4,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
+2027-01-29,18,build,,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2027-01-30,18,build,,facile,corsa,26,3.7,136,156,
+2027-01-31,18,build,,lungo,corsa,105,15.4,136,156,tenere la FC nella metà bassa della zona
+2027-02-02,19,build,,ripetute,corsa,38,5.6,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
+2027-02-03,19,build,,facile,corsa,27,3.9,136,156,
+2027-02-04,19,build,,tempo,corsa,38,5.6,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
+2027-02-05,19,build,,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2027-02-06,19,build,,facile,corsa,27,3.9,136,156,
+2027-02-07,19,build,,lungo,corsa,110,16.1,136,156,tenere la FC nella metà bassa della zona
+2027-02-09,20,build,si,ripetute,corsa,26,3.8,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
+2027-02-10,20,build,si,facile,corsa,18,2.6,136,156,
+2027-02-11,20,build,si,tempo,corsa,26,3.8,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
+2027-02-12,20,build,si,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2027-02-13,20,build,si,facile,corsa,18,2.6,136,156,
+2027-02-14,20,build,si,lungo,corsa,75,10.9,136,156,tenere la FC nella metà bassa della zona
+2027-02-16,21,build,,ripetute,corsa,41,6.1,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
+2027-02-17,21,build,,facile,corsa,29,4.2,136,156,
+2027-02-18,21,build,,tempo,corsa,41,6.1,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
+2027-02-19,21,build,,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2027-02-20,21,build,,facile,corsa,29,4.2,136,156,
+2027-02-21,21,build,,lungo,corsa,120,17.6,136,156,tenere la FC nella metà bassa della zona
+2027-02-23,22,build,,ripetute,corsa,43,6.3,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
+2027-02-24,22,build,,facile,corsa,30,4.3,136,156,
+2027-02-25,22,build,,tempo,corsa,43,6.3,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
+2027-02-26,22,build,,potenziamento,supporto,20,,,,"calf raise: due gambe, poi gamba singola, poi con carico"
+2027-02-27,22,build,,facile,corsa,30,4.3,136,156,
+2027-02-28,22,build,,lungo,corsa,125,18.3,136,156,tenere la FC nella metà bassa della zona
+2027-03-02,23,specifico,,ripetute,corsa,43,6.3,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
+2027-03-03,23,specifico,,facile,corsa,30,4.3,136,156,
+2027-03-04,23,specifico,,tempo,corsa,43,6.3,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
+2027-03-06,23,specifico,,facile,corsa,30,4.3,136,156,
+2027-03-07,23,specifico,,ritmo_gara,corsa,130,19.0,,,ultimi km del lungo al ritmo gara previsto
+2027-03-09,24,specifico,si,ripetute,corsa,29,4.2,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
+2027-03-10,24,specifico,si,facile,corsa,20,2.9,136,156,
+2027-03-11,24,specifico,si,tempo,corsa,29,4.2,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
+2027-03-13,24,specifico,si,facile,corsa,20,2.9,136,156,
+2027-03-14,24,specifico,si,ritmo_gara,corsa,89,13.0,,,ultimi km del lungo al ritmo gara previsto
+2027-03-16,25,specifico,,ripetute,corsa,46,6.7,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
+2027-03-17,25,specifico,,facile,corsa,32,4.6,136,156,
+2027-03-18,25,specifico,,tempo,corsa,46,6.7,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
+2027-03-20,25,specifico,,facile,corsa,32,4.6,136,156,
+2027-03-21,25,specifico,,ritmo_gara,corsa,143,21.0,,,ultimi km del lungo al ritmo gara previsto
+2027-03-23,26,specifico,,ripetute,corsa,47,6.9,,,"sforzo percepito 8/10, recupero completo; niente target FC col sensore ottico"
+2027-03-24,26,specifico,,facile,corsa,33,4.8,136,156,
+2027-03-25,26,specifico,,tempo,corsa,47,6.9,156,170,blocco continuo in Z3 dentro una seduta con riscaldamento e defaticamento
+2027-03-27,26,specifico,,facile,corsa,33,4.8,136,156,
+2027-03-28,26,specifico,,ritmo_gara,corsa,150,22.0,,,ultimi km del lungo al ritmo gara previsto
+2027-03-30,27,taper,,facile_allunghi,corsa,32,4.6,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
+2027-04-01,27,taper,,facile,corsa,32,4.6,136,156,
+2027-04-03,27,taper,,facile,corsa,32,4.6,136,156,
+2027-04-06,28,taper,,facile_allunghi,corsa,32,4.6,136,156,"5x100m in scioltezza a fine seduta, recupero camminando"
+2027-04-08,28,taper,,facile,corsa,32,4.6,136,156,
+2027-04-10,28,taper,,facile,corsa,32,4.6,136,156,
+2027-04-11,,,,gara,corsa,,21.1,,,Zurich Marathon — Halbmarathon — modalita: gara

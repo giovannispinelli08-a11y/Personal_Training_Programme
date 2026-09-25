@@ -107,6 +107,7 @@ h2:first-child{margin-top:6px}
 .t-tempo .sd-t::before{background:var(--tempo)}
 .t-ripetute .sd-t::before{background:var(--hard)}
 .t-gara .sd-t::before{background:var(--signal)}
+.t-mobilita .sd-t::before,.t-potenziamento .sd-t::before{background:none;border:1.5px solid var(--ink3);box-sizing:border-box}
 .sd-d{color:var(--ink2);font-size:12px;text-align:right;white-space:nowrap}
 .sd-note{grid-column:2/4;color:var(--ink3);font-size:11.5px;margin-top:-2px;max-width:58ch}
 
@@ -310,8 +311,12 @@ const OGGI = new Date(); OGGI.setHours(0,0,0,0);
 
 const ETICHETTE = {
   facile:"Facile", facile_allunghi:"Facile con allunghi", lungo:"Lungo",
-  tempo:"Soglia", ripetute:"Ripetute", ritmo_gara:"Lungo a ritmo gara", gara:"Gara"
+  tempo:"Soglia", ripetute:"Ripetute", ritmo_gara:"Lungo a ritmo gara", gara:"Gara",
+  mobilita:"Mobilità", potenziamento:"Potenziamento"
 };
+/* le sedute di supporto non contano nel volume di corsa */
+const diCorsa=r=>(r.disciplina||"corsa")==="corsa";
+const minCorsa=righe=>righe.reduce((t,r)=>t+(diCorsa(r)?num(r.minuti)||0:0),0);
 const MESI = ["gen","feb","mar","apr","mag","giu","lug","ago","set","ott","nov","dic"];
 const GIORNI = ["dom","lun","mar","mer","gio","ven","sab"];
 
@@ -409,6 +414,10 @@ function renderFacts(){
   const ora=S.piano.filter(r=>r.data && lunediDi(dLoc(r.data)).getTime()===lunediDi(OGGI).getTime());
   const nSett=ora.length?ora[0].settimana:"—";
   const blocco=ora.length?ora[0].blocco:"—";
+  const totSett=Math.max(0,...S.piano.map(r=>num(r.settimana)||0));
+  const primo=S.piano.filter(r=>r.settimana).map(r=>r.data).sort()[0];
+  const sottoSett=ora.length?`di ${totSett} · ${blocco}`
+    :(primo&&dLoc(primo)>OGGI?`inizia ${fmtD(lunediDi(dLoc(primo)))}`:`di ${totSett}`);
   const l28=S.corse.filter(c=>(OGGI-c.data)/864e5<=28);
   const km28=l28.reduce((s,c)=>s+c.km,0);
   const lungo=l28.length?Math.max(...l28.map(c=>c.km)):0;
@@ -418,7 +427,7 @@ function renderFacts(){
   const dati=[
     ["Prontezza oggi", pr!=null?`<span class="liv-${S.M.oggi.livello}">${pr}</span>`:"—", "/100"],
     ["Alla gara", giorni, "giorni"],
-    ["Settimana", nSett, `di 30 · ${blocco}`],
+    ["Settimana", nSett, sottoSett],
     ["Ultimi 28 giorni", km28.toFixed(1), `km · ${l28.length} corse`],
     ["Lungo massimo", lungo?lungo.toFixed(1):"—", "km"],
     ["Ultima corsa", ult?fmtD(ult.data):"—", ult?`${ult.km.toFixed(1)} km`:""],
@@ -445,20 +454,20 @@ function renderPiano(){
     if(r.scarico) s.scarico=r.scarico;
   }
   const sett=[...perSett.values()].sort((a,b)=>a.lun-b.lun);
-  const maxVol=Math.max(...sett.map(s=>s.righe.reduce((t,r)=>t+(num(r.minuti)||0),0)),1);
+  const maxVol=Math.max(...sett.map(s=>minCorsa(s.righe)),1);
 
   let html="", bloccoCorr=null;
   for(const s of sett){
     if(s.blocco!==bloccoCorr){
       if(bloccoCorr!==null) html+="</div>";
       const dellB=sett.filter(x=>x.blocco===s.blocco);
-      const tot=dellB.reduce((t,x)=>t+x.righe.reduce((u,r)=>u+(num(r.minuti)||0),0),0);
+      const tot=dellB.reduce((t,x)=>t+minCorsa(x.righe),0);
       html+=`<div class="blocco"><div class="blocco-hd">
         <span class="blocco-nome">${s.blocco||"—"}</span>
         <span class="blocco-meta">${dellB.length} settimane · ${Math.round(tot/60)} ore</span></div>`;
       bloccoCorr=s.blocco;
     }
-    const vol=s.righe.reduce((t,r)=>t+(num(r.minuti)||0),0);
+    const vol=minCorsa(s.righe);
     const ora=s.lun===lunOra;
     const dom=new Date(s.lun+6*864e5);
     const cls=["sett",ora?"now":"",s.scarico?"scarico":""].filter(Boolean).join(" ");
@@ -491,6 +500,7 @@ function seduta(r){
   const et=ETICHETTE[r.tipo]||r.tipo;
   let dettaglio;
   if(r.tipo==="gara") dettaglio=`${r.km_indicativi} km`;
+  else if(!diCorsa(r)) dettaglio=`${r.minuti}′`;
   else{
     const fc=r.fc_min?`FC ${r.fc_min}–${r.fc_max}`:"a sensazione";
     dettaglio=`${r.minuti}′ · ${fc}`;
@@ -510,7 +520,7 @@ function chartVolume(){
 
   const prev=new Map();
   for(const r of S.piano){
-    if(!r.data||!r.minuti) continue;
+    if(!r.data||!r.minuti||!diCorsa(r)) continue;
     const k=lunediDi(dLoc(r.data)).getTime();
     prev.set(k,(prev.get(k)||0)+(num(r.minuti)||0));
   }
