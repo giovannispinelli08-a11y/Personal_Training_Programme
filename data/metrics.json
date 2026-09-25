@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-24",
+ "generato": "2026-09-25",
  "zone": [
   "Z1",
   "Z2",
@@ -30,76 +30,52 @@
   ]
  ],
  "oggi": {
-  "data": "2026-09-24",
-  "prontezza": 83,
+  "data": "2026-09-25",
+  "prontezza": 84,
   "livello": "verde",
-  "ieri": 88,
+  "ieri": 81,
   "componenti": {
    "hrv": {
-    "valore": 109.0,
+    "valore": 112.0,
     "baseline": 100.0,
-    "z": 0.62,
-    "punti": 79.0,
+    "z": 0.81,
+    "punti": 82.0,
     "peso": 0.35
    },
    "rhr": {
-    "valore": 44.0,
-    "baseline": 44.8,
-    "delta": -0.8,
-    "z": -0.42,
-    "punti": 76.0,
+    "valore": 43.0,
+    "baseline": 44.9,
+    "delta": -1.9,
+    "z": -1.12,
+    "punti": 87.0,
     "peso": 0.2
    },
    "sonno": {
-    "ore": 8.2,
-    "score": 97.0,
+    "ore": 8.6,
+    "score": 96.0,
     "punti": 98.0,
     "peso": 0.25
    },
    "carico": {
-    "rapporto": 1.06,
-    "tsb": -0.5,
-    "punti": 80.0,
+    "rapporto": 1.2,
+    "tsb": -1.6,
+    "punti": 69.0,
     "peso": 0.2
    }
   },
   "hrv_settimana": {
-   "media7": 105,
+   "media7": 106,
    "banda": [
     92,
     106
    ],
    "stato": "normale"
   },
-  "seduta": {
-   "tipo": "facile",
-   "minuti": "32",
-   "fc_min": "136",
-   "fc_max": "156",
-   "note": ""
-  },
-  "consiglio": "Via libera: seduta come da piano.",
+  "seduta": null,
+  "consiglio": "Giorno di riposo da piano. Recupero buono: una camminata o mobilità vanno benissimo.",
   "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-05-28",
-   "hrv": null,
-   "hrv7": 85,
-   "hrv_banda": [
-    75,
-    87
-   ],
-   "rhr": 51.0,
-   "rhr_base": 48.6,
-   "sonno_h": 8.0,
-   "sonno_score": 86.0,
-   "prontezza": 63,
-   "ctl": 7.1,
-   "atl": 12.3,
-   "tsb": -5.2,
-   "load": 0.0
-  },
   {
    "data": "2026-05-29",
    "hrv": null,
@@ -2236,11 +2212,29 @@
    "rhr_base": 44.8,
    "sonno_h": 8.25,
    "sonno_score": 97.0,
-   "prontezza": 83,
-   "ctl": 8.0,
-   "atl": 8.4,
-   "tsb": -0.5,
-   "load": 9.0
+   "prontezza": 81,
+   "ctl": 8.3,
+   "atl": 10.2,
+   "tsb": -1.9,
+   "load": 22.0
+  },
+  {
+   "data": "2026-09-25",
+   "hrv": 112.0,
+   "hrv7": 106,
+   "hrv_banda": [
+    93,
+    107
+   ],
+   "rhr": 43.0,
+   "rhr_base": 44.9,
+   "sonno_h": 8.63,
+   "sonno_score": 96.0,
+   "prontezza": 84,
+   "ctl": 8.3,
+   "atl": 9.9,
+   "tsb": -1.6,
+   "load": 8.0
   }
  ],
  "settimane": [
@@ -2496,7 +2490,7 @@
     0,
     0
    ],
-   "load_tot": 23,
+   "load_tot": 44,
    "monotonia": null,
    "strain": null
   }
@@ -3150,7 +3144,7 @@
     "pace_s": 390
    },
    {
-    "data": "2026-09-24",
+    "data": "2026-09-25",
     "pace_s": 389
    }
   ],
