@@ -1,9 +1,9 @@
-# Digest — 2026-09-25
+# Digest — 2026-09-26
 
 ## Stato
 
 - Ultima corsa: 2026-09-25 — 4.8 km in 34' (7:07/km, FC 134)
-- Giorni dall'ultima corsa: 0
+- Giorni dall'ultima corsa: 1
 - Ultimi 7 giorni: 2 corse, 8.8 km, 65 min
 - Ultimi 28 giorni: 8 corse, 38.6 km, 254 min
 - Lungo più lungo (28gg): 5.7 km
@@ -11,12 +11,10 @@
 
 ## Recupero
 
-- Prontezza oggi: 77/100 (verde)
-- HRV: 112 ms (baseline 100)
-- HRV media 7 giorni: 106 ms, banda normale 92-106 (normale)
-- FC a riposo: 43 bpm (-1.9 sulla media)
-- Sonno: 8.6 h
-- Consiglio: Giorno di riposo da piano. Recupero buono: una camminata o mobilità vanno benissimo.
+- Prontezza oggi: 58/100 (giallo)
+- HRV media 7 giorni: 106 ms, banda normale 93-106 (normale)
+- FC a riposo: 45 bpm (+0.2 sulla media)
+- Consiglio: Giorno di riposo da piano: sfruttalo davvero.
 
 ## Piano vs reale (ultime 4 settimane)
 

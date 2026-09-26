@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-25",
+ "generato": "2026-09-26",
  "zone": [
   "Z1",
   "Z2",
@@ -30,70 +30,39 @@
   ]
  ],
  "oggi": {
-  "data": "2026-09-25",
-  "prontezza": 77,
-  "livello": "verde",
-  "ieri": 81,
+  "data": "2026-09-26",
+  "prontezza": 58,
+  "livello": "giallo",
+  "ieri": 77,
   "componenti": {
-   "hrv": {
-    "valore": 112.0,
-    "baseline": 100.0,
-    "z": 0.81,
-    "punti": 82.0,
-    "peso": 0.35
-   },
    "rhr": {
-    "valore": 43.0,
-    "baseline": 44.9,
-    "delta": -1.9,
-    "z": -1.12,
-    "punti": 87.0,
+    "valore": 45.0,
+    "baseline": 44.8,
+    "delta": 0.2,
+    "z": 0.1,
+    "punti": 68.0,
     "peso": 0.2
    },
-   "sonno": {
-    "ore": 8.6,
-    "score": 96.0,
-    "punti": 98.0,
-    "peso": 0.25
-   },
    "carico": {
-    "rapporto": 1.6,
-    "tsb": -5.4,
-    "punti": 33.0,
+    "rapporto": 1.42,
+    "tsb": -3.7,
+    "punti": 49.0,
     "peso": 0.2
    }
   },
   "hrv_settimana": {
    "media7": 106,
    "banda": [
-    92,
+    93,
     106
    ],
    "stato": "normale"
   },
   "seduta": null,
-  "consiglio": "Giorno di riposo da piano. Recupero buono: una camminata o mobilità vanno benissimo.",
+  "consiglio": "Giorno di riposo da piano: sfruttalo davvero.",
   "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-05-29",
-   "hrv": null,
-   "hrv7": 83,
-   "hrv_banda": [
-    76,
-    87
-   ],
-   "rhr": 47.0,
-   "rhr_base": 48.7,
-   "sonno_h": 7.1,
-   "sonno_score": 82.0,
-   "prontezza": 67,
-   "ctl": 7.0,
-   "atl": 10.7,
-   "tsb": -3.7,
-   "load": 0.0
-  },
   {
    "data": "2026-05-30",
    "hrv": 76.0,
@@ -2235,6 +2204,24 @@
    "atl": 14.5,
    "tsb": -5.4,
    "load": 43.0
+  },
+  {
+   "data": "2026-09-26",
+   "hrv": null,
+   "hrv7": 106,
+   "hrv_banda": [
+    93,
+    108
+   ],
+   "rhr": 45.0,
+   "rhr_base": 44.8,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 58,
+   "ctl": 8.9,
+   "atl": 12.6,
+   "tsb": -3.7,
+   "load": 0.0
   }
  ],
  "settimane": [
@@ -3162,7 +3149,7 @@
     "pace_s": 390
    },
    {
-    "data": "2026-09-25",
+    "data": "2026-09-26",
     "pace_s": 390
    }
   ],
