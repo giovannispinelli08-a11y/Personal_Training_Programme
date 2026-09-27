@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-26",
+ "generato": "2026-09-27",
  "zone": [
   "Z1",
   "Z2",
@@ -30,11 +30,18 @@
   ]
  ],
  "oggi": {
-  "data": "2026-09-26",
-  "prontezza": 58,
-  "livello": "giallo",
-  "ieri": 77,
+  "data": "2026-09-27",
+  "prontezza": 76,
+  "livello": "verde",
+  "ieri": 73,
   "componenti": {
+   "hrv": {
+    "valore": 114.0,
+    "baseline": 100.0,
+    "z": 0.91,
+    "punti": 84.0,
+    "peso": 0.35
+   },
    "rhr": {
     "valore": 45.0,
     "baseline": 44.8,
@@ -43,44 +50,32 @@
     "punti": 68.0,
     "peso": 0.2
    },
+   "sonno": {
+    "ore": 9.2,
+    "score": 86.0,
+    "punti": 93.0,
+    "peso": 0.25
+   },
    "carico": {
-    "rapporto": 1.42,
+    "rapporto": 1.41,
     "tsb": -3.7,
-    "punti": 49.0,
+    "punti": 50.0,
     "peso": 0.2
    }
   },
   "hrv_settimana": {
-   "media7": 106,
+   "media7": 112,
    "banda": [
     93,
     106
    ],
-   "stato": "normale"
+   "stato": "sopra"
   },
   "seduta": null,
-  "consiglio": "Giorno di riposo da piano: sfruttalo davvero.",
+  "consiglio": "Giorno di riposo da piano. Recupero buono: una camminata o mobilità vanno benissimo.",
   "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-05-30",
-   "hrv": 76.0,
-   "hrv7": 81,
-   "hrv_banda": [
-    76,
-    87
-   ],
-   "rhr": 49.0,
-   "rhr_base": 48.6,
-   "sonno_h": 10.28,
-   "sonno_score": 82.0,
-   "prontezza": 69,
-   "ctl": 6.8,
-   "atl": 9.2,
-   "tsb": -2.5,
-   "load": 0.0
-  },
   {
    "data": "2026-05-31",
    "hrv": 77.0,
@@ -2207,7 +2202,7 @@
   },
   {
    "data": "2026-09-26",
-   "hrv": null,
+   "hrv": 107.0,
    "hrv7": 106,
    "hrv_banda": [
     93,
@@ -2215,13 +2210,31 @@
    ],
    "rhr": 45.0,
    "rhr_base": 44.8,
-   "sonno_h": null,
-   "sonno_score": null,
-   "prontezza": 58,
+   "sonno_h": 13.22,
+   "sonno_score": 79.0,
+   "prontezza": 73,
    "ctl": 8.9,
    "atl": 12.6,
    "tsb": -3.7,
    "load": 0.0
+  },
+  {
+   "data": "2026-09-27",
+   "hrv": 114.0,
+   "hrv7": 112,
+   "hrv_banda": [
+    94,
+    108
+   ],
+   "rhr": 45.0,
+   "rhr_base": 44.8,
+   "sonno_h": 9.25,
+   "sonno_score": 86.0,
+   "prontezza": 76,
+   "ctl": 9.0,
+   "atl": 12.7,
+   "tsb": -3.7,
+   "load": 13.0
   }
  ],
  "settimane": [
@@ -2477,9 +2490,9 @@
     0,
     0
    ],
-   "load_tot": 79,
-   "monotonia": null,
-   "strain": null
+   "load_tot": 92,
+   "monotonia": 0.83,
+   "strain": 77
   }
  ],
  "corse": [
@@ -3149,7 +3162,7 @@
     "pace_s": 390
    },
    {
-    "data": "2026-09-26",
+    "data": "2026-09-27",
     "pace_s": 390
    }
   ],
