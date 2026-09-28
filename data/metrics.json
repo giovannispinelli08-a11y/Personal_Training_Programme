@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-27",
+ "generato": "2026-09-28",
  "zone": [
   "Z1",
   "Z2",
@@ -30,43 +30,43 @@
   ]
  ],
  "oggi": {
-  "data": "2026-09-27",
-  "prontezza": 76,
+  "data": "2026-09-28",
+  "prontezza": 82,
   "livello": "verde",
-  "ieri": 73,
+  "ieri": 71,
   "componenti": {
    "hrv": {
-    "valore": 114.0,
-    "baseline": 100.0,
-    "z": 0.91,
-    "punti": 84.0,
+    "valore": 123.0,
+    "baseline": 101.0,
+    "z": 1.44,
+    "punti": 92.0,
     "peso": 0.35
    },
    "rhr": {
-    "valore": 45.0,
+    "valore": 42.0,
     "baseline": 44.8,
-    "delta": 0.2,
-    "z": 0.1,
-    "punti": 68.0,
+    "delta": -2.8,
+    "z": -1.67,
+    "punti": 95.0,
     "peso": 0.2
    },
    "sonno": {
-    "ore": 9.2,
-    "score": 86.0,
-    "punti": 93.0,
+    "ore": 8.1,
+    "score": 88.0,
+    "punti": 94.0,
     "peso": 0.25
    },
    "carico": {
-    "rapporto": 1.41,
-    "tsb": -3.7,
-    "punti": 50.0,
+    "rapporto": 1.55,
+    "tsb": -5.2,
+    "punti": 37.0,
     "peso": 0.2
    }
   },
   "hrv_settimana": {
-   "media7": 112,
+   "media7": 114,
    "banda": [
-    93,
+    92,
     106
    ],
    "stato": "sopra"
@@ -76,24 +76,6 @@
   "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-05-31",
-   "hrv": 77.0,
-   "hrv7": 81,
-   "hrv_banda": [
-    76,
-    87
-   ],
-   "rhr": 50.0,
-   "rhr_base": 48.6,
-   "sonno_h": 5.32,
-   "sonno_score": 67.0,
-   "prontezza": 66,
-   "ctl": 6.6,
-   "atl": 8.0,
-   "tsb": -1.4,
-   "load": 0.0
-  },
   {
    "data": "2026-06-01",
    "hrv": 107.0,
@@ -2230,30 +2212,32 @@
    "rhr_base": 44.8,
    "sonno_h": 9.25,
    "sonno_score": 86.0,
-   "prontezza": 76,
-   "ctl": 9.0,
-   "atl": 12.7,
-   "tsb": -3.7,
-   "load": 13.0
+   "prontezza": 71,
+   "ctl": 9.6,
+   "atl": 16.4,
+   "tsb": -6.8,
+   "load": 41.0
+  },
+  {
+   "data": "2026-09-28",
+   "hrv": 123.0,
+   "hrv7": 114,
+   "hrv_banda": [
+    94,
+    108
+   ],
+   "rhr": 42.0,
+   "rhr_base": 44.8,
+   "sonno_h": 8.1,
+   "sonno_score": 88.0,
+   "prontezza": 82,
+   "ctl": 9.5,
+   "atl": 14.7,
+   "tsb": -5.2,
+   "load": 4.0
   }
  ],
  "settimane": [
-  {
-   "lun": "2026-06-08",
-   "corse": 1,
-   "min_corsa": 31,
-   "km": 4.5,
-   "zone_min": [
-    11,
-    14,
-    6,
-    0,
-    0
-   ],
-   "load_tot": 24,
-   "monotonia": 0.38,
-   "strain": 9
-  },
   {
    "lun": "2026-06-15",
    "corse": 0,
@@ -2480,19 +2464,35 @@
   },
   {
    "lun": "2026-09-21",
-   "corse": 2,
-   "min_corsa": 65,
-   "km": 8.8,
+   "corse": 3,
+   "min_corsa": 100,
+   "km": 13.8,
    "zone_min": [
-    40,
-    26,
-    1,
+    50,
+    41,
+    11,
     0,
     0
    ],
-   "load_tot": 92,
-   "monotonia": 0.83,
-   "strain": 77
+   "load_tot": 120,
+   "monotonia": 0.91,
+   "strain": 109
+  },
+  {
+   "lun": "2026-09-28",
+   "corse": 0,
+   "min_corsa": 0,
+   "km": 0,
+   "zone_min": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "load_tot": 4,
+   "monotonia": null,
+   "strain": null
   }
  ],
  "corse": [
@@ -3107,16 +3107,30 @@
     0.0,
     0.0
    ]
+  },
+  {
+   "id": "i190821139",
+   "data": "2026-09-27",
+   "km": 5.01,
+   "min": 34.5,
+   "pace_s": 413,
+   "fc": 139.0,
+   "ef": 16.61,
+   "decoupling": null,
+   "cadenza": 158.0,
+   "zone_min": [
+    9.6,
+    15.1,
+    9.8,
+    0.0,
+    0.0
+   ]
   }
  ],
  "prestazione": {
   "fc_riferimento": 145,
-  "ritmo_a_fc_s": 390,
+  "ritmo_a_fc_s": 393,
   "ritmo_a_fc_storia": [
-   {
-    "data": "2026-07-05",
-    "pace_s": 397
-   },
    {
     "data": "2026-07-12",
     "pace_s": 391
@@ -3163,7 +3177,11 @@
    },
    {
     "data": "2026-09-27",
-    "pace_s": 390
+    "pace_s": 393
+   },
+   {
+    "data": "2026-09-28",
+    "pace_s": 393
    }
   ],
   "vo2max": 51.0,
@@ -3291,11 +3309,15 @@
    {
     "data": "2026-09-25",
     "vo2max": 51.0
+   },
+   {
+    "data": "2026-09-27",
+    "vo2max": 51.0
    }
   ],
   "mezza_teorica": "1:29:59",
   "mezza_teorica_s": 5399,
-  "polarizzazione_28": 89,
+  "polarizzazione_28": 88,
   "decoupling_medio_28": null,
   "cadenza_media_28": 158.0
  }
