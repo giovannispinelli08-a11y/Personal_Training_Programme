@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-28",
+ "generato": "2026-09-29",
  "zone": [
   "Z1",
   "Z2",
@@ -30,70 +30,59 @@
   ]
  ],
  "oggi": {
-  "data": "2026-09-28",
-  "prontezza": 82,
+  "data": "2026-09-29",
+  "prontezza": 71,
   "livello": "verde",
-  "ieri": 71,
+  "ieri": 80,
   "componenti": {
    "hrv": {
-    "valore": 123.0,
+    "valore": 112.0,
     "baseline": 101.0,
-    "z": 1.44,
-    "punti": 92.0,
+    "z": 0.73,
+    "punti": 81.0,
     "peso": 0.35
    },
    "rhr": {
-    "valore": 42.0,
-    "baseline": 44.8,
-    "delta": -2.8,
-    "z": -1.67,
-    "punti": 95.0,
+    "valore": 44.0,
+    "baseline": 44.7,
+    "delta": -0.7,
+    "z": -0.41,
+    "punti": 76.0,
     "peso": 0.2
    },
    "sonno": {
-    "ore": 8.1,
-    "score": 88.0,
-    "punti": 94.0,
+    "ore": 7.7,
+    "score": 86.0,
+    "punti": 91.0,
     "peso": 0.25
    },
    "carico": {
-    "rapporto": 1.55,
-    "tsb": -5.2,
-    "punti": 37.0,
+    "rapporto": 1.72,
+    "tsb": -7.3,
+    "punti": 22.0,
     "peso": 0.2
    }
   },
   "hrv_settimana": {
-   "media7": 114,
+   "media7": 113,
    "banda": [
     92,
     106
    ],
    "stato": "sopra"
   },
-  "seduta": null,
-  "consiglio": "Giorno di riposo da piano. Recupero buono: una camminata o mobilità vanno benissimo.",
+  "seduta": {
+   "tipo": "facile",
+   "disciplina": "corsa",
+   "minuti": "31",
+   "fc_min": "136",
+   "fc_max": "156",
+   "note": ""
+  },
+  "consiglio": "Via libera: seduta come da piano.",
   "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-06-01",
-   "hrv": 107.0,
-   "hrv7": 85,
-   "hrv_banda": [
-    76,
-    88
-   ],
-   "rhr": 45.0,
-   "rhr_base": 48.0,
-   "sonno_h": 7.68,
-   "sonno_score": 94.0,
-   "prontezza": 90,
-   "ctl": 6.5,
-   "atl": 6.9,
-   "tsb": -0.5,
-   "load": 0.0
-  },
   {
    "data": "2026-06-02",
    "hrv": 83.0,
@@ -2230,11 +2219,29 @@
    "rhr_base": 44.8,
    "sonno_h": 8.1,
    "sonno_score": 88.0,
-   "prontezza": 82,
-   "ctl": 9.5,
-   "atl": 14.7,
-   "tsb": -5.2,
-   "load": 4.0
+   "prontezza": 80,
+   "ctl": 9.8,
+   "atl": 16.3,
+   "tsb": -6.6,
+   "load": 16.0
+  },
+  {
+   "data": "2026-09-29",
+   "hrv": 112.0,
+   "hrv7": 113,
+   "hrv_banda": [
+    94,
+    108
+   ],
+   "rhr": 44.0,
+   "rhr_base": 44.7,
+   "sonno_h": 7.72,
+   "sonno_score": 86.0,
+   "prontezza": 71,
+   "ctl": 10.1,
+   "atl": 17.5,
+   "tsb": -7.3,
+   "load": 25.0
   }
  ],
  "settimane": [
@@ -2480,17 +2487,17 @@
   },
   {
    "lun": "2026-09-28",
-   "corse": 0,
-   "min_corsa": 0,
-   "km": 0,
+   "corse": 1,
+   "min_corsa": 33,
+   "km": 5.0,
    "zone_min": [
-    0,
-    0,
-    0,
+    10,
+    22,
+    1,
     0,
     0
    ],
-   "load_tot": 4,
+   "load_tot": 41,
    "monotonia": null,
    "strain": null
   }
@@ -3125,6 +3132,24 @@
     0.0,
     0.0
    ]
+  },
+  {
+   "id": "i191426337",
+   "data": "2026-09-29",
+   "km": 5.0,
+   "min": 33.0,
+   "pace_s": 396,
+   "fc": 135.0,
+   "ef": 17.98,
+   "decoupling": null,
+   "cadenza": 158.0,
+   "zone_min": [
+    10.3,
+    21.9,
+    0.8,
+    0.0,
+    0.0
+   ]
   }
  ],
  "prestazione": {
@@ -3180,7 +3205,7 @@
     "pace_s": 393
    },
    {
-    "data": "2026-09-28",
+    "data": "2026-09-29",
     "pace_s": 393
    }
   ],
@@ -3313,11 +3338,15 @@
    {
     "data": "2026-09-27",
     "vo2max": 51.0
+   },
+   {
+    "data": "2026-09-29",
+    "vo2max": 51.0
    }
   ],
   "mezza_teorica": "1:29:59",
   "mezza_teorica_s": 5399,
-  "polarizzazione_28": 88,
+  "polarizzazione_28": 89,
   "decoupling_medio_28": null,
   "cadenza_media_28": 158.0
  }
