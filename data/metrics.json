@@ -1,5 +1,5 @@
 {
- "generato": "2026-09-29",
+ "generato": "2026-09-30",
  "zone": [
   "Z1",
   "Z2",
@@ -30,77 +30,61 @@
   ]
  ],
  "oggi": {
-  "data": "2026-09-29",
-  "prontezza": 71,
+  "data": "2026-09-30",
+  "prontezza": 74,
   "livello": "verde",
-  "ieri": 80,
+  "ieri": 71,
   "componenti": {
    "hrv": {
-    "valore": 112.0,
+    "valore": 115.0,
     "baseline": 101.0,
-    "z": 0.73,
-    "punti": 81.0,
+    "z": 0.91,
+    "punti": 84.0,
     "peso": 0.35
    },
    "rhr": {
-    "valore": 44.0,
+    "valore": 41.0,
     "baseline": 44.7,
-    "delta": -0.7,
-    "z": -0.41,
-    "punti": 76.0,
+    "delta": -3.7,
+    "z": -2.14,
+    "punti": 100.0,
     "peso": 0.2
    },
    "sonno": {
-    "ore": 7.7,
-    "score": 86.0,
-    "punti": 91.0,
+    "ore": 5.8,
+    "score": 74.0,
+    "punti": 73.0,
     "peso": 0.25
    },
    "carico": {
-    "rapporto": 1.72,
-    "tsb": -7.3,
-    "punti": 22.0,
+    "rapporto": 1.62,
+    "tsb": -6.2,
+    "punti": 31.0,
     "peso": 0.2
    }
   },
   "hrv_settimana": {
    "media7": 113,
    "banda": [
-    92,
-    106
+    93,
+    107
    ],
    "stato": "sopra"
   },
   "seduta": {
-   "tipo": "facile",
-   "disciplina": "corsa",
-   "minuti": "31",
-   "fc_min": "136",
-   "fc_max": "156",
-   "note": ""
+   "tipo": "potenziamento",
+   "disciplina": "supporto",
+   "minuti": "20",
+   "fc_min": "",
+   "fc_max": "",
+   "note": "calf raise: due gambe, poi gamba singola, poi con carico"
   },
-  "consiglio": "Via libera: seduta come da piano.",
-  "note": []
+  "consiglio": "Seduta di supporto come da piano.",
+  "note": [
+   "Solo 5.8 ore di sonno."
+  ]
  },
  "giornaliero": [
-  {
-   "data": "2026-06-02",
-   "hrv": 83.0,
-   "hrv7": 84,
-   "hrv_banda": [
-    77,
-    88
-   ],
-   "rhr": 49.0,
-   "rhr_base": 47.2,
-   "sonno_h": 6.73,
-   "sonno_score": 80.0,
-   "prontezza": 75,
-   "ctl": 6.3,
-   "atl": 6.0,
-   "tsb": 0.3,
-   "load": 0.0
-  },
   {
    "data": "2026-06-03",
    "hrv": 69.0,
@@ -2242,6 +2226,24 @@
    "atl": 17.5,
    "tsb": -7.3,
    "load": 25.0
+  },
+  {
+   "data": "2026-09-30",
+   "hrv": 115.0,
+   "hrv7": 113,
+   "hrv_banda": [
+    94,
+    109
+   ],
+   "rhr": 41.0,
+   "rhr_base": 44.7,
+   "sonno_h": 5.83,
+   "sonno_score": 74.0,
+   "prontezza": 74,
+   "ctl": 10.1,
+   "atl": 16.4,
+   "tsb": -6.2,
+   "load": 9.0
   }
  ],
  "settimane": [
@@ -2497,7 +2499,7 @@
     0,
     0
    ],
-   "load_tot": 41,
+   "load_tot": 50,
    "monotonia": null,
    "strain": null
   }
@@ -3205,7 +3207,7 @@
     "pace_s": 393
    },
    {
-    "data": "2026-09-29",
+    "data": "2026-09-30",
     "pace_s": 393
    }
   ],
