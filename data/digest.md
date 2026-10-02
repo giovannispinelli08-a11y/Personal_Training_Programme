@@ -1,22 +1,22 @@
-# Digest — 2026-10-01
+# Digest — 2026-10-02
 
 ## Stato
 
-- Ultima corsa: 2026-09-29 — 5.0 km in 33' (6:35/km, FC 135)
-- Giorni dall'ultima corsa: 2
-- Ultimi 7 giorni: 3 corse, 14.9 km, 102 min
-- Ultimi 28 giorni: 8 corse, 39.0 km, 260 min
+- Ultima corsa: 2026-10-01 — 4.9 km in 36' (7:18/km, FC 127)
+- Giorni dall'ultima corsa: 1
+- Ultimi 7 giorni: 4 corse, 19.8 km, 138 min
+- Ultimi 28 giorni: 9 corse, 43.9 km, 296 min
 - Lungo più lungo (28gg): 5.7 km
-- Carico: CTL 10.1 / ATL 17.5 (rapporto 1.72)
+- Carico: CTL 10.7 / ATL 18.6 (rapporto 1.74)
 
 ## Recupero
 
-- Prontezza oggi: 56/100 (giallo)
-- HRV: 83 ms (baseline 101)
-- HRV media 7 giorni: 109 ms, banda normale 93-107 (sopra)
-- FC a riposo: 46 bpm (+1.4 sulla media)
-- Sonno: 7.2 h
-- Consiglio: Recupero parziale: seduta facile ma accorciata, circa 23′, FC nella parte bassa della Z2.
+- Prontezza oggi: 66/100 (verde)
+- HRV: 100 ms (baseline 101)
+- HRV media 7 giorni: 107 ms, banda normale 93-107 (normale)
+- FC a riposo: 46 bpm (+1.3 sulla media)
+- Sonno: 8.4 h
+- Consiglio: Seduta di supporto come da piano.
 
 ## Piano vs reale (ultime 4 settimane)
 
@@ -25,7 +25,7 @@
 | 2026-09-07 | 0 | 91 | — | 0 | 33 |
 | 2026-09-14 | 0 | 0 | — | 0 | 0 |
 | 2026-09-21 | 0 | 100 | — | 0 | 34 |
-| 2026-09-28 | 95 | 33 | 35% | 33 | 33 |
+| 2026-09-28 | 95 | 69 | 73% | 33 | 36 |
 
 ## In programma (settimana dal 2026-10-05)
 
@@ -40,7 +40,6 @@
 
 Velocità corretta per pendenza divisa per battito (×1000). Sale = stesso costo cardiaco a velocità maggiore.
 
-- 2026-08-30 · 4.9 km · 6:34/km · FC 142 · EF 16.7
 - 2026-09-02 · 4.8 km · 6:07/km · FC 143 · EF 17.9
 - 2026-09-05 · 5.7 km · 6:13/km · FC 142 · EF 17.9
 - 2026-09-07 · 4.8 km · 6:00/km · FC 149 · EF 18.0
@@ -50,14 +49,15 @@ Velocità corretta per pendenza divisa per battito (×1000). Sale = stesso costo
 - 2026-09-25 · 4.8 km · 7:07/km · FC 134 · EF 16.8
 - 2026-09-27 · 5.0 km · 6:53/km · FC 139 · EF 16.6
 - 2026-09-29 · 5.0 km · 6:35/km · FC 135 · EF 18.0
+- 2026-10-01 · 4.9 km · 7:18/km · FC 127 · EF 17.2
 
-Trend ultime 3 vs 3 precedenti: -3.9%
+Trend ultime 3 vs 3 precedenti: -1.1%
 
 ## Altro carico (28 giorni)
 
 - Hike: 36 min, carico 8
-- Ride: 363 min, carico 229
+- Ride: 377 min, carico 233
 
 ## Segnalazioni
 
-- Fatica acuta alta rispetto alla base (ATL/CTL 1.72): settimana più leggera o un giorno in più di recupero.
+- Fatica acuta alta rispetto alla base (ATL/CTL 1.74): settimana più leggera o un giorno in più di recupero.
