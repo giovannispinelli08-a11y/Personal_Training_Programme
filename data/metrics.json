@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-05",
+ "generato": "2026-10-06",
  "zone": [
   "Z1",
   "Z2",
@@ -30,70 +30,38 @@
   ]
  ],
  "oggi": {
-  "data": "2026-10-05",
-  "prontezza": 66,
-  "livello": "verde",
-  "ieri": 54,
+  "data": "2026-10-06",
+  "prontezza": null,
+  "livello": null,
+  "ieri": 66,
   "componenti": {
-   "hrv": {
-    "valore": 105.0,
-    "baseline": 101.0,
-    "z": 0.31,
-    "punti": 75.0,
-    "peso": 0.35
-   },
-   "rhr": {
-    "valore": 45.0,
-    "baseline": 44.7,
-    "delta": 0.3,
-    "z": 0.14,
-    "punti": 68.0,
-    "peso": 0.2
-   },
-   "sonno": {
-    "ore": 9.3,
-    "score": 91.0,
-    "punti": 96.0,
-    "peso": 0.25
-   },
    "carico": {
-    "rapporto": 1.89,
-    "tsb": -11.2,
-    "punti": 10,
+    "rapporto": 1.67,
+    "tsb": -8.3,
+    "punti": 26.0,
     "peso": 0.2
    }
   },
   "hrv_settimana": {
-   "media7": 98,
+   "media7": 96,
    "banda": [
     94,
     108
    ],
    "stato": "normale"
   },
-  "seduta": null,
-  "consiglio": "Giorno di riposo da piano. Recupero buono: una camminata o mobilità vanno benissimo.",
+  "seduta": {
+   "tipo": "facile",
+   "disciplina": "corsa",
+   "minuti": "32",
+   "fc_min": "136",
+   "fc_max": "156",
+   "note": ""
+  },
+  "consiglio": "Dati di recupero insufficienti: segui il piano e le sensazioni.",
   "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-06-08",
-   "hrv": 67.0,
-   "hrv7": 79,
-   "hrv_banda": [
-    78,
-    89
-   ],
-   "rhr": 49.0,
-   "rhr_base": 46.9,
-   "sonno_h": 3.33,
-   "sonno_score": 38.0,
-   "prontezza": 54,
-   "ctl": 5.6,
-   "atl": 2.8,
-   "tsb": 2.7,
-   "load": 0.0
-  },
   {
    "data": "2026-06-09",
    "hrv": 66.0,
@@ -2235,6 +2203,24 @@
    "atl": 23.8,
    "tsb": -11.2,
    "load": 0.0
+  },
+  {
+   "data": "2026-10-06",
+   "hrv": null,
+   "hrv7": 96,
+   "hrv_banda": [
+    95,
+    108
+   ],
+   "rhr": null,
+   "rhr_base": 44.7,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": null,
+   "ctl": 12.3,
+   "atl": 20.6,
+   "tsb": -8.3,
+   "load": 0.0
   }
  ],
  "settimane": [
@@ -3234,7 +3220,7 @@
     "pace_s": 392
    },
    {
-    "data": "2026-10-05",
+    "data": "2026-10-06",
     "pace_s": 392
    }
   ],
