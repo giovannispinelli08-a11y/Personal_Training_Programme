@@ -1,10 +1,10 @@
-# Digest — 2026-10-06
+# Digest — 2026-10-07
 
 ## Stato
 
 - Ultima corsa: 2026-10-04 — 5.7 km in 34' (6:03/km, FC 144)
-- Giorni dall'ultima corsa: 2
-- Ultimi 7 giorni: 3 corse, 15.6 km, 103 min
+- Giorni dall'ultima corsa: 3
+- Ultimi 7 giorni: 2 corse, 10.6 km, 70 min
 - Ultimi 28 giorni: 8 corse, 39.0 km, 266 min
 - Lungo più lungo (28gg): 5.7 km
 - Carico: CTL 12.9 / ATL 27.4 (rapporto 2.13)
@@ -52,3 +52,4 @@ Trend ultime 3 vs 3 precedenti: +3.5%
 ## Segnalazioni
 
 - Fatica acuta alta rispetto alla base (ATL/CTL 2.13): settimana più leggera o un giorno in più di recupero.
+- HRV media della settimana sotto la tua banda normale: il recupero sta faticando da qualche giorno.
