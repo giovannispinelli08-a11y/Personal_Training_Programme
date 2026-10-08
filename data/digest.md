@@ -1,13 +1,22 @@
-# Digest — 2026-10-07
+# Digest — 2026-10-08
 
 ## Stato
 
-- Ultima corsa: 2026-10-04 — 5.7 km in 34' (6:03/km, FC 144)
-- Giorni dall'ultima corsa: 3
-- Ultimi 7 giorni: 2 corse, 10.6 km, 70 min
-- Ultimi 28 giorni: 8 corse, 39.0 km, 266 min
+- Ultima corsa: 2026-10-07 — 5.5 km in 33' (6:00/km, FC 143)
+- Giorni dall'ultima corsa: 1
+- Ultimi 7 giorni: 3 corse, 16.0 km, 103 min
+- Ultimi 28 giorni: 8 corse, 39.6 km, 266 min
 - Lungo più lungo (28gg): 5.7 km
-- Carico: CTL 12.9 / ATL 27.4 (rapporto 2.13)
+- Carico: CTL 12.7 / ATL 21.5 (rapporto 1.70)
+
+## Recupero
+
+- Prontezza oggi: 72/100 (verde)
+- HRV: 109 ms (baseline 101)
+- HRV media 7 giorni: 98 ms, banda normale 95-109 (normale)
+- FC a riposo: 46 bpm (+1.4 sulla media)
+- Sonno: 8.5 h
+- Consiglio: Via libera: seduta come da piano.
 
 ## Piano vs reale (ultime 4 settimane)
 
@@ -16,7 +25,7 @@
 | 2026-09-14 | 0 | 0 | — | 0 | 0 |
 | 2026-09-21 | 0 | 100 | — | 0 | 34 |
 | 2026-09-28 | 95 | 103 | 109% | 33 | 36 |
-| 2026-10-05 | 101 | 0 | 0% | 37 | 0 |
+| 2026-10-05 | 101 | 33 | 32% | 37 | 33 |
 
 ## In programma (settimana dal 2026-10-12)
 
@@ -31,7 +40,6 @@
 
 Velocità corretta per pendenza divisa per battito (×1000). Sale = stesso costo cardiaco a velocità maggiore.
 
-- 2026-09-05 · 5.7 km · 6:13/km · FC 142 · EF 17.9
 - 2026-09-07 · 4.8 km · 6:00/km · FC 149 · EF 18.0
 - 2026-09-09 · 4.9 km · 6:37/km · FC 133 · EF 18.0
 - 2026-09-11 · 4.7 km · 6:27/km · FC 144 · EF 17.4
@@ -41,8 +49,9 @@ Velocità corretta per pendenza divisa per battito (×1000). Sale = stesso costo
 - 2026-09-29 · 5.0 km · 6:35/km · FC 135 · EF 18.0
 - 2026-10-01 · 4.9 km · 7:18/km · FC 127 · EF 17.2
 - 2026-10-04 · 5.7 km · 6:03/km · FC 144 · EF 18.2
+- 2026-10-07 · 5.5 km · 6:00/km · FC 143 · EF 17.9
 
-Trend ultime 3 vs 3 precedenti: +3.5%
+Trend ultime 3 vs 3 precedenti: +3.6%
 
 ## Altro carico (28 giorni)
 
@@ -51,5 +60,4 @@ Trend ultime 3 vs 3 precedenti: +3.5%
 
 ## Segnalazioni
 
-- Fatica acuta alta rispetto alla base (ATL/CTL 2.13): settimana più leggera o un giorno in più di recupero.
-- HRV media della settimana sotto la tua banda normale: il recupero sta faticando da qualche giorno.
+- Fatica acuta alta rispetto alla base (ATL/CTL 1.70): settimana più leggera o un giorno in più di recupero.

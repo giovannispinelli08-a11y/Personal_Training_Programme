@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-07",
+ "generato": "2026-10-08",
  "zone": [
   "Z1",
   "Z2",
@@ -30,58 +30,59 @@
   ]
  ],
  "oggi": {
-  "data": "2026-10-07",
-  "prontezza": null,
-  "livello": null,
-  "ieri": 66,
+  "data": "2026-10-08",
+  "prontezza": 72,
+  "livello": "verde",
+  "ieri": 59,
   "componenti": {
+   "hrv": {
+    "valore": 109.0,
+    "baseline": 101.0,
+    "z": 0.54,
+    "punti": 78.0,
+    "peso": 0.35
+   },
+   "rhr": {
+    "valore": 46.0,
+    "baseline": 44.6,
+    "delta": 1.4,
+    "z": 0.82,
+    "punti": 58.0,
+    "peso": 0.2
+   },
+   "sonno": {
+    "ore": 8.5,
+    "score": 98.0,
+    "punti": 99.0,
+    "peso": 0.25
+   },
    "carico": {
-    "rapporto": 1.49,
-    "tsb": -5.9,
-    "punti": 43.0,
+    "rapporto": 1.51,
+    "tsb": -6.3,
+    "punti": 41.0,
     "peso": 0.2
    }
   },
   "hrv_settimana": {
-   "media7": 92,
+   "media7": 98,
    "banda": [
-    94,
+    95,
     109
    ],
-   "stato": "sotto"
+   "stato": "normale"
   },
   "seduta": {
-   "tipo": "potenziamento",
-   "disciplina": "supporto",
-   "minuti": "20",
-   "fc_min": "",
-   "fc_max": "",
-   "note": "calf raise: due gambe, poi gamba singola, poi con carico"
+   "tipo": "facile",
+   "disciplina": "corsa",
+   "minuti": "32",
+   "fc_min": "136",
+   "fc_max": "156",
+   "note": ""
   },
-  "consiglio": "Dati di recupero insufficienti: segui il piano e le sensazioni.",
-  "note": [
-   "HRV media della settimana sotto la tua banda normale: il recupero sta faticando da qualche giorno."
-  ]
+  "consiglio": "Via libera: seduta come da piano.",
+  "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-06-10",
-   "hrv": 84.0,
-   "hrv7": 79,
-   "hrv_banda": [
-    77,
-    88
-   ],
-   "rhr": 47.0,
-   "rhr_base": 47.1,
-   "sonno_h": 8.82,
-   "sonno_score": 88.0,
-   "prontezza": 80,
-   "ctl": 5.9,
-   "atl": 5.3,
-   "tsb": 0.6,
-   "load": 24.0
-  },
   {
    "data": "2026-06-11",
    "hrv": null,
@@ -2190,17 +2191,17 @@
   },
   {
    "data": "2026-10-06",
-   "hrv": null,
-   "hrv7": 96,
+   "hrv": 103.0,
+   "hrv7": 97,
    "hrv_banda": [
     95,
     108
    ],
-   "rhr": null,
+   "rhr": 44.0,
    "rhr_base": 44.7,
-   "sonno_h": null,
-   "sonno_score": null,
-   "prontezza": null,
+   "sonno_h": 7.87,
+   "sonno_score": 86.0,
+   "prontezza": 69,
    "ctl": 12.3,
    "atl": 20.6,
    "tsb": -8.3,
@@ -2208,20 +2209,38 @@
   },
   {
    "data": "2026-10-07",
-   "hrv": null,
-   "hrv7": 92,
+   "hrv": 99.0,
+   "hrv7": 95,
    "hrv_banda": [
     95,
     108
    ],
-   "rhr": null,
+   "rhr": 47.0,
    "rhr_base": 44.6,
-   "sonno_h": null,
-   "sonno_score": null,
-   "prontezza": null,
-   "ctl": 12.0,
-   "atl": 17.9,
-   "tsb": -5.9,
+   "sonno_h": 7.13,
+   "sonno_score": 78.0,
+   "prontezza": 59,
+   "ctl": 12.7,
+   "atl": 21.5,
+   "tsb": -8.8,
+   "load": 27.0
+  },
+  {
+   "data": "2026-10-08",
+   "hrv": 109.0,
+   "hrv7": 98,
+   "hrv_banda": [
+    95,
+    108
+   ],
+   "rhr": 46.0,
+   "rhr_base": 44.6,
+   "sonno_h": 8.53,
+   "sonno_score": 98.0,
+   "prontezza": 72,
+   "ctl": 12.4,
+   "atl": 18.6,
+   "tsb": -6.3,
    "load": 0.0
   }
  ],
@@ -2468,17 +2487,17 @@
   },
   {
    "lun": "2026-10-05",
-   "corse": 0,
-   "min_corsa": 0,
-   "km": 0,
+   "corse": 1,
+   "min_corsa": 33,
+   "km": 5.5,
    "zone_min": [
-    0,
-    0,
-    0,
+    4,
+    27,
+    1,
     0,
     0
    ],
-   "load_tot": 0,
+   "load_tot": 27,
    "monotonia": null,
    "strain": null
   }
@@ -3167,6 +3186,24 @@
     0.0,
     0.0
    ]
+  },
+  {
+   "id": "i194848333",
+   "data": "2026-10-07",
+   "km": 5.45,
+   "min": 32.7,
+   "pace_s": 360,
+   "fc": 143.0,
+   "ef": 17.88,
+   "decoupling": null,
+   "cadenza": 157.0,
+   "zone_min": [
+    4.4,
+    27.2,
+    1.2,
+    0.0,
+    0.0
+   ]
   }
  ],
  "prestazione": {
@@ -3222,7 +3259,7 @@
     "pace_s": 392
    },
    {
-    "data": "2026-10-07",
+    "data": "2026-10-08",
     "pace_s": 392
    }
   ],
@@ -3367,11 +3404,15 @@
    {
     "data": "2026-10-04",
     "vo2max": 51.0
+   },
+   {
+    "data": "2026-10-07",
+    "vo2max": 51.0
    }
   ],
   "mezza_teorica": "1:29:59",
   "mezza_teorica_s": 5399,
-  "polarizzazione_28": 91,
+  "polarizzazione_28": 92,
   "decoupling_medio_28": null,
   "cadenza_media_28": 157.0
  }
