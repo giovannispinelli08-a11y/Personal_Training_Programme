@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-09",
+ "generato": "2026-10-10",
  "zone": [
   "Z1",
   "Z2",
@@ -30,44 +30,44 @@
   ]
  ],
  "oggi": {
-  "data": "2026-10-09",
-  "prontezza": 78,
+  "data": "2026-10-10",
+  "prontezza": 84,
   "livello": "verde",
-  "ieri": 72,
+  "ieri": 78,
   "componenti": {
    "hrv": {
-    "valore": 110.0,
+    "valore": 115.0,
     "baseline": 102.0,
-    "z": 0.61,
-    "punti": 79.0,
+    "z": 0.94,
+    "punti": 84.0,
     "peso": 0.35
    },
    "rhr": {
     "valore": 43.0,
-    "baseline": 44.6,
-    "delta": -1.6,
-    "z": -0.93,
-    "punti": 84.0,
+    "baseline": 44.5,
+    "delta": -1.5,
+    "z": -0.87,
+    "punti": 83.0,
     "peso": 0.2
    },
    "sonno": {
-    "ore": 7.9,
-    "score": 86.0,
-    "punti": 92.0,
+    "ore": 10.4,
+    "score": 98.0,
+    "punti": 99.0,
     "peso": 0.25
    },
    "carico": {
-    "rapporto": 1.4,
-    "tsb": -4.8,
-    "punti": 51.0,
+    "rapporto": 1.24,
+    "tsb": -2.8,
+    "punti": 65.0,
     "peso": 0.2
    }
   },
   "hrv_settimana": {
-   "media7": 100,
+   "media7": 103,
    "banda": [
     94,
-    109
+    108
    ],
    "stato": "normale"
   },
@@ -83,24 +83,6 @@
   "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-06-12",
-   "hrv": null,
-   "hrv7": 79,
-   "hrv_banda": [
-    77,
-    88
-   ],
-   "rhr": 46.0,
-   "rhr_base": 47.3,
-   "sonno_h": 8.37,
-   "sonno_score": 91.0,
-   "prontezza": 87,
-   "ctl": 5.6,
-   "atl": 4.0,
-   "tsb": 1.6,
-   "load": 0.0
-  },
   {
    "data": "2026-06-13",
    "hrv": null,
@@ -2242,6 +2224,24 @@
    "atl": 17.1,
    "tsb": -4.8,
    "load": 7.0
+  },
+  {
+   "data": "2026-10-10",
+   "hrv": 115.0,
+   "hrv7": 103,
+   "hrv_banda": [
+    95,
+    109
+   ],
+   "rhr": 43.0,
+   "rhr_base": 44.5,
+   "sonno_h": 10.4,
+   "sonno_score": 98.0,
+   "prontezza": 84,
+   "ctl": 11.9,
+   "atl": 14.8,
+   "tsb": -2.8,
+   "load": 0.0
   }
  ],
  "settimane": [
@@ -3259,7 +3259,7 @@
     "pace_s": 392
    },
    {
-    "data": "2026-10-09",
+    "data": "2026-10-10",
     "pace_s": 392
    }
   ],
