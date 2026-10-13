@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-12",
+ "generato": "2026-10-13",
  "zone": [
   "Z1",
   "Z2",
@@ -30,70 +30,59 @@
   ]
  ],
  "oggi": {
-  "data": "2026-10-12",
-  "prontezza": 70,
+  "data": "2026-10-13",
+  "prontezza": 72,
   "livello": "verde",
-  "ieri": 60,
+  "ieri": 70,
   "componenti": {
    "hrv": {
-    "valore": 97.0,
+    "valore": 96.0,
     "baseline": 102.0,
-    "z": -0.43,
-    "punti": 64.0,
+    "z": -0.51,
+    "punti": 62.0,
     "peso": 0.35
    },
    "rhr": {
-    "valore": 44.0,
-    "baseline": 44.5,
-    "delta": -0.5,
-    "z": -0.29,
-    "punti": 74.0,
+    "valore": 45.0,
+    "baseline": 44.6,
+    "delta": 0.4,
+    "z": 0.26,
+    "punti": 66.0,
     "peso": 0.2
    },
    "sonno": {
-    "ore": 7.5,
-    "score": 85.0,
-    "punti": 89.0,
+    "ore": 8.4,
+    "score": 87.0,
+    "punti": 94.0,
     "peso": 0.25
    },
    "carico": {
-    "rapporto": 1.35,
-    "tsb": -4.4,
-    "punti": 55.0,
+    "rapporto": 1.2,
+    "tsb": -2.5,
+    "punti": 68.0,
     "peso": 0.2
    }
   },
   "hrv_settimana": {
-   "media7": 104,
+   "media7": 103,
    "banda": [
-    94,
+    95,
     108
    ],
    "stato": "normale"
   },
-  "seduta": null,
-  "consiglio": "Giorno di riposo da piano. Recupero buono: una camminata o mobilità vanno benissimo.",
+  "seduta": {
+   "tipo": "facile",
+   "disciplina": "corsa",
+   "minuti": "34",
+   "fc_min": "136",
+   "fc_max": "156",
+   "note": ""
+  },
+  "consiglio": "Via libera: seduta come da piano.",
   "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-06-15",
-   "hrv": null,
-   "hrv7": null,
-   "hrv_banda": [
-    77,
-    89
-   ],
-   "rhr": 46.0,
-   "rhr_base": 47.6,
-   "sonno_h": 9.42,
-   "sonno_score": 90.0,
-   "prontezza": 87,
-   "ctl": 5.2,
-   "atl": 2.6,
-   "tsb": 2.6,
-   "load": 0.0
-  },
   {
    "data": "2026-06-16",
    "hrv": 80.0,
@@ -2235,6 +2224,24 @@
    "atl": 17.1,
    "tsb": -4.4,
    "load": 0.0
+  },
+  {
+   "data": "2026-10-13",
+   "hrv": 96.0,
+   "hrv7": 103,
+   "hrv_banda": [
+    96,
+    109
+   ],
+   "rhr": 45.0,
+   "rhr_base": 44.6,
+   "sonno_h": 8.38,
+   "sonno_score": 87.0,
+   "prontezza": 72,
+   "ctl": 12.3,
+   "atl": 14.8,
+   "tsb": -2.5,
+   "load": 0.0
   }
  ],
  "settimane": [
@@ -3270,7 +3277,7 @@
     "pace_s": 387
    },
    {
-    "data": "2026-10-12",
+    "data": "2026-10-13",
     "pace_s": 384
    }
   ],
