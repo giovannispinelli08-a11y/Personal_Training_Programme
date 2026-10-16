@@ -1,9 +1,9 @@
-# Digest — 2026-10-15
+# Digest — 2026-10-16
 
 ## Stato
 
 - Ultima corsa: 2026-10-14 — 5.7 km in 36' (6:21/km, FC 131)
-- Giorni dall'ultima corsa: 1
+- Giorni dall'ultima corsa: 2
 - Ultimi 7 giorni: 3 corse, 17.8 km, 108 min
 - Ultimi 28 giorni: 10 corse, 52.7 km, 344 min
 - Lungo più lungo (28gg): 6.6 km
@@ -11,12 +11,12 @@
 
 ## Recupero
 
-- Prontezza oggi: 56/100 (giallo)
-- HRV: 77 ms (baseline 102)
-- HRV media 7 giorni: 97 ms, banda normale 95-108 (normale)
-- FC a riposo: 48 bpm (+3.5 sulla media)
-- Sonno: 7.5 h
-- Consiglio: Recupero parziale: seduta facile ma accorciata, circa 26′, FC nella parte bassa della Z2.
+- Prontezza oggi: 78/100 (verde)
+- HRV: 94 ms (baseline 101)
+- HRV media 7 giorni: 94 ms, banda normale 95-108 (sotto)
+- FC a riposo: 41 bpm (-3.6 sulla media)
+- Sonno: 6.2 h
+- Consiglio: Seduta di supporto come da piano.
 
 ## Piano vs reale (ultime 4 settimane)
 
@@ -56,8 +56,8 @@ Trend ultime 3 vs 3 precedenti: +7.8%
 ## Altro carico (28 giorni)
 
 - Hike: 36 min, carico 8
-- Ride: 397 min, carico 240
+- Ride: 364 min, carico 218
 
 ## Segnalazioni
 
-- Nessuna anomalia.
+- HRV media della settimana sotto la tua banda normale: il recupero sta faticando da qualche giorno.
