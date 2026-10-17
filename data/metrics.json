@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-16",
+ "generato": "2026-10-17",
  "zone": [
   "Z1",
   "Z2",
@@ -30,44 +30,31 @@
   ]
  ],
  "oggi": {
-  "data": "2026-10-16",
-  "prontezza": 78,
+  "data": "2026-10-17",
+  "prontezza": 71,
   "livello": "verde",
-  "ieri": 56,
+  "ieri": 78,
   "componenti": {
-   "hrv": {
-    "valore": 94.0,
-    "baseline": 101.0,
-    "z": -0.57,
-    "punti": 61.0,
-    "peso": 0.35
-   },
    "rhr": {
-    "valore": 41.0,
-    "baseline": 44.6,
-    "delta": -3.6,
-    "z": -2.32,
-    "punti": 100.0,
+    "valore": 46.0,
+    "baseline": 44.5,
+    "delta": 1.5,
+    "z": 0.88,
+    "punti": 57.0,
     "peso": 0.2
    },
-   "sonno": {
-    "ore": 6.2,
-    "score": 77.0,
-    "punti": 77.0,
-    "peso": 0.25
-   },
    "carico": {
-    "rapporto": 0.99,
-    "tsb": 0.1,
+    "rapporto": 0.88,
+    "tsb": 1.4,
     "punti": 85,
     "peso": 0.2
    }
   },
   "hrv_settimana": {
-   "media7": 94,
+   "media7": 91,
    "banda": [
     95,
-    108
+    109
    ],
    "stato": "sotto"
   },
@@ -85,24 +72,6 @@
   ]
  },
  "giornaliero": [
-  {
-   "data": "2026-06-19",
-   "hrv": 87.0,
-   "hrv7": 84,
-   "hrv_banda": [
-    79,
-    89
-   ],
-   "rhr": 44.0,
-   "rhr_base": 47.5,
-   "sonno_h": 9.27,
-   "sonno_score": 87.0,
-   "prontezza": 85,
-   "ctl": 4.7,
-   "atl": 1.5,
-   "tsb": 3.3,
-   "load": 0.0
-  },
   {
    "data": "2026-06-20",
    "hrv": 62.0,
@@ -2244,6 +2213,24 @@
    "atl": 11.9,
    "tsb": 0.1,
    "load": 0.0
+  },
+  {
+   "data": "2026-10-17",
+   "hrv": null,
+   "hrv7": 91,
+   "hrv_banda": [
+    96,
+    108
+   ],
+   "rhr": 46.0,
+   "rhr_base": 44.5,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 71,
+   "ctl": 11.7,
+   "atl": 10.4,
+   "tsb": 1.4,
+   "load": 0.0
   }
  ],
  "settimane": [
@@ -3279,7 +3266,7 @@
     "pace_s": 387
    },
    {
-    "data": "2026-10-16",
+    "data": "2026-10-17",
     "pace_s": 383
    }
   ],
