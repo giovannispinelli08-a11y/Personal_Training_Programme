@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-17",
+ "generato": "2026-10-18",
  "zone": [
   "Z1",
   "Z2",
@@ -30,66 +30,40 @@
   ]
  ],
  "oggi": {
-  "data": "2026-10-17",
-  "prontezza": 71,
-  "livello": "verde",
-  "ieri": 78,
+  "data": "2026-10-18",
+  "prontezza": null,
+  "livello": null,
+  "ieri": 71,
   "componenti": {
-   "rhr": {
-    "valore": 46.0,
-    "baseline": 44.5,
-    "delta": 1.5,
-    "z": 0.88,
-    "punti": 57.0,
-    "peso": 0.2
-   },
    "carico": {
-    "rapporto": 0.88,
-    "tsb": 1.4,
+    "rapporto": 0.78,
+    "tsb": 2.5,
     "punti": 85,
     "peso": 0.2
    }
   },
   "hrv_settimana": {
-   "media7": 91,
+   "media7": 90,
    "banda": [
-    95,
+    96,
     109
    ],
    "stato": "sotto"
   },
   "seduta": {
-   "tipo": "mobilita",
-   "disciplina": "supporto",
-   "minuti": "15",
-   "fc_min": "",
-   "fc_max": "",
-   "note": "mobilità caviglia e allungamento fascia plantare"
+   "tipo": "lungo",
+   "disciplina": "corsa",
+   "minuti": "41",
+   "fc_min": "136",
+   "fc_max": "156",
+   "note": "tenere la FC nella metà bassa della zona"
   },
-  "consiglio": "Seduta di supporto come da piano.",
+  "consiglio": "Dati di recupero insufficienti: segui il piano e le sensazioni.",
   "note": [
    "HRV media della settimana sotto la tua banda normale: il recupero sta faticando da qualche giorno."
   ]
  },
  "giornaliero": [
-  {
-   "data": "2026-06-20",
-   "hrv": 62.0,
-   "hrv7": 79,
-   "hrv_banda": [
-    79,
-    89
-   ],
-   "rhr": 51.0,
-   "rhr_base": 47.4,
-   "sonno_h": 3.45,
-   "sonno_score": 41.0,
-   "prontezza": 40,
-   "ctl": 4.6,
-   "atl": 1.3,
-   "tsb": 3.4,
-   "load": 0.0
-  },
   {
    "data": "2026-06-21",
    "hrv": null,
@@ -2216,7 +2190,7 @@
   },
   {
    "data": "2026-10-17",
-   "hrv": null,
+   "hrv": 89.0,
    "hrv7": 91,
    "hrv_banda": [
     96,
@@ -2224,12 +2198,30 @@
    ],
    "rhr": 46.0,
    "rhr_base": 44.5,
-   "sonno_h": null,
-   "sonno_score": null,
+   "sonno_h": 9.72,
+   "sonno_score": 92.0,
    "prontezza": 71,
    "ctl": 11.7,
    "atl": 10.4,
    "tsb": 1.4,
+   "load": 0.0
+  },
+  {
+   "data": "2026-10-18",
+   "hrv": null,
+   "hrv7": 90,
+   "hrv_banda": [
+    96,
+    108
+   ],
+   "rhr": null,
+   "rhr_base": 44.6,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": null,
+   "ctl": 11.4,
+   "atl": 9.0,
+   "tsb": 2.5,
    "load": 0.0
   }
  ],
@@ -2487,8 +2479,8 @@
     0
    ],
    "load_tot": 23,
-   "monotonia": null,
-   "strain": null
+   "monotonia": 0.38,
+   "strain": 9
   }
  ],
  "corse": [
@@ -3266,7 +3258,7 @@
     "pace_s": 387
    },
    {
-    "data": "2026-10-17",
+    "data": "2026-10-18",
     "pace_s": 383
    }
   ],

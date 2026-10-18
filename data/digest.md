@@ -1,20 +1,13 @@
-# Digest — 2026-10-17
+# Digest — 2026-10-18
 
 ## Stato
 
 - Ultima corsa: 2026-10-14 — 5.7 km in 36' (6:21/km, FC 131)
-- Giorni dall'ultima corsa: 3
-- Ultimi 7 giorni: 3 corse, 17.8 km, 108 min
+- Giorni dall'ultima corsa: 4
+- Ultimi 7 giorni: 2 corse, 12.3 km, 76 min
 - Ultimi 28 giorni: 10 corse, 52.7 km, 344 min
 - Lungo più lungo (28gg): 6.6 km
 - Carico: CTL 12.6 / ATL 15.9 (rapporto 1.26)
-
-## Recupero
-
-- Prontezza oggi: 71/100 (verde)
-- HRV media 7 giorni: 91 ms, banda normale 95-109 (sotto)
-- FC a riposo: 46 bpm (+1.5 sulla media)
-- Consiglio: Seduta di supporto come da piano.
 
 ## Piano vs reale (ultime 4 settimane)
 
