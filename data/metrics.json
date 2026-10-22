@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-21",
+ "generato": "2026-10-22",
  "zone": [
   "Z1",
   "Z2",
@@ -30,58 +30,31 @@
   ]
  ],
  "oggi": {
-  "data": "2026-10-21",
+  "data": "2026-10-22",
   "prontezza": null,
   "livello": null,
   "ieri": 77,
   "componenti": {
    "carico": {
-    "rapporto": 0.83,
-    "tsb": 2.0,
+    "rapporto": 0.73,
+    "tsb": 3.0,
     "punti": 85,
     "peso": 0.2
    }
   },
-  "hrv_settimana": {
-   "media7": 90,
-   "banda": [
-    96,
-    109
-   ],
-   "stato": "sotto"
-  },
+  "hrv_settimana": null,
   "seduta": {
-   "tipo": "potenziamento",
-   "disciplina": "supporto",
-   "minuti": "20",
-   "fc_min": "",
-   "fc_max": "",
-   "note": "calf raise: due gambe, poi gamba singola, poi con carico"
+   "tipo": "facile",
+   "disciplina": "corsa",
+   "minuti": "23",
+   "fc_min": "136",
+   "fc_max": "156",
+   "note": ""
   },
   "consiglio": "Dati di recupero insufficienti: segui il piano e le sensazioni.",
-  "note": [
-   "HRV media della settimana sotto la tua banda normale: il recupero sta faticando da qualche giorno."
-  ]
+  "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-06-24",
-   "hrv": 86.0,
-   "hrv7": 81,
-   "hrv_banda": [
-    77,
-    88
-   ],
-   "rhr": 45.0,
-   "rhr_base": 48.0,
-   "sonno_h": 5.95,
-   "sonno_score": 76.0,
-   "prontezza": 78,
-   "ctl": 4.2,
-   "atl": 0.7,
-   "tsb": 3.5,
-   "load": 0.0
-  },
   {
    "data": "2026-06-25",
    "hrv": 88.0,
@@ -2223,6 +2196,24 @@
    "atl": 9.6,
    "tsb": 2.0,
    "load": 0.0
+  },
+  {
+   "data": "2026-10-22",
+   "hrv": null,
+   "hrv7": 95,
+   "hrv_banda": [
+    95,
+    107
+   ],
+   "rhr": null,
+   "rhr_base": 44.5,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": null,
+   "ctl": 11.3,
+   "atl": 8.3,
+   "tsb": 3.0,
+   "load": 0.0
   }
  ],
  "settimane": [
@@ -3258,7 +3249,7 @@
     "pace_s": 382
    },
    {
-    "data": "2026-10-21",
+    "data": "2026-10-22",
     "pace_s": 382
    }
   ],
@@ -3429,6 +3420,6 @@
   "mezza_teorica_s": 5309,
   "polarizzazione_28": 93,
   "decoupling_medio_28": 2.6,
-  "cadenza_media_28": 157.0
+  "cadenza_media_28": 158.0
  }
 }

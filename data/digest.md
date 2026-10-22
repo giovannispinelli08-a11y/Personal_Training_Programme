@@ -1,11 +1,11 @@
-# Digest — 2026-10-21
+# Digest — 2026-10-22
 
 ## Stato
 
 - Ultima corsa: 2026-10-18 — 7.9 km in 48' (6:02/km, FC 144)
-- Giorni dall'ultima corsa: 3
-- Ultimi 7 giorni: 2 corse, 13.6 km, 84 min
-- Ultimi 28 giorni: 11 corse, 60.6 km, 392 min
+- Giorni dall'ultima corsa: 4
+- Ultimi 7 giorni: 1 corse, 7.9 km, 48 min
+- Ultimi 28 giorni: 10 corse, 56.6 km, 361 min
 - Lungo più lungo (28gg): 7.9 km
 - Carico: CTL 12.5 / ATL 14.7 (rapporto 1.18)
 
@@ -51,4 +51,3 @@ Trend ultime 3 vs 3 precedenti: +3.1%
 ## Segnalazioni
 
 - Il lungo è cresciuto da 5.7 a 7.9 km in un mese (+38%).
-- HRV media della settimana sotto la tua banda normale: il recupero sta faticando da qualche giorno.
