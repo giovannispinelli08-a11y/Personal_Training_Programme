@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-22",
+ "generato": "2026-10-23",
  "zone": [
   "Z1",
   "Z2",
@@ -30,49 +30,31 @@
   ]
  ],
  "oggi": {
-  "data": "2026-10-22",
+  "data": "2026-10-23",
   "prontezza": null,
   "livello": null,
   "ieri": 77,
   "componenti": {
    "carico": {
-    "rapporto": 0.73,
-    "tsb": 3.0,
+    "rapporto": 0.65,
+    "tsb": 3.9,
     "punti": 85,
     "peso": 0.2
    }
   },
   "hrv_settimana": null,
   "seduta": {
-   "tipo": "facile",
-   "disciplina": "corsa",
-   "minuti": "23",
-   "fc_min": "136",
-   "fc_max": "156",
-   "note": ""
+   "tipo": "mobilita",
+   "disciplina": "supporto",
+   "minuti": "15",
+   "fc_min": "",
+   "fc_max": "",
+   "note": "mobilità caviglia e allungamento fascia plantare"
   },
   "consiglio": "Dati di recupero insufficienti: segui il piano e le sensazioni.",
   "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-06-25",
-   "hrv": 88.0,
-   "hrv7": 80,
-   "hrv_banda": [
-    78,
-    88
-   ],
-   "rhr": 46.0,
-   "rhr_base": 48.0,
-   "sonno_h": 9.88,
-   "sonno_score": 96.0,
-   "prontezza": 85,
-   "ctl": 4.1,
-   "atl": 0.6,
-   "tsb": 3.5,
-   "load": 0.0
-  },
   {
    "data": "2026-06-26",
    "hrv": 106.0,
@@ -2214,6 +2196,24 @@
    "atl": 8.3,
    "tsb": 3.0,
    "load": 0.0
+  },
+  {
+   "data": "2026-10-23",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    95,
+    107
+   ],
+   "rhr": null,
+   "rhr_base": 44.5,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": null,
+   "ctl": 11.1,
+   "atl": 7.2,
+   "tsb": 3.9,
+   "load": 0.0
   }
  ],
  "settimane": [
@@ -3249,7 +3249,7 @@
     "pace_s": 382
    },
    {
-    "data": "2026-10-22",
+    "data": "2026-10-23",
     "pace_s": 382
    }
   ],
