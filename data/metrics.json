@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-23",
+ "generato": "2026-10-24",
  "zone": [
   "Z1",
   "Z2",
@@ -30,14 +30,14 @@
   ]
  ],
  "oggi": {
-  "data": "2026-10-23",
+  "data": "2026-10-24",
   "prontezza": null,
   "livello": null,
   "ieri": 77,
   "componenti": {
    "carico": {
-    "rapporto": 0.65,
-    "tsb": 3.9,
+    "rapporto": 0.58,
+    "tsb": 4.6,
     "punti": 85,
     "peso": 0.2
    }
@@ -55,24 +55,6 @@
   "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-06-26",
-   "hrv": 106.0,
-   "hrv7": 83,
-   "hrv_banda": [
-    78,
-    89
-   ],
-   "rhr": 44.0,
-   "rhr_base": 48.0,
-   "sonno_h": 7.55,
-   "sonno_score": 88.0,
-   "prontezza": 95,
-   "ctl": 4.5,
-   "atl": 3.5,
-   "tsb": 1.1,
-   "load": 22.0
-  },
   {
    "data": "2026-06-27",
    "hrv": 84.0,
@@ -2214,6 +2196,24 @@
    "atl": 7.2,
    "tsb": 3.9,
    "load": 0.0
+  },
+  {
+   "data": "2026-10-24",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    94,
+    107
+   ],
+   "rhr": null,
+   "rhr_base": 44.6,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": null,
+   "ctl": 10.8,
+   "atl": 6.2,
+   "tsb": 4.6,
+   "load": 0.0
   }
  ],
  "settimane": [
@@ -3198,7 +3198,7 @@
  ],
  "prestazione": {
   "fc_riferimento": 145,
-  "ritmo_a_fc_s": 382,
+  "ritmo_a_fc_s": 379,
   "ritmo_a_fc_storia": [
    {
     "data": "2026-08-02",
@@ -3249,8 +3249,8 @@
     "pace_s": 382
    },
    {
-    "data": "2026-10-23",
-    "pace_s": 382
+    "data": "2026-10-24",
+    "pace_s": 379
    }
   ],
   "vo2max": 52.0,
