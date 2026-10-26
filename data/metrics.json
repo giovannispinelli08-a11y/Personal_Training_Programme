@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-25",
+ "generato": "2026-10-26",
  "zone": [
   "Z1",
   "Z2",
@@ -30,49 +30,24 @@
   ]
  ],
  "oggi": {
-  "data": "2026-10-25",
+  "data": "2026-10-26",
   "prontezza": null,
   "livello": null,
   "ieri": 77,
   "componenti": {
    "carico": {
-    "rapporto": 0.51,
-    "tsb": 5.1,
+    "rapporto": 0.46,
+    "tsb": 5.6,
     "punti": 85,
     "peso": 0.2
    }
   },
   "hrv_settimana": null,
-  "seduta": {
-   "tipo": "lungo",
-   "disciplina": "corsa",
-   "minuti": "29",
-   "fc_min": "136",
-   "fc_max": "156",
-   "note": "tenere la FC nella metà bassa della zona"
-  },
+  "seduta": null,
   "consiglio": "Dati di recupero insufficienti: segui il piano e le sensazioni.",
   "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-06-28",
-   "hrv": 80.0,
-   "hrv7": 87,
-   "hrv_banda": [
-    78,
-    89
-   ],
-   "rhr": 47.0,
-   "rhr_base": 47.7,
-   "sonno_h": 6.85,
-   "sonno_score": 79.0,
-   "prontezza": 73,
-   "ctl": 4.3,
-   "atl": 2.6,
-   "tsb": 1.7,
-   "load": 0.0
-  },
   {
    "data": "2026-06-29",
    "hrv": 73.0,
@@ -2214,25 +2189,27 @@
    "atl": 5.4,
    "tsb": 5.1,
    "load": 0.0
+  },
+  {
+   "data": "2026-10-26",
+   "hrv": null,
+   "hrv7": null,
+   "hrv_banda": [
+    94,
+    106
+   ],
+   "rhr": null,
+   "rhr_base": 44.7,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": null,
+   "ctl": 10.3,
+   "atl": 4.7,
+   "tsb": 5.6,
+   "load": 0.0
   }
  ],
  "settimane": [
-  {
-   "lun": "2026-07-06",
-   "corse": 2,
-   "min_corsa": 62,
-   "km": 8.7,
-   "zone_min": [
-    33,
-    17,
-    12,
-    0,
-    0
-   ],
-   "load_tot": 44,
-   "monotonia": 0.56,
-   "strain": 25
-  },
   {
    "lun": "2026-07-13",
    "corse": 0,
@@ -2459,6 +2436,22 @@
   },
   {
    "lun": "2026-10-19",
+   "corse": 0,
+   "min_corsa": 0,
+   "km": 0,
+   "zone_min": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "load_tot": 0,
+   "monotonia": null,
+   "strain": null
+  },
+  {
+   "lun": "2026-10-26",
    "corse": 0,
    "min_corsa": 0,
    "km": 0,
@@ -3201,10 +3194,6 @@
   "ritmo_a_fc_s": 379,
   "ritmo_a_fc_storia": [
    {
-    "data": "2026-08-02",
-    "pace_s": null
-   },
-   {
     "data": "2026-08-09",
     "pace_s": null
    },
@@ -3250,6 +3239,10 @@
    },
    {
     "data": "2026-10-25",
+    "pace_s": 379
+   },
+   {
+    "data": "2026-10-26",
     "pace_s": 379
    }
   ],
