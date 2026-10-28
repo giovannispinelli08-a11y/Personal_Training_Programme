@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-27",
+ "generato": "2026-10-28",
  "zone": [
   "Z1",
   "Z2",
@@ -30,49 +30,61 @@
   ]
  ],
  "oggi": {
-  "data": "2026-10-27",
-  "prontezza": null,
-  "livello": null,
+  "data": "2026-10-28",
+  "prontezza": 72,
+  "livello": "verde",
   "ieri": 77,
   "componenti": {
+   "hrv": {
+    "valore": 90.0,
+    "baseline": 98.0,
+    "z": -0.64,
+    "punti": 60.0,
+    "peso": 0.35
+   },
+   "rhr": {
+    "valore": 48.0,
+    "baseline": 45.5,
+    "delta": 2.5,
+    "z": 0.93,
+    "punti": 56.0,
+    "peso": 0.2
+   },
+   "sonno": {
+    "ore": 10.1,
+    "score": 84.0,
+    "punti": 92.0,
+    "peso": 0.25
+   },
    "carico": {
-    "rapporto": 0.4,
-    "tsb": 6.0,
+    "rapporto": 0.36,
+    "tsb": 6.3,
     "punti": 85,
     "peso": 0.2
    }
   },
-  "hrv_settimana": null,
-  "seduta": {
-   "tipo": "facile",
-   "disciplina": "corsa",
-   "minuti": "23",
-   "fc_min": "136",
-   "fc_max": "156",
-   "note": ""
+  "hrv_settimana": {
+   "media7": 84,
+   "banda": [
+    95,
+    108
+   ],
+   "stato": "sotto"
   },
-  "consiglio": "Dati di recupero insufficienti: segui il piano e le sensazioni.",
-  "note": []
+  "seduta": {
+   "tipo": "potenziamento",
+   "disciplina": "supporto",
+   "minuti": "20",
+   "fc_min": "",
+   "fc_max": "",
+   "note": "calf raise: due gambe, poi gamba singola, poi con carico"
+  },
+  "consiglio": "Seduta di supporto come da piano.",
+  "note": [
+   "HRV media della settimana sotto la tua banda normale: il recupero sta faticando da qualche giorno."
+  ]
  },
  "giornaliero": [
-  {
-   "data": "2026-06-30",
-   "hrv": 76.0,
-   "hrv7": 84,
-   "hrv_banda": [
-    78,
-    89
-   ],
-   "rhr": 47.0,
-   "rhr_base": 47.6,
-   "sonno_h": 7.13,
-   "sonno_score": 78.0,
-   "prontezza": 71,
-   "ctl": 4.1,
-   "atl": 2.0,
-   "tsb": 2.2,
-   "load": 0.0
-  },
   {
    "data": "2026-07-01",
    "hrv": 100.0,
@@ -2055,17 +2067,17 @@
   },
   {
    "data": "2026-10-19",
-   "hrv": null,
-   "hrv7": 91,
+   "hrv": 105.0,
+   "hrv7": 93,
    "hrv_banda": [
     95,
     108
    ],
-   "rhr": null,
+   "rhr": 42.0,
    "rhr_base": 44.6,
-   "sonno_h": null,
-   "sonno_score": null,
-   "prontezza": null,
+   "sonno_h": 7.83,
+   "sonno_score": 88.0,
+   "prontezza": 84,
    "ctl": 12.2,
    "atl": 12.7,
    "tsb": -0.6,
@@ -2074,16 +2086,16 @@
   {
    "data": "2026-10-20",
    "hrv": null,
-   "hrv7": 90,
+   "hrv7": 92,
    "hrv_banda": [
     95,
     108
    ],
-   "rhr": null,
-   "rhr_base": 44.6,
+   "rhr": 48.0,
+   "rhr_base": 44.5,
    "sonno_h": null,
    "sonno_score": null,
-   "prontezza": null,
+   "prontezza": 62,
    "ctl": 11.9,
    "atl": 11.0,
    "tsb": 0.8,
@@ -2091,17 +2103,17 @@
   },
   {
    "data": "2026-10-21",
-   "hrv": null,
-   "hrv7": 90,
+   "hrv": 82.0,
+   "hrv7": 91,
    "hrv_banda": [
     95,
     108
    ],
-   "rhr": null,
+   "rhr": 49.0,
    "rhr_base": 44.5,
-   "sonno_h": null,
-   "sonno_score": null,
-   "prontezza": null,
+   "sonno_h": 5.63,
+   "sonno_score": 70.0,
+   "prontezza": 57,
    "ctl": 11.6,
    "atl": 9.6,
    "tsb": 2.0,
@@ -2109,17 +2121,17 @@
   },
   {
    "data": "2026-10-22",
-   "hrv": null,
-   "hrv7": 95,
+   "hrv": 77.0,
+   "hrv7": 91,
    "hrv_banda": [
-    95,
+    94,
     107
    ],
-   "rhr": null,
-   "rhr_base": 44.5,
-   "sonno_h": null,
-   "sonno_score": null,
-   "prontezza": null,
+   "rhr": 49.0,
+   "rhr_base": 44.7,
+   "sonno_h": 5.48,
+   "sonno_score": 68.0,
+   "prontezza": 55,
    "ctl": 11.3,
    "atl": 8.3,
    "tsb": 3.0,
@@ -2127,17 +2139,17 @@
   },
   {
    "data": "2026-10-23",
-   "hrv": null,
-   "hrv7": null,
+   "hrv": 98.0,
+   "hrv7": 92,
    "hrv_banda": [
-    95,
-    107
+    94,
+    106
    ],
-   "rhr": null,
-   "rhr_base": 44.5,
-   "sonno_h": null,
-   "sonno_score": null,
-   "prontezza": null,
+   "rhr": 45.0,
+   "rhr_base": 44.8,
+   "sonno_h": 6.62,
+   "sonno_score": 77.0,
+   "prontezza": 75,
    "ctl": 11.1,
    "atl": 7.2,
    "tsb": 3.9,
@@ -2145,17 +2157,17 @@
   },
   {
    "data": "2026-10-24",
-   "hrv": null,
-   "hrv7": null,
+   "hrv": 68.0,
+   "hrv7": 88,
    "hrv_banda": [
-    94,
-    107
+    93,
+    106
    ],
-   "rhr": null,
-   "rhr_base": 44.6,
-   "sonno_h": null,
-   "sonno_score": null,
-   "prontezza": null,
+   "rhr": 50.0,
+   "rhr_base": 44.9,
+   "sonno_h": 6.72,
+   "sonno_score": 75.0,
+   "prontezza": 52,
    "ctl": 10.8,
    "atl": 6.2,
    "tsb": 4.6,
@@ -2163,17 +2175,17 @@
   },
   {
    "data": "2026-10-25",
-   "hrv": null,
-   "hrv7": null,
+   "hrv": 73.0,
+   "hrv7": 83,
    "hrv_banda": [
-    94,
-    106
+    92,
+    105
    ],
-   "rhr": null,
-   "rhr_base": 44.6,
-   "sonno_h": null,
-   "sonno_score": null,
-   "prontezza": null,
+   "rhr": 53.0,
+   "rhr_base": 45.1,
+   "sonno_h": 7.2,
+   "sonno_score": 80.0,
+   "prontezza": 55,
    "ctl": 10.5,
    "atl": 5.4,
    "tsb": 5.1,
@@ -2181,17 +2193,17 @@
   },
   {
    "data": "2026-10-26",
-   "hrv": null,
-   "hrv7": null,
+   "hrv": 100.0,
+   "hrv7": 82,
    "hrv_banda": [
-    94,
-    106
+    92,
+    105
    ],
-   "rhr": null,
-   "rhr_base": 44.7,
-   "sonno_h": null,
-   "sonno_score": null,
-   "prontezza": null,
+   "rhr": 47.0,
+   "rhr_base": 45.4,
+   "sonno_h": 7.28,
+   "sonno_score": 77.0,
+   "prontezza": 75,
    "ctl": 10.3,
    "atl": 4.7,
    "tsb": 5.6,
@@ -2199,20 +2211,38 @@
   },
   {
    "data": "2026-10-27",
-   "hrv": null,
-   "hrv7": null,
+   "hrv": 89.0,
+   "hrv7": 83,
    "hrv_banda": [
-    94,
-    106
+    92,
+    105
    ],
-   "rhr": null,
-   "rhr_base": 44.6,
-   "sonno_h": null,
-   "sonno_score": null,
-   "prontezza": null,
+   "rhr": 44.0,
+   "rhr_base": 45.5,
+   "sonno_h": 7.83,
+   "sonno_score": 93.0,
+   "prontezza": 77,
    "ctl": 10.1,
    "atl": 4.1,
    "tsb": 6.0,
+   "load": 0.0
+  },
+  {
+   "data": "2026-10-28",
+   "hrv": 90.0,
+   "hrv7": 84,
+   "hrv_banda": [
+    92,
+    105
+   ],
+   "rhr": 48.0,
+   "rhr_base": 45.5,
+   "sonno_h": 10.1,
+   "sonno_score": 84.0,
+   "prontezza": 72,
+   "ctl": 9.8,
+   "atl": 3.5,
+   "tsb": 6.3,
    "load": 0.0
   }
  ],
@@ -3249,7 +3279,7 @@
     "pace_s": 379
    },
    {
-    "data": "2026-10-27",
+    "data": "2026-10-28",
     "pace_s": 379
    }
   ],

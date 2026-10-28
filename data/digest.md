@@ -1,13 +1,22 @@
-# Digest — 2026-10-27
+# Digest — 2026-10-28
 
 ## Stato
 
 - Ultima corsa: 2026-10-18 — 7.9 km in 48' (6:02/km, FC 144)
-- Giorni dall'ultima corsa: 9
+- Giorni dall'ultima corsa: 10
 - Ultimi 7 giorni: 0 corse, 0.0 km, 0 min
-- Ultimi 28 giorni: 8 corse, 46.8 km, 292 min
+- Ultimi 28 giorni: 7 corse, 41.8 km, 259 min
 - Lungo più lungo (28gg): 7.9 km
 - Carico: CTL 12.5 / ATL 14.7 (rapporto 1.18)
+
+## Recupero
+
+- Prontezza oggi: 72/100 (verde)
+- HRV: 90 ms (baseline 98)
+- HRV media 7 giorni: 84 ms, banda normale 95-108 (sotto)
+- FC a riposo: 48 bpm (+2.5 sulla media)
+- Sonno: 10.1 h
+- Consiglio: Seduta di supporto come da piano.
 
 ## Piano vs reale (ultime 4 settimane)
 
@@ -50,5 +59,7 @@ Trend ultime 3 vs 3 precedenti: +3.1%
 
 ## Segnalazioni
 
+- Ferm* da 10 giorni: al rientro ripartire dal volume di due settimane fa, non da dove si era arrivati.
 - Il lungo è cresciuto da 5.7 a 7.9 km in un mese (+38%).
 - Settimana scorsa al 0% del piano: se si ripete, il piano va riscalato invece di accumulare arretrato.
+- HRV media della settimana sotto la tua banda normale: il recupero sta faticando da qualche giorno.
