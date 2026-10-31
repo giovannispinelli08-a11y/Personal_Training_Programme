@@ -1,5 +1,5 @@
 {
- "generato": "2026-10-30",
+ "generato": "2026-10-31",
  "zone": [
   "Z1",
   "Z2",
@@ -30,79 +30,40 @@
   ]
  ],
  "oggi": {
-  "data": "2026-10-30",
-  "prontezza": 80,
-  "livello": "verde",
-  "ieri": 67,
+  "data": "2026-10-31",
+  "prontezza": null,
+  "livello": null,
+  "ieri": 80,
   "componenti": {
-   "hrv": {
-    "valore": 98.0,
-    "baseline": 98.0,
-    "z": 0.01,
-    "punti": 70.0,
-    "peso": 0.35
-   },
-   "rhr": {
-    "valore": 45.0,
-    "baseline": 45.8,
-    "delta": -0.8,
-    "z": -0.31,
-    "punti": 75.0,
-    "peso": 0.2
-   },
-   "sonno": {
-    "ore": 10.1,
-    "score": 86.0,
-    "punti": 93.0,
-    "peso": 0.25
-   },
    "carico": {
-    "rapporto": 0.41,
-    "tsb": 5.7,
+    "rapporto": 0.36,
+    "tsb": 6.0,
     "punti": 85,
     "peso": 0.2
    }
   },
   "hrv_settimana": {
-   "media7": 85,
+   "media7": 88,
    "banda": [
-    94,
+    93,
     106
    ],
    "stato": "sotto"
   },
   "seduta": {
-   "tipo": "mobilita",
-   "disciplina": "supporto",
-   "minuti": "15",
-   "fc_min": "",
-   "fc_max": "",
-   "note": "mobilità caviglia e allungamento fascia plantare"
+   "tipo": "facile_allunghi",
+   "disciplina": "corsa",
+   "minuti": "23",
+   "fc_min": "136",
+   "fc_max": "156",
+   "note": "5x100m in scioltezza a fine seduta, recupero camminando"
   },
-  "consiglio": "Seduta di supporto come da piano.",
+  "consiglio": "Dati di recupero insufficienti: segui il piano e le sensazioni.",
   "note": [
    "HRV media della settimana sotto la tua banda normale: il recupero sta faticando da qualche giorno."
   ]
  },
  "giornaliero": [
-  {
-   "data": "2026-07-03",
-   "hrv": null,
-   "hrv7": 82,
-   "hrv_banda": [
-    78,
-    89
-   ],
-   "rhr": 47.0,
-   "rhr_base": 47.5,
-   "sonno_h": null,
-   "sonno_score": null,
-   "prontezza": 73,
-   "ctl": 3.8,
-   "atl": 1.3,
-   "tsb": 2.6,
-   "load": 0.0
-  },
   {
    "data": "2026-07-04",
    "hrv": 79.0,
@@ -2244,6 +2205,24 @@
    "atl": 3.9,
    "tsb": 5.7,
    "load": 0.0
+  },
+  {
+   "data": "2026-10-31",
+   "hrv": null,
+   "hrv7": 88,
+   "hrv_banda": [
+    91,
+    105
+   ],
+   "rhr": null,
+   "rhr_base": 46.0,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": null,
+   "ctl": 9.4,
+   "atl": 3.4,
+   "tsb": 6.0,
+   "load": 0.0
   }
  ],
  "settimane": [
@@ -3279,7 +3258,7 @@
     "pace_s": 379
    },
    {
-    "data": "2026-10-30",
+    "data": "2026-10-31",
     "pace_s": 379
    }
   ],
