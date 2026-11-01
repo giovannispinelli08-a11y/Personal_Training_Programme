@@ -1,13 +1,13 @@
-# Digest — 2026-10-31
+# Digest — 2026-11-01
 
 ## Stato
 
-- Ultima corsa: 2026-10-18 — 7.9 km in 48' (6:02/km, FC 144)
-- Giorni dall'ultima corsa: 13
-- Ultimi 7 giorni: 0 corse, 0.0 km, 0 min
-- Ultimi 28 giorni: 6 corse, 36.9 km, 223 min
+- Ultima corsa: 2026-10-31 — 4.7 km in 32' (6:43/km, FC 138)
+- Giorni dall'ultima corsa: 1
+- Ultimi 7 giorni: 1 corse, 4.7 km, 32 min
+- Ultimi 28 giorni: 7 corse, 41.6 km, 255 min
 - Lungo più lungo (28gg): 7.9 km
-- Carico: CTL 12.5 / ATL 14.7 (rapporto 1.18)
+- Carico: CTL 10.0 / ATL 6.6 (rapporto 0.66)
 
 ## Piano vs reale (ultime 4 settimane)
 
@@ -16,7 +16,7 @@
 | 2026-10-05 | 101 | 105 | 104% | 37 | 40 |
 | 2026-10-12 | 109 | 84 | 77% | 41 | 48 |
 | 2026-10-19 | 75 | 0 | 0% | 29 | 0 |
-| 2026-10-26 | 119 | 0 | 0% | 50 | 0 |
+| 2026-10-26 | 119 | 32 | 27% | 50 | 32 |
 
 ## In programma (settimana dal 2026-11-02)
 
@@ -31,7 +31,6 @@
 
 Velocità corretta per pendenza divisa per battito (×1000). Sale = stesso costo cardiaco a velocità maggiore.
 
-- 2026-09-25 · 4.8 km · 7:07/km · FC 134 · EF 16.8
 - 2026-09-27 · 5.0 km · 6:53/km · FC 139 · EF 16.6
 - 2026-09-29 · 5.0 km · 6:35/km · FC 135 · EF 18.0
 - 2026-10-01 · 4.9 km · 7:18/km · FC 127 · EF 17.2
@@ -41,16 +40,16 @@ Velocità corretta per pendenza divisa per battito (×1000). Sale = stesso costo
 - 2026-10-11 · 6.6 km · 6:03/km · FC 140 · EF 19.2
 - 2026-10-14 · 5.7 km · 6:21/km · FC 131 · EF 19.3
 - 2026-10-18 · 7.9 km · 6:02/km · FC 144 · EF 18.4
+- 2026-10-31 · 4.7 km · 6:43/km · FC 138 · EF 17.0
 
-Trend ultime 3 vs 3 precedenti: +3.1%
+Trend ultime 3 vs 3 precedenti: -2.4%
 
 ## Altro carico (28 giorni)
 
-- Ride: 180 min, carico 114
+- Ride: 44 min, carico 24
 
 ## Segnalazioni
 
-- Ferm* da 13 giorni: al rientro ripartire dal volume di due settimane fa, non da dove si era arrivati.
-- Il lungo è cresciuto da 5.7 a 7.9 km in un mese (+38%).
+- Il lungo è cresciuto da 5.0 a 7.9 km in un mese (+58%).
 - Settimana scorsa al 0% del piano: se si ripete, il piano va riscalato invece di accumulare arretrato.
 - HRV media della settimana sotto la tua banda normale: il recupero sta faticando da qualche giorno.
