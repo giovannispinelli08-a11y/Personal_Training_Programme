@@ -1,11 +1,11 @@
-# Digest — 2026-11-01
+# Digest — 2026-11-02
 
 ## Stato
 
 - Ultima corsa: 2026-10-31 — 4.7 km in 32' (6:43/km, FC 138)
-- Giorni dall'ultima corsa: 1
+- Giorni dall'ultima corsa: 2
 - Ultimi 7 giorni: 1 corse, 4.7 km, 32 min
-- Ultimi 28 giorni: 7 corse, 41.6 km, 255 min
+- Ultimi 28 giorni: 6 corse, 35.9 km, 221 min
 - Lungo più lungo (28gg): 7.9 km
 - Carico: CTL 10.0 / ATL 6.6 (rapporto 0.66)
 
@@ -13,19 +13,19 @@
 
 | Settimana | Piano min | Reale min | % | Lungo piano | Lungo reale |
 |---|---|---|---|---|---|
-| 2026-10-05 | 101 | 105 | 104% | 37 | 40 |
 | 2026-10-12 | 109 | 84 | 77% | 41 | 48 |
 | 2026-10-19 | 75 | 0 | 0% | 29 | 0 |
 | 2026-10-26 | 119 | 32 | 27% | 50 | 32 |
+| 2026-11-02 | 130 | 0 | 0% | 55 | 0 |
 
-## In programma (settimana dal 2026-11-02)
+## In programma (settimana dal 2026-11-09)
 
-- 2026-11-03 · facile 25' — FC 136-156
-- 2026-11-04 · potenziamento 20'
-- 2026-11-05 · facile 25' — FC 136-156
-- 2026-11-06 · mobilita 15'
-- 2026-11-07 · facile_allunghi 25' — FC 136-156
-- 2026-11-08 · lungo 55' — FC 136-156
+- 2026-11-10 · facile 26' — FC 136-156
+- 2026-11-11 · potenziamento 20'
+- 2026-11-12 · facile 26' — FC 136-156
+- 2026-11-13 · mobilita 15'
+- 2026-11-14 · facile_allunghi 26' — FC 136-156
+- 2026-11-15 · lungo 60' — FC 136-156
 
 ## Efficienza aerobica
 
@@ -46,10 +46,10 @@ Trend ultime 3 vs 3 precedenti: -2.4%
 
 ## Altro carico (28 giorni)
 
-- Ride: 44 min, carico 24
+- Ride: 31 min, carico 20
 
 ## Segnalazioni
 
-- Il lungo è cresciuto da 5.0 a 7.9 km in un mese (+58%).
-- Settimana scorsa al 0% del piano: se si ripete, il piano va riscalato invece di accumulare arretrato.
+- Il lungo è cresciuto da 5.7 a 7.9 km in un mese (+40%).
+- Settimana scorsa al 27% del piano: se si ripete, il piano va riscalato invece di accumulare arretrato.
 - HRV media della settimana sotto la tua banda normale: il recupero sta faticando da qualche giorno.
