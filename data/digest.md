@@ -1,9 +1,9 @@
-# Digest — 2026-11-03
+# Digest — 2026-11-04
 
 ## Stato
 
 - Ultima corsa: 2026-10-31 — 4.7 km in 32' (6:43/km, FC 138)
-- Giorni dall'ultima corsa: 3
+- Giorni dall'ultima corsa: 4
 - Ultimi 7 giorni: 1 corse, 4.7 km, 32 min
 - Ultimi 28 giorni: 6 corse, 35.9 km, 221 min
 - Lungo più lungo (28gg): 7.9 km
@@ -52,4 +52,3 @@ Trend ultime 3 vs 3 precedenti: -2.4%
 
 - Il lungo è cresciuto da 5.7 a 7.9 km in un mese (+40%).
 - Settimana scorsa al 27% del piano: se si ripete, il piano va riscalato invece di accumulare arretrato.
-- HRV media della settimana sotto la tua banda normale: il recupero sta faticando da qualche giorno.
