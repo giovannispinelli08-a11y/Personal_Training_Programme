@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-05",
+ "generato": "2026-11-06",
  "zone": [
   "Z1",
   "Z2",
@@ -30,29 +30,35 @@
   ]
  ],
  "oggi": {
-  "data": "2026-11-05",
-  "prontezza": 67,
+  "data": "2026-11-06",
+  "prontezza": 77,
   "livello": "verde",
-  "ieri": 68,
+  "ieri": 71,
   "componenti": {
    "hrv": {
-    "valore": 89.0,
+    "valore": 94.0,
     "baseline": 98.0,
-    "z": -0.72,
-    "punti": 59.0,
+    "z": -0.32,
+    "punti": 65.0,
     "peso": 0.35
    },
    "rhr": {
-    "valore": 47.0,
-    "baseline": 45.9,
-    "delta": 1.1,
-    "z": 0.41,
-    "punti": 64.0,
+    "valore": 46.0,
+    "baseline": 46.0,
+    "delta": 0.0,
+    "z": 0.01,
+    "punti": 70.0,
     "peso": 0.2
    },
+   "sonno": {
+    "ore": 8.9,
+    "score": 89.0,
+    "punti": 94.0,
+    "peso": 0.25
+   },
    "carico": {
-    "rapporto": 0.69,
-    "tsb": 3.0,
+    "rapporto": 0.61,
+    "tsb": 3.6,
     "punti": 85,
     "peso": 0.2
    }
@@ -60,41 +66,23 @@
   "hrv_settimana": {
    "media7": 101,
    "banda": [
-    92,
+    91,
     105
    ],
    "stato": "normale"
   },
   "seduta": {
-   "tipo": "facile",
-   "disciplina": "corsa",
-   "minuti": "25",
-   "fc_min": "136",
-   "fc_max": "156",
-   "note": ""
+   "tipo": "mobilita",
+   "disciplina": "supporto",
+   "minuti": "15",
+   "fc_min": "",
+   "fc_max": "",
+   "note": "mobilità caviglia e allungamento fascia plantare"
   },
-  "consiglio": "Via libera: seduta come da piano.",
+  "consiglio": "Seduta di supporto come da piano.",
   "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-07-09",
-   "hrv": 90.0,
-   "hrv7": 86,
-   "hrv_banda": [
-    78,
-    90
-   ],
-   "rhr": 47.0,
-   "rhr_base": 47.3,
-   "sonno_h": 3.68,
-   "sonno_score": 44.0,
-   "prontezza": 66,
-   "ctl": 3.7,
-   "atl": 2.7,
-   "tsb": 1.0,
-   "load": 16.0
-  },
   {
    "data": "2026-07-10",
    "hrv": 88.0,
@@ -2229,12 +2217,30 @@
    ],
    "rhr": 47.0,
    "rhr_base": 45.9,
-   "sonno_h": null,
-   "sonno_score": null,
-   "prontezza": 67,
+   "sonno_h": 6.87,
+   "sonno_score": 78.0,
+   "prontezza": 71,
    "ctl": 9.5,
    "atl": 6.6,
    "tsb": 3.0,
+   "load": 0.0
+  },
+  {
+   "data": "2026-11-06",
+   "hrv": 94.0,
+   "hrv7": 101,
+   "hrv_banda": [
+    92,
+    105
+   ],
+   "rhr": 46.0,
+   "rhr_base": 46.0,
+   "sonno_h": 8.92,
+   "sonno_score": 89.0,
+   "prontezza": 77,
+   "ctl": 9.3,
+   "atl": 5.7,
+   "tsb": 3.6,
    "load": 0.0
   }
  ],
@@ -3271,7 +3277,7 @@
     "pace_s": 381
    },
    {
-    "data": "2026-11-05",
+    "data": "2026-11-06",
     "pace_s": 378
    }
   ],
