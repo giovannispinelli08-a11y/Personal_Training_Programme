@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-07",
+ "generato": "2026-11-08",
  "zone": [
   "Z1",
   "Z2",
@@ -30,64 +30,46 @@
   ]
  ],
  "oggi": {
-  "data": "2026-11-07",
-  "prontezza": 72,
+  "data": "2026-11-08",
+  "prontezza": 83,
   "livello": "verde",
-  "ieri": 77,
+  "ieri": 70,
   "componenti": {
    "rhr": {
-    "valore": 48.0,
-    "baseline": 45.9,
-    "delta": 2.1,
-    "z": 0.75,
-    "punti": 59.0,
+    "valore": 44.0,
+    "baseline": 46.0,
+    "delta": -2.0,
+    "z": -0.72,
+    "punti": 81.0,
     "peso": 0.2
    },
    "carico": {
-    "rapporto": 0.54,
-    "tsb": 4.1,
-    "punti": 85,
+    "rapporto": 1.0,
+    "tsb": -0.0,
+    "punti": 85.0,
     "peso": 0.2
    }
   },
   "hrv_settimana": {
-   "media7": 102,
+   "media7": 97,
    "banda": [
     91,
-    105
+    104
    ],
    "stato": "normale"
   },
   "seduta": {
-   "tipo": "facile_allunghi",
+   "tipo": "lungo",
    "disciplina": "corsa",
-   "minuti": "25",
+   "minuti": "55",
    "fc_min": "136",
    "fc_max": "156",
-   "note": "5x100m in scioltezza a fine seduta, recupero camminando"
+   "note": "tenere la FC nella metà bassa della zona"
   },
   "consiglio": "Via libera: seduta come da piano.",
   "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-07-11",
-   "hrv": 74.0,
-   "hrv7": 85,
-   "hrv_banda": [
-    78,
-    89
-   ],
-   "rhr": 47.0,
-   "rhr_base": 47.0,
-   "sonno_h": 8.7,
-   "sonno_score": 87.0,
-   "prontezza": 71,
-   "ctl": 4.2,
-   "atl": 5.7,
-   "tsb": -1.5,
-   "load": 28.0
-  },
   {
    "data": "2026-07-12",
    "hrv": null,
@@ -2214,20 +2196,38 @@
   },
   {
    "data": "2026-11-07",
-   "hrv": null,
-   "hrv7": 102,
+   "hrv": 90.0,
+   "hrv7": 100,
    "hrv_banda": [
     92,
     105
    ],
    "rhr": 48.0,
    "rhr_base": 45.9,
+   "sonno_h": 9.4,
+   "sonno_score": 79.0,
+   "prontezza": 70,
+   "ctl": 10.3,
+   "atl": 11.6,
+   "tsb": -1.3,
+   "load": 50.0
+  },
+  {
+   "data": "2026-11-08",
+   "hrv": null,
+   "hrv7": 97,
+   "hrv_banda": [
+    92,
+    105
+   ],
+   "rhr": 44.0,
+   "rhr_base": 46.0,
    "sonno_h": null,
    "sonno_score": null,
-   "prontezza": 72,
-   "ctl": 9.1,
-   "atl": 4.9,
-   "tsb": 4.1,
+   "prontezza": 83,
+   "ctl": 10.0,
+   "atl": 10.1,
+   "tsb": -0.0,
    "load": 0.0
   }
  ],
@@ -2474,40 +2474,22 @@
   },
   {
    "lun": "2026-11-02",
-   "corse": 0,
-   "min_corsa": 0,
-   "km": 0,
+   "corse": 1,
+   "min_corsa": 64,
+   "km": 10.0,
    "zone_min": [
-    0,
-    0,
-    0,
+    13,
+    42,
+    9,
     0,
     0
    ],
-   "load_tot": 29,
-   "monotonia": null,
-   "strain": null
+   "load_tot": 79,
+   "monotonia": 0.56,
+   "strain": 44
   }
  ],
  "corse": [
-  {
-   "id": "i185355328",
-   "data": "2026-04-19",
-   "km": 6.02,
-   "min": 43.6,
-   "pace_s": 434,
-   "fc": 142.0,
-   "ef": 16.69,
-   "decoupling": 6.6,
-   "cadenza": 153.0,
-   "zone_min": [
-    17.0,
-    7.4,
-    19.5,
-    0.1,
-    0.0
-   ]
-  },
   {
    "id": "i185355319",
    "data": "2026-04-22",
@@ -3209,11 +3191,29 @@
     0.0,
     0.0
    ]
+  },
+  {
+   "id": "i207056248",
+   "data": "2026-11-07",
+   "km": 10.04,
+   "min": 63.7,
+   "pace_s": 381,
+   "fc": 138.0,
+   "ef": 19.27,
+   "decoupling": -0.7,
+   "cadenza": 155.0,
+   "zone_min": [
+    12.7,
+    42.0,
+    9.0,
+    0.0,
+    0.0
+   ]
   }
  ],
  "prestazione": {
   "fc_riferimento": 145,
-  "ritmo_a_fc_s": 378,
+  "ritmo_a_fc_s": 376,
   "ritmo_a_fc_storia": [
    {
     "data": "2026-08-16",
@@ -3264,8 +3264,8 @@
     "pace_s": 381
    },
    {
-    "data": "2026-11-07",
-    "pace_s": 378
+    "data": "2026-11-08",
+    "pace_s": 376
    }
   ],
   "vo2max": 52.0,
@@ -3433,12 +3433,16 @@
    {
     "data": "2026-10-31",
     "vo2max": 52.0
+   },
+   {
+    "data": "2026-11-07",
+    "vo2max": 52.0
    }
   ],
   "mezza_teorica": "1:28:29",
   "mezza_teorica_s": 5309,
-  "polarizzazione_28": 90,
-  "decoupling_medio_28": 2.6,
-  "cadenza_media_28": 158.0
+  "polarizzazione_28": 89,
+  "decoupling_medio_28": 1.5,
+  "cadenza_media_28": 157.0
  }
 }

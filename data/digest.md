@@ -1,19 +1,19 @@
-# Digest — 2026-11-07
+# Digest — 2026-11-08
 
 ## Stato
 
-- Ultima corsa: 2026-10-31 — 4.7 km in 32' (6:43/km, FC 138)
-- Giorni dall'ultima corsa: 7
-- Ultimi 7 giorni: 1 corse, 4.7 km, 32 min
-- Ultimi 28 giorni: 5 corse, 30.5 km, 188 min
-- Lungo più lungo (28gg): 7.9 km
-- Carico: CTL 10.0 / ATL 6.6 (rapporto 0.66)
+- Ultima corsa: 2026-11-07 — 10.0 km in 64' (6:20/km, FC 138)
+- Giorni dall'ultima corsa: 1
+- Ultimi 7 giorni: 1 corse, 10.0 km, 64 min
+- Ultimi 28 giorni: 5 corse, 35.0 km, 220 min
+- Lungo più lungo (28gg): 10.0 km
+- Carico: CTL 10.3 / ATL 11.6 (rapporto 1.13)
 
 ## Recupero
 
-- Prontezza oggi: 72/100 (verde)
-- HRV media 7 giorni: 102 ms, banda normale 91-105 (normale)
-- FC a riposo: 48 bpm (+2.1 sulla media)
+- Prontezza oggi: 83/100 (verde)
+- HRV media 7 giorni: 97 ms, banda normale 91-104 (normale)
+- FC a riposo: 44 bpm (-2.0 sulla media)
 - Consiglio: Via libera: seduta come da piano.
 
 ## Piano vs reale (ultime 4 settimane)
@@ -23,7 +23,7 @@
 | 2026-10-12 | 109 | 84 | 77% | 41 | 48 |
 | 2026-10-19 | 75 | 0 | 0% | 29 | 0 |
 | 2026-10-26 | 119 | 32 | 27% | 50 | 32 |
-| 2026-11-02 | 130 | 0 | 0% | 55 | 0 |
+| 2026-11-02 | 130 | 64 | 49% | 55 | 64 |
 
 ## In programma (settimana dal 2026-11-09)
 
@@ -38,7 +38,6 @@
 
 Velocità corretta per pendenza divisa per battito (×1000). Sale = stesso costo cardiaco a velocità maggiore.
 
-- 2026-09-27 · 5.0 km · 6:53/km · FC 139 · EF 16.6
 - 2026-09-29 · 5.0 km · 6:35/km · FC 135 · EF 18.0
 - 2026-10-01 · 4.9 km · 7:18/km · FC 127 · EF 17.2
 - 2026-10-04 · 5.7 km · 6:03/km · FC 144 · EF 18.2
@@ -48,8 +47,9 @@ Velocità corretta per pendenza divisa per battito (×1000). Sale = stesso costo
 - 2026-10-14 · 5.7 km · 6:21/km · FC 131 · EF 19.3
 - 2026-10-18 · 7.9 km · 6:02/km · FC 144 · EF 18.4
 - 2026-10-31 · 4.7 km · 6:43/km · FC 138 · EF 17.0
+- 2026-11-07 · 10.0 km · 6:20/km · FC 138 · EF 19.3
 
-Trend ultime 3 vs 3 precedenti: -2.4%
+Trend ultime 3 vs 3 precedenti: -4.8%
 
 ## Altro carico (28 giorni)
 
@@ -58,5 +58,5 @@ Trend ultime 3 vs 3 precedenti: -2.4%
 
 ## Segnalazioni
 
-- Il lungo è cresciuto da 5.7 a 7.9 km in un mese (+40%).
+- Il lungo è cresciuto da 5.7 a 10.0 km in un mese (+77%).
 - Settimana scorsa al 27% del piano: se si ripete, il piano va riscalato invece di accumulare arretrato.
