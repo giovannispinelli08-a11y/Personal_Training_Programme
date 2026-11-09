@@ -1,38 +1,31 @@
-# Digest — 2026-11-08
+# Digest — 2026-11-09
 
 ## Stato
 
 - Ultima corsa: 2026-11-07 — 10.0 km in 64' (6:20/km, FC 138)
-- Giorni dall'ultima corsa: 1
+- Giorni dall'ultima corsa: 2
 - Ultimi 7 giorni: 1 corse, 10.0 km, 64 min
-- Ultimi 28 giorni: 5 corse, 35.0 km, 220 min
+- Ultimi 28 giorni: 4 corse, 28.4 km, 179 min
 - Lungo più lungo (28gg): 10.0 km
 - Carico: CTL 10.3 / ATL 11.6 (rapporto 1.13)
-
-## Recupero
-
-- Prontezza oggi: 83/100 (verde)
-- HRV media 7 giorni: 97 ms, banda normale 91-104 (normale)
-- FC a riposo: 44 bpm (-2.0 sulla media)
-- Consiglio: Via libera: seduta come da piano.
 
 ## Piano vs reale (ultime 4 settimane)
 
 | Settimana | Piano min | Reale min | % | Lungo piano | Lungo reale |
 |---|---|---|---|---|---|
-| 2026-10-12 | 109 | 84 | 77% | 41 | 48 |
 | 2026-10-19 | 75 | 0 | 0% | 29 | 0 |
 | 2026-10-26 | 119 | 32 | 27% | 50 | 32 |
 | 2026-11-02 | 130 | 64 | 49% | 55 | 64 |
+| 2026-11-09 | 138 | 0 | 0% | 60 | 0 |
 
-## In programma (settimana dal 2026-11-09)
+## In programma (settimana dal 2026-11-16)
 
-- 2026-11-10 · facile 26' — FC 136-156
-- 2026-11-11 · potenziamento 20'
-- 2026-11-12 · facile 26' — FC 136-156
-- 2026-11-13 · mobilita 15'
-- 2026-11-14 · facile_allunghi 26' — FC 136-156
-- 2026-11-15 · lungo 60' — FC 136-156
+- 2026-11-17 · facile 18' — FC 136-156
+- 2026-11-18 · potenziamento 20'
+- 2026-11-19 · facile 18' — FC 136-156
+- 2026-11-20 · mobilita 15'
+- 2026-11-21 · facile_allunghi 18' — FC 136-156
+- 2026-11-22 · lungo 42' — FC 136-156
 
 ## Efficienza aerobica
 
@@ -53,10 +46,12 @@ Trend ultime 3 vs 3 precedenti: -4.8%
 
 ## Altro carico (28 giorni)
 
+- Hike: 60 min, carico 9
 - Ride: 18 min, carico 13
 - VirtualRun: 22 min, carico 29
 
 ## Segnalazioni
 
-- Il lungo è cresciuto da 5.7 a 10.0 km in un mese (+77%).
-- Settimana scorsa al 27% del piano: se si ripete, il piano va riscalato invece di accumulare arretrato.
+- Salto di volume: settimana del 2026-11-02 64 min contro 32 della precedente (+101%).
+- Il lungo è cresciuto da 6.6 a 10.0 km in un mese (+52%).
+- Settimana scorsa al 49% del piano: se si ripete, il piano va riscalato invece di accumulare arretrato.
