@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-10",
+ "generato": "2026-11-11",
  "zone": [
   "Z1",
   "Z2",
@@ -30,49 +30,31 @@
   ]
  ],
  "oggi": {
-  "data": "2026-11-10",
+  "data": "2026-11-11",
   "prontezza": null,
   "livello": null,
   "ieri": 79,
   "componenti": {
    "carico": {
-    "rapporto": 0.87,
-    "tsb": 1.3,
+    "rapporto": 0.77,
+    "tsb": 2.2,
     "punti": 85,
     "peso": 0.2
    }
   },
   "hrv_settimana": null,
   "seduta": {
-   "tipo": "facile",
-   "disciplina": "corsa",
-   "minuti": "26",
-   "fc_min": "136",
-   "fc_max": "156",
-   "note": ""
+   "tipo": "potenziamento",
+   "disciplina": "supporto",
+   "minuti": "20",
+   "fc_min": "",
+   "fc_max": "",
+   "note": "calf raise: due gambe, poi gamba singola, poi con carico"
   },
   "consiglio": "Dati di recupero insufficienti: segui il piano e le sensazioni.",
   "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-07-14",
-   "hrv": null,
-   "hrv7": 84,
-   "hrv_banda": [
-    78,
-    89
-   ],
-   "rhr": 47.0,
-   "rhr_base": 47.0,
-   "sonno_h": null,
-   "sonno_score": null,
-   "prontezza": 70,
-   "ctl": 3.9,
-   "atl": 3.7,
-   "tsb": 0.2,
-   "load": 0.0
-  },
   {
    "data": "2026-07-15",
    "hrv": null,
@@ -2214,6 +2196,24 @@
    "atl": 8.5,
    "tsb": 1.3,
    "load": 0.0
+  },
+  {
+   "data": "2026-11-11",
+   "hrv": null,
+   "hrv7": 91,
+   "hrv_banda": [
+    91,
+    105
+   ],
+   "rhr": null,
+   "rhr_base": 46.2,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": null,
+   "ctl": 9.5,
+   "atl": 7.3,
+   "tsb": 2.2,
+   "load": 0.0
   }
  ],
  "settimane": [
@@ -3249,7 +3249,7 @@
     "pace_s": 376
    },
    {
-    "data": "2026-11-10",
+    "data": "2026-11-11",
     "pace_s": 372
    }
   ],
