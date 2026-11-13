@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-12",
+ "generato": "2026-11-13",
  "zone": [
   "Z1",
   "Z2",
@@ -30,41 +30,41 @@
   ]
  ],
  "oggi": {
-  "data": "2026-11-12",
-  "prontezza": 78,
+  "data": "2026-11-13",
+  "prontezza": 77,
   "livello": "verde",
-  "ieri": 76,
+  "ieri": 78,
   "componenti": {
    "hrv": {
-    "valore": 96.0,
+    "valore": 101.0,
     "baseline": 98.0,
-    "z": -0.16,
-    "punti": 68.0,
+    "z": 0.2,
+    "punti": 73.0,
     "peso": 0.35
    },
    "rhr": {
-    "valore": 45.0,
+    "valore": 46.0,
     "baseline": 46.1,
-    "delta": -1.1,
-    "z": -0.39,
-    "punti": 76.0,
+    "delta": -0.1,
+    "z": -0.02,
+    "punti": 70.0,
     "peso": 0.2
    },
    "sonno": {
-    "ore": 7.4,
-    "score": 83.0,
+    "ore": 7.9,
+    "score": 77.0,
     "punti": 88.0,
     "peso": 0.25
    },
    "carico": {
-    "rapporto": 0.91,
-    "tsb": 0.9,
-    "punti": 85,
+    "rapporto": 1.09,
+    "tsb": -1.0,
+    "punti": 77.0,
     "peso": 0.2
    }
   },
   "hrv_settimana": {
-   "media7": 99,
+   "media7": 100,
    "banda": [
     92,
     105
@@ -72,35 +72,17 @@
    "stato": "normale"
   },
   "seduta": {
-   "tipo": "facile",
-   "disciplina": "corsa",
-   "minuti": "26",
-   "fc_min": "136",
-   "fc_max": "156",
-   "note": ""
+   "tipo": "mobilita",
+   "disciplina": "supporto",
+   "minuti": "15",
+   "fc_min": "",
+   "fc_max": "",
+   "note": "mobilità caviglia e allungamento fascia plantare"
   },
-  "consiglio": "Via libera: seduta come da piano.",
+  "consiglio": "Seduta di supporto come da piano.",
   "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-07-16",
-   "hrv": null,
-   "hrv7": null,
-   "hrv_banda": [
-    79,
-    89
-   ],
-   "rhr": 47.0,
-   "rhr_base": 47.0,
-   "sonno_h": null,
-   "sonno_score": null,
-   "prontezza": 70,
-   "ctl": 3.7,
-   "atl": 2.8,
-   "tsb": 0.9,
-   "load": 0.0
-  },
   {
    "data": "2026-07-17",
    "hrv": null,
@@ -2242,6 +2224,24 @@
    "atl": 9.0,
    "tsb": 0.9,
    "load": 0.0
+  },
+  {
+   "data": "2026-11-13",
+   "hrv": 101.0,
+   "hrv7": 100,
+   "hrv_banda": [
+    92,
+    105
+   ],
+   "rhr": 46.0,
+   "rhr_base": 46.1,
+   "sonno_h": 7.87,
+   "sonno_score": 77.0,
+   "prontezza": 77,
+   "ctl": 10.3,
+   "atl": 11.2,
+   "tsb": -1.0,
+   "load": 26.0
   }
  ],
  "settimane": [
@@ -2487,40 +2487,22 @@
   },
   {
    "lun": "2026-11-09",
-   "corse": 1,
-   "min_corsa": 34,
-   "km": 5.3,
+   "corse": 2,
+   "min_corsa": 64,
+   "km": 10.2,
    "zone_min": [
-    30,
-    18,
-    5,
+    39,
+    31,
+    14,
     0,
     0
    ],
-   "load_tot": 26,
+   "load_tot": 52,
    "monotonia": null,
    "strain": null
   }
  ],
  "corse": [
-  {
-   "id": "i185355303",
-   "data": "2026-04-25",
-   "km": 6.04,
-   "min": 44.1,
-   "pace_s": 438,
-   "fc": 139.0,
-   "ef": 17.01,
-   "decoupling": 17.7,
-   "cadenza": 154.0,
-   "zone_min": [
-    13.5,
-    17.8,
-    12.7,
-    0.2,
-    0.0
-   ]
-  },
   {
    "id": "i185355295",
    "data": "2026-05-01",
@@ -3222,11 +3204,29 @@
     0.0,
     0.0
    ]
+  },
+  {
+   "id": "i209493546",
+   "data": "2026-11-13",
+   "km": 4.92,
+   "min": 30.6,
+   "pace_s": 372,
+   "fc": 141.0,
+   "ef": 18.2,
+   "decoupling": null,
+   "cadenza": 159.0,
+   "zone_min": [
+    9.0,
+    13.3,
+    8.3,
+    0.0,
+    0.0
+   ]
   }
  ],
  "prestazione": {
   "fc_riferimento": 145,
-  "ritmo_a_fc_s": 374,
+  "ritmo_a_fc_s": 377,
   "ritmo_a_fc_storia": [
    {
     "data": "2026-08-23",
@@ -3277,8 +3277,8 @@
     "pace_s": 376
    },
    {
-    "data": "2026-11-12",
-    "pace_s": 374
+    "data": "2026-11-13",
+    "pace_s": 377
    }
   ],
   "vo2max": 52.0,
@@ -3454,12 +3454,16 @@
    {
     "data": "2026-11-10",
     "vo2max": 52.0
+   },
+   {
+    "data": "2026-11-13",
+    "vo2max": 52.0
    }
   ],
   "mezza_teorica": "1:28:29",
   "mezza_teorica_s": 5309,
-  "polarizzazione_28": 89,
+  "polarizzazione_28": 86,
   "decoupling_medio_28": 0.6,
-  "cadenza_media_28": 156.0
+  "cadenza_media_28": 157.0
  }
 }
