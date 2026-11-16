@@ -1,40 +1,38 @@
-# Digest — 2026-11-15
+# Digest — 2026-11-16
 
 ## Stato
 
 - Ultima corsa: 2026-11-13 — 4.9 km in 31' (6:12/km, FC 141)
-- Giorni dall'ultima corsa: 2
+- Giorni dall'ultima corsa: 3
 - Ultimi 7 giorni: 2 corse, 10.2 km, 64 min
-- Ultimi 28 giorni: 5 corse, 32.9 km, 208 min
+- Ultimi 28 giorni: 4 corse, 25.0 km, 160 min
 - Lungo più lungo (28gg): 10.0 km
 - Carico: CTL 10.3 / ATL 11.2 (rapporto 1.09)
 
 ## Recupero
 
-- Prontezza oggi: 84/100 (verde)
-- HRV: 103 ms (baseline 97)
-- HRV media 7 giorni: 96 ms, banda normale 92-105 (normale)
-- FC a riposo: 42 bpm (-4.1 sulla media)
-- Sonno: 7.1 h
-- Consiglio: Via libera: seduta come da piano.
+- Prontezza oggi: 80/100 (verde)
+- HRV media 7 giorni: 93 ms, banda normale 92-105 (normale)
+- FC a riposo: 45 bpm (-1.1 sulla media)
+- Consiglio: Giorno di riposo da piano. Recupero buono: una camminata o mobilità vanno benissimo.
 
 ## Piano vs reale (ultime 4 settimane)
 
 | Settimana | Piano min | Reale min | % | Lungo piano | Lungo reale |
 |---|---|---|---|---|---|
-| 2026-10-19 | 75 | 0 | 0% | 29 | 0 |
 | 2026-10-26 | 119 | 32 | 27% | 50 | 32 |
 | 2026-11-02 | 130 | 64 | 49% | 55 | 64 |
 | 2026-11-09 | 138 | 64 | 47% | 60 | 34 |
+| 2026-11-16 | 96 | 0 | 0% | 42 | 0 |
 
-## In programma (settimana dal 2026-11-16)
+## In programma (settimana dal 2026-11-23)
 
-- 2026-11-17 · facile 18' — FC 136-156
-- 2026-11-18 · potenziamento 20'
-- 2026-11-19 · facile 18' — FC 136-156
-- 2026-11-20 · mobilita 15'
-- 2026-11-21 · facile_allunghi 18' — FC 136-156
-- 2026-11-22 · lungo 42' — FC 136-156
+- 2026-11-24 · facile 29' — FC 136-156
+- 2026-11-25 · potenziamento 20'
+- 2026-11-26 · facile 29' — FC 136-156
+- 2026-11-27 · mobilita 15'
+- 2026-11-28 · facile_allunghi 29' — FC 136-156
+- 2026-11-29 · lungo 70' — FC 136-156
 
 ## Efficienza aerobica
 
@@ -62,5 +60,4 @@ Trend ultime 3 vs 3 precedenti: +2.7%
 ## Segnalazioni
 
 - Salto di volume: settimana del 2026-11-02 64 min contro 32 della precedente (+101%).
-- Il lungo è cresciuto da 6.6 a 10.0 km in un mese (+52%).
-- Settimana scorsa al 49% del piano: se si ripete, il piano va riscalato invece di accumulare arretrato.
+- Settimana scorsa al 47% del piano: se si ripete, il piano va riscalato invece di accumulare arretrato.
