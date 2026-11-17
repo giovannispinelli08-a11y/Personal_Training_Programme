@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-16",
+ "generato": "2026-11-17",
  "zone": [
   "Z1",
   "Z2",
@@ -30,57 +30,59 @@
   ]
  ],
  "oggi": {
-  "data": "2026-11-16",
-  "prontezza": 80,
+  "data": "2026-11-17",
+  "prontezza": 92,
   "livello": "verde",
-  "ieri": 84,
+  "ieri": 80,
   "componenti": {
+   "hrv": {
+    "valore": 119.0,
+    "baseline": 97.0,
+    "z": 1.39,
+    "punti": 91.0,
+    "peso": 0.35
+   },
    "rhr": {
-    "valore": 45.0,
+    "valore": 41.0,
     "baseline": 46.1,
-    "delta": -1.1,
-    "z": -0.42,
-    "punti": 76.0,
+    "delta": -5.1,
+    "z": -1.87,
+    "punti": 98.0,
     "peso": 0.2
    },
+   "sonno": {
+    "ore": 7.8,
+    "score": 93.0,
+    "punti": 95.0,
+    "peso": 0.25
+   },
    "carico": {
-    "rapporto": 0.76,
-    "tsb": 2.2,
+    "rapporto": 0.68,
+    "tsb": 3.0,
     "punti": 85,
     "peso": 0.2
    }
   },
   "hrv_settimana": {
-   "media7": 93,
+   "media7": 95,
    "banda": [
     92,
-    105
+    106
    ],
    "stato": "normale"
   },
-  "seduta": null,
-  "consiglio": "Giorno di riposo da piano. Recupero buono: una camminata o mobilità vanno benissimo.",
+  "seduta": {
+   "tipo": "facile",
+   "disciplina": "corsa",
+   "minuti": "18",
+   "fc_min": "136",
+   "fc_max": "156",
+   "note": ""
+  },
+  "consiglio": "Via libera: seduta come da piano.",
   "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-07-20",
-   "hrv": null,
-   "hrv7": null,
-   "hrv_banda": [
-    78,
-    89
-   ],
-   "rhr": 45.0,
-   "rhr_base": 47.0,
-   "sonno_h": 5.98,
-   "sonno_score": 74.0,
-   "prontezza": 78,
-   "ctl": 3.4,
-   "atl": 1.6,
-   "tsb": 1.8,
-   "load": 0.0
-  },
   {
    "data": "2026-07-21",
    "hrv": null,
@@ -2222,6 +2224,24 @@
    "atl": 7.3,
    "tsb": 2.2,
    "load": 0.0
+  },
+  {
+   "data": "2026-11-17",
+   "hrv": 119.0,
+   "hrv7": 95,
+   "hrv_banda": [
+    91,
+    105
+   ],
+   "rhr": 41.0,
+   "rhr_base": 46.1,
+   "sonno_h": 7.8,
+   "sonno_score": 93.0,
+   "prontezza": 92,
+   "ctl": 9.3,
+   "atl": 6.3,
+   "tsb": 3.0,
+   "load": 0.0
   }
  ],
  "settimane": [
@@ -3257,7 +3277,7 @@
     "pace_s": 377
    },
    {
-    "data": "2026-11-16",
+    "data": "2026-11-17",
     "pace_s": 377
    }
   ],
