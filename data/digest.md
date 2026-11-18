@@ -1,22 +1,22 @@
-# Digest — 2026-11-17
+# Digest — 2026-11-18
 
 ## Stato
 
-- Ultima corsa: 2026-11-13 — 4.9 km in 31' (6:12/km, FC 141)
-- Giorni dall'ultima corsa: 4
-- Ultimi 7 giorni: 2 corse, 10.2 km, 64 min
-- Ultimi 28 giorni: 4 corse, 25.0 km, 160 min
+- Ultima corsa: 2026-11-17 — 7.1 km in 46' (6:23/km, FC 140)
+- Giorni dall'ultima corsa: 1
+- Ultimi 7 giorni: 2 corse, 12.0 km, 76 min
+- Ultimi 28 giorni: 5 corse, 32.1 km, 205 min
 - Lungo più lungo (28gg): 10.0 km
-- Carico: CTL 10.3 / ATL 11.2 (rapporto 1.09)
+- Carico: CTL 10.3 / ATL 11.5 (rapporto 1.12)
 
 ## Recupero
 
-- Prontezza oggi: 92/100 (verde)
-- HRV: 119 ms (baseline 97)
-- HRV media 7 giorni: 95 ms, banda normale 92-106 (normale)
-- FC a riposo: 41 bpm (-5.1 sulla media)
-- Sonno: 7.8 h
-- Consiglio: Via libera: seduta come da piano.
+- Prontezza oggi: 74/100 (verde)
+- HRV: 93 ms (baseline 98)
+- HRV media 7 giorni: 95 ms, banda normale 92-105 (normale)
+- FC a riposo: 49 bpm (+3.0 sulla media)
+- Sonno: 8.6 h
+- Consiglio: Seduta di supporto come da piano.
 
 ## Piano vs reale (ultime 4 settimane)
 
@@ -25,7 +25,7 @@
 | 2026-10-26 | 119 | 32 | 27% | 50 | 32 |
 | 2026-11-02 | 130 | 64 | 49% | 55 | 64 |
 | 2026-11-09 | 138 | 64 | 47% | 60 | 34 |
-| 2026-11-16 | 96 | 0 | 0% | 42 | 0 |
+| 2026-11-16 | 96 | 46 | 47% | 42 | 46 |
 
 ## In programma (settimana dal 2026-11-23)
 
@@ -40,7 +40,6 @@
 
 Velocità corretta per pendenza divisa per battito (×1000). Sale = stesso costo cardiaco a velocità maggiore.
 
-- 2026-10-04 · 5.7 km · 6:03/km · FC 144 · EF 18.2
 - 2026-10-07 · 5.5 km · 6:00/km · FC 143 · EF 17.9
 - 2026-10-10 · 5.5 km · 5:48/km · FC 140 · EF 19.0
 - 2026-10-11 · 6.6 km · 6:03/km · FC 140 · EF 19.2
@@ -50,8 +49,9 @@ Velocità corretta per pendenza divisa per battito (×1000). Sale = stesso costo
 - 2026-11-07 · 10.0 km · 6:20/km · FC 138 · EF 19.3
 - 2026-11-10 · 5.3 km · 6:24/km · FC 125 · EF 18.7
 - 2026-11-13 · 4.9 km · 6:12/km · FC 141 · EF 18.2
+- 2026-11-17 · 7.1 km · 6:23/km · FC 140 · EF 19.1
 
-Trend ultime 3 vs 3 precedenti: +2.7%
+Trend ultime 3 vs 3 precedenti: +2.4%
 
 ## Altro carico (28 giorni)
 
