@@ -1,22 +1,22 @@
-# Digest — 2026-11-20
+# Digest — 2026-11-21
 
 ## Stato
 
-- Ultima corsa: 2026-11-17 — 7.1 km in 46' (6:23/km, FC 140)
-- Giorni dall'ultima corsa: 3
-- Ultimi 7 giorni: 2 corse, 12.0 km, 76 min
-- Ultimi 28 giorni: 5 corse, 32.1 km, 205 min
+- Ultima corsa: 2026-11-20 — 4.8 km in 27' (5:41/km, FC 147)
+- Giorni dall'ultima corsa: 1
+- Ultimi 7 giorni: 2 corse, 11.9 km, 73 min
+- Ultimi 28 giorni: 6 corse, 36.9 km, 233 min
 - Lungo più lungo (28gg): 10.0 km
-- Carico: CTL 10.3 / ATL 11.5 (rapporto 1.12)
+- Carico: CTL 10.2 / ATL 11.1 (rapporto 1.09)
 
 ## Recupero
 
-- Prontezza oggi: 83/100 (verde)
-- HRV: 107 ms (baseline 98)
-- HRV media 7 giorni: 98 ms, banda normale 92-105 (normale)
-- FC a riposo: 45 bpm (-1.1 sulla media)
-- Sonno: 7.7 h
-- Consiglio: Seduta di supporto come da piano.
+- Prontezza oggi: 63/100 (giallo)
+- HRV: 82 ms (baseline 98)
+- HRV media 7 giorni: 101 ms, banda normale 92-105 (normale)
+- FC a riposo: 48 bpm (+2.1 sulla media)
+- Sonno: 5.4 h
+- Consiglio: Recupero parziale: seduta facile ma accorciata, circa 14′, FC nella parte bassa della Z2.
 
 ## Piano vs reale (ultime 4 settimane)
 
@@ -25,7 +25,7 @@
 | 2026-10-26 | 119 | 32 | 27% | 50 | 32 |
 | 2026-11-02 | 130 | 64 | 49% | 55 | 64 |
 | 2026-11-09 | 138 | 64 | 47% | 60 | 34 |
-| 2026-11-16 | 96 | 46 | 47% | 42 | 46 |
+| 2026-11-16 | 96 | 73 | 76% | 42 | 46 |
 
 ## In programma (settimana dal 2026-11-23)
 
@@ -40,7 +40,6 @@
 
 Velocità corretta per pendenza divisa per battito (×1000). Sale = stesso costo cardiaco a velocità maggiore.
 
-- 2026-10-07 · 5.5 km · 6:00/km · FC 143 · EF 17.9
 - 2026-10-10 · 5.5 km · 5:48/km · FC 140 · EF 19.0
 - 2026-10-11 · 6.6 km · 6:03/km · FC 140 · EF 19.2
 - 2026-10-14 · 5.7 km · 6:21/km · FC 131 · EF 19.3
@@ -50,8 +49,9 @@ Velocità corretta per pendenza divisa per battito (×1000). Sale = stesso costo
 - 2026-11-10 · 5.3 km · 6:24/km · FC 125 · EF 18.7
 - 2026-11-13 · 4.9 km · 6:12/km · FC 141 · EF 18.2
 - 2026-11-17 · 7.1 km · 6:23/km · FC 140 · EF 19.1
+- 2026-11-20 · 4.8 km · 5:41/km · FC 147 · EF 18.8
 
-Trend ultime 3 vs 3 precedenti: +2.4%
+Trend ultime 3 vs 3 precedenti: +2.2%
 
 ## Altro carico (28 giorni)
 
@@ -63,3 +63,4 @@ Trend ultime 3 vs 3 precedenti: +2.4%
 
 - Salto di volume: settimana del 2026-11-02 64 min contro 32 della precedente (+101%).
 - Settimana scorsa al 47% del piano: se si ripete, il piano va riscalato invece di accumulare arretrato.
+- Solo 5.4 ore di sonno.

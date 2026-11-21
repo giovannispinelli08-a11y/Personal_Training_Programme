@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-20",
+ "generato": "2026-11-21",
  "zone": [
   "Z1",
   "Z2",
@@ -30,41 +30,41 @@
   ]
  ],
  "oggi": {
-  "data": "2026-11-20",
-  "prontezza": 83,
-  "livello": "verde",
-  "ieri": 85,
+  "data": "2026-11-21",
+  "prontezza": 63,
+  "livello": "giallo",
+  "ieri": 81,
   "componenti": {
    "hrv": {
-    "valore": 107.0,
+    "valore": 82.0,
     "baseline": 98.0,
-    "z": 0.62,
-    "punti": 79.0,
+    "z": -1.25,
+    "punti": 51.0,
     "peso": 0.35
    },
    "rhr": {
-    "valore": 45.0,
-    "baseline": 46.1,
-    "delta": -1.1,
-    "z": -0.39,
-    "punti": 76.0,
+    "valore": 48.0,
+    "baseline": 45.9,
+    "delta": 2.1,
+    "z": 0.78,
+    "punti": 58.0,
     "peso": 0.2
    },
    "sonno": {
-    "ore": 7.7,
-    "score": 86.0,
-    "punti": 91.0,
+    "ore": 5.4,
+    "score": 64.0,
+    "punti": 66.0,
     "peso": 0.25
    },
    "carico": {
-    "rapporto": 0.79,
-    "tsb": 2.0,
+    "rapporto": 0.97,
+    "tsb": 0.3,
     "punti": 85,
     "peso": 0.2
    }
   },
   "hrv_settimana": {
-   "media7": 98,
+   "media7": 101,
    "banda": [
     92,
     105
@@ -72,35 +72,19 @@
    "stato": "normale"
   },
   "seduta": {
-   "tipo": "mobilita",
-   "disciplina": "supporto",
-   "minuti": "15",
-   "fc_min": "",
-   "fc_max": "",
-   "note": "mobilità caviglia e allungamento fascia plantare"
+   "tipo": "facile_allunghi",
+   "disciplina": "corsa",
+   "minuti": "18",
+   "fc_min": "136",
+   "fc_max": "156",
+   "note": "5x100m in scioltezza a fine seduta, recupero camminando"
   },
-  "consiglio": "Seduta di supporto come da piano.",
-  "note": []
+  "consiglio": "Recupero parziale: seduta facile ma accorciata, circa 14′, FC nella parte bassa della Z2.",
+  "note": [
+   "Solo 5.4 ore di sonno."
+  ]
  },
  "giornaliero": [
-  {
-   "data": "2026-07-24",
-   "hrv": null,
-   "hrv7": null,
-   "hrv_banda": [
-    77,
-    88
-   ],
-   "rhr": null,
-   "rhr_base": 46.9,
-   "sonno_h": null,
-   "sonno_score": null,
-   "prontezza": null,
-   "ctl": 3.1,
-   "atl": 0.9,
-   "tsb": 2.2,
-   "load": 0.0
-  },
   {
    "data": "2026-07-25",
    "hrv": null,
@@ -2237,10 +2221,28 @@
    "rhr_base": 46.1,
    "sonno_h": 7.72,
    "sonno_score": 86.0,
-   "prontezza": 83,
-   "ctl": 9.5,
-   "atl": 7.5,
-   "tsb": 2.0,
+   "prontezza": 81,
+   "ctl": 10.2,
+   "atl": 11.1,
+   "tsb": -0.9,
+   "load": 27.0
+  },
+  {
+   "data": "2026-11-21",
+   "hrv": 82.0,
+   "hrv7": 101,
+   "hrv_banda": [
+    91,
+    105
+   ],
+   "rhr": 48.0,
+   "rhr_base": 45.9,
+   "sonno_h": 5.42,
+   "sonno_score": 64.0,
+   "prontezza": 63,
+   "ctl": 9.9,
+   "atl": 9.6,
+   "tsb": 0.3,
    "load": 0.0
   }
  ],
@@ -2487,40 +2489,22 @@
   },
   {
    "lun": "2026-11-16",
-   "corse": 1,
-   "min_corsa": 46,
-   "km": 7.1,
+   "corse": 2,
+   "min_corsa": 73,
+   "km": 11.9,
    "zone_min": [
-    13,
-    20,
-    13,
-    0,
+    17,
+    33,
+    21,
+    2,
     0
    ],
-   "load_tot": 39,
+   "load_tot": 66,
    "monotonia": null,
    "strain": null
   }
  ],
  "corse": [
-  {
-   "id": "i185355287",
-   "data": "2026-05-03",
-   "km": 5.02,
-   "min": 35.4,
-   "pace_s": 422,
-   "fc": 135.0,
-   "ef": 17.61,
-   "decoupling": null,
-   "cadenza": 159.0,
-   "zone_min": [
-    7.3,
-    20.1,
-    8.0,
-    0.0,
-    0.0
-   ]
-  },
   {
    "id": "i185355282",
    "data": "2026-05-06",
@@ -3222,11 +3206,29 @@
     0.0,
     0.0
    ]
+  },
+  {
+   "id": "i212528625",
+   "data": "2026-11-20",
+   "km": 4.8,
+   "min": 27.3,
+   "pace_s": 341,
+   "fc": 147.0,
+   "ef": 18.84,
+   "decoupling": null,
+   "cadenza": 156.0,
+   "zone_min": [
+    4.0,
+    12.7,
+    8.6,
+    2.0,
+    0.0
+   ]
   }
  ],
  "prestazione": {
   "fc_riferimento": 145,
-  "ritmo_a_fc_s": 371,
+  "ritmo_a_fc_s": 370,
   "ritmo_a_fc_storia": [
    {
     "data": "2026-08-30",
@@ -3277,8 +3279,8 @@
     "pace_s": 377
    },
    {
-    "data": "2026-11-20",
-    "pace_s": 371
+    "data": "2026-11-21",
+    "pace_s": 370
    }
   ],
   "vo2max": 52.0,
@@ -3462,11 +3464,15 @@
    {
     "data": "2026-11-17",
     "vo2max": 52.0
+   },
+   {
+    "data": "2026-11-20",
+    "vo2max": 52.0
    }
   ],
   "mezza_teorica": "1:28:29",
   "mezza_teorica_s": 5309,
-  "polarizzazione_28": 83,
+  "polarizzazione_28": 81,
   "decoupling_medio_28": 3.2,
   "cadenza_media_28": 156.0
  }
