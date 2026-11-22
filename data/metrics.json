@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-21",
+ "generato": "2026-11-22",
  "zone": [
   "Z1",
   "Z2",
@@ -30,35 +30,22 @@
   ]
  ],
  "oggi": {
-  "data": "2026-11-21",
-  "prontezza": 63,
-  "livello": "giallo",
-  "ieri": 81,
+  "data": "2026-11-22",
+  "prontezza": 77,
+  "livello": "verde",
+  "ieri": 63,
   "componenti": {
-   "hrv": {
-    "valore": 82.0,
-    "baseline": 98.0,
-    "z": -1.25,
-    "punti": 51.0,
-    "peso": 0.35
-   },
    "rhr": {
-    "valore": 48.0,
+    "valore": 46.0,
     "baseline": 45.9,
-    "delta": 2.1,
-    "z": 0.78,
-    "punti": 58.0,
+    "delta": 0.1,
+    "z": 0.04,
+    "punti": 69.0,
     "peso": 0.2
    },
-   "sonno": {
-    "ore": 5.4,
-    "score": 64.0,
-    "punti": 66.0,
-    "peso": 0.25
-   },
    "carico": {
-    "rapporto": 0.97,
-    "tsb": 0.3,
+    "rapporto": 0.86,
+    "tsb": 1.4,
     "punti": 85,
     "peso": 0.2
    }
@@ -66,43 +53,23 @@
   "hrv_settimana": {
    "media7": 101,
    "banda": [
-    92,
+    91,
     105
    ],
    "stato": "normale"
   },
   "seduta": {
-   "tipo": "facile_allunghi",
+   "tipo": "lungo",
    "disciplina": "corsa",
-   "minuti": "18",
+   "minuti": "42",
    "fc_min": "136",
    "fc_max": "156",
-   "note": "5x100m in scioltezza a fine seduta, recupero camminando"
+   "note": "tenere la FC nella metà bassa della zona"
   },
-  "consiglio": "Recupero parziale: seduta facile ma accorciata, circa 14′, FC nella parte bassa della Z2.",
-  "note": [
-   "Solo 5.4 ore di sonno."
-  ]
+  "consiglio": "Via libera: seduta come da piano.",
+  "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-07-25",
-   "hrv": null,
-   "hrv7": null,
-   "hrv_banda": [
-    77,
-    88
-   ],
-   "rhr": 51.0,
-   "rhr_base": 47.0,
-   "sonno_h": null,
-   "sonno_score": null,
-   "prontezza": 40,
-   "ctl": 3.0,
-   "atl": 0.8,
-   "tsb": 2.2,
-   "load": 0.0
-  },
   {
    "data": "2026-07-26",
    "hrv": null,
@@ -2244,6 +2211,24 @@
    "atl": 9.6,
    "tsb": 0.3,
    "load": 0.0
+  },
+  {
+   "data": "2026-11-22",
+   "hrv": null,
+   "hrv7": 101,
+   "hrv_banda": [
+    91,
+    104
+   ],
+   "rhr": 46.0,
+   "rhr_base": 45.9,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 77,
+   "ctl": 9.7,
+   "atl": 8.3,
+   "tsb": 1.4,
+   "load": 0.0
   }
  ],
  "settimane": [
@@ -2500,8 +2485,8 @@
     0
    ],
    "load_tot": 66,
-   "monotonia": null,
-   "strain": null
+   "monotonia": 0.57,
+   "strain": 38
   }
  ],
  "corse": [
@@ -3228,7 +3213,7 @@
  ],
  "prestazione": {
   "fc_riferimento": 145,
-  "ritmo_a_fc_s": 370,
+  "ritmo_a_fc_s": 371,
   "ritmo_a_fc_storia": [
    {
     "data": "2026-08-30",
@@ -3279,8 +3264,8 @@
     "pace_s": 377
    },
    {
-    "data": "2026-11-21",
-    "pace_s": 370
+    "data": "2026-11-22",
+    "pace_s": 371
    }
   ],
   "vo2max": 52.0,
