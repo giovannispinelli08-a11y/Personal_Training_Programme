@@ -1,9 +1,9 @@
-# Digest — 2026-11-22
+# Digest — 2026-11-23
 
 ## Stato
 
 - Ultima corsa: 2026-11-20 — 4.8 km in 27' (5:41/km, FC 147)
-- Giorni dall'ultima corsa: 2
+- Giorni dall'ultima corsa: 3
 - Ultimi 7 giorni: 2 corse, 11.9 km, 73 min
 - Ultimi 28 giorni: 6 corse, 36.9 km, 233 min
 - Lungo più lungo (28gg): 10.0 km
@@ -11,28 +11,28 @@
 
 ## Recupero
 
-- Prontezza oggi: 77/100 (verde)
+- Prontezza oggi: 68/100 (verde)
 - HRV media 7 giorni: 101 ms, banda normale 91-105 (normale)
-- FC a riposo: 46 bpm (+0.1 sulla media)
-- Consiglio: Via libera: seduta come da piano.
+- FC a riposo: 49 bpm (+3.1 sulla media)
+- Consiglio: Giorno di riposo da piano. Recupero buono: una camminata o mobilità vanno benissimo.
 
 ## Piano vs reale (ultime 4 settimane)
 
 | Settimana | Piano min | Reale min | % | Lungo piano | Lungo reale |
 |---|---|---|---|---|---|
-| 2026-10-26 | 119 | 32 | 27% | 50 | 32 |
 | 2026-11-02 | 130 | 64 | 49% | 55 | 64 |
 | 2026-11-09 | 138 | 64 | 47% | 60 | 34 |
 | 2026-11-16 | 96 | 73 | 76% | 42 | 46 |
+| 2026-11-23 | 157 | 0 | 0% | 70 | 0 |
 
-## In programma (settimana dal 2026-11-23)
+## In programma (settimana dal 2026-11-30)
 
-- 2026-11-24 · facile 29' — FC 136-156
-- 2026-11-25 · potenziamento 20'
-- 2026-11-26 · facile 29' — FC 136-156
-- 2026-11-27 · mobilita 15'
-- 2026-11-28 · facile_allunghi 29' — FC 136-156
-- 2026-11-29 · lungo 70' — FC 136-156
+- 2026-12-01 · facile 30' — FC 136-156
+- 2026-12-02 · potenziamento 20'
+- 2026-12-03 · facile 30' — FC 136-156
+- 2026-12-04 · mobilita 15'
+- 2026-12-05 · facile_allunghi 30' — FC 136-156
+- 2026-12-06 · gara 
 
 ## Efficienza aerobica
 
@@ -59,5 +59,4 @@ Trend ultime 3 vs 3 precedenti: +2.2%
 
 ## Segnalazioni
 
-- Salto di volume: settimana del 2026-11-02 64 min contro 32 della precedente (+101%).
-- Settimana scorsa al 47% del piano: se si ripete, il piano va riscalato invece di accumulare arretrato.
+- Nessuna anomalia.

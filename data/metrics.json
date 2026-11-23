@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-22",
+ "generato": "2026-11-23",
  "zone": [
   "Z1",
   "Z2",
@@ -30,22 +30,22 @@
   ]
  ],
  "oggi": {
-  "data": "2026-11-22",
-  "prontezza": 77,
+  "data": "2026-11-23",
+  "prontezza": 68,
   "livello": "verde",
-  "ieri": 63,
+  "ieri": 77,
   "componenti": {
    "rhr": {
-    "valore": 46.0,
+    "valore": 49.0,
     "baseline": 45.9,
-    "delta": 0.1,
-    "z": 0.04,
-    "punti": 69.0,
+    "delta": 3.1,
+    "z": 1.17,
+    "punti": 52.0,
     "peso": 0.2
    },
    "carico": {
-    "rapporto": 0.86,
-    "tsb": 1.4,
+    "rapporto": 0.76,
+    "tsb": 2.2,
     "punti": 85,
     "peso": 0.2
    }
@@ -58,36 +58,11 @@
    ],
    "stato": "normale"
   },
-  "seduta": {
-   "tipo": "lungo",
-   "disciplina": "corsa",
-   "minuti": "42",
-   "fc_min": "136",
-   "fc_max": "156",
-   "note": "tenere la FC nella metà bassa della zona"
-  },
-  "consiglio": "Via libera: seduta come da piano.",
+  "seduta": null,
+  "consiglio": "Giorno di riposo da piano. Recupero buono: una camminata o mobilità vanno benissimo.",
   "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-07-26",
-   "hrv": null,
-   "hrv7": null,
-   "hrv_banda": [
-    77,
-    88
-   ],
-   "rhr": 46.0,
-   "rhr_base": 47.2,
-   "sonno_h": 4.81,
-   "sonno_score": 63.0,
-   "prontezza": 69,
-   "ctl": 2.9,
-   "atl": 0.7,
-   "tsb": 2.3,
-   "load": 0.0
-  },
   {
    "data": "2026-07-27",
    "hrv": null,
@@ -2229,25 +2204,27 @@
    "atl": 8.3,
    "tsb": 1.4,
    "load": 0.0
+  },
+  {
+   "data": "2026-11-23",
+   "hrv": null,
+   "hrv7": 101,
+   "hrv_banda": [
+    90,
+    104
+   ],
+   "rhr": 49.0,
+   "rhr_base": 45.9,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": 68,
+   "ctl": 9.5,
+   "atl": 7.2,
+   "tsb": 2.2,
+   "load": 0.0
   }
  ],
  "settimane": [
-  {
-   "lun": "2026-08-03",
-   "corse": 0,
-   "min_corsa": 0,
-   "km": 0,
-   "zone_min": [
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "load_tot": 0,
-   "monotonia": null,
-   "strain": null
-  },
   {
    "lun": "2026-08-10",
    "corse": 0,
@@ -2487,6 +2464,22 @@
    "load_tot": 66,
    "monotonia": 0.57,
    "strain": 38
+  },
+  {
+   "lun": "2026-11-23",
+   "corse": 0,
+   "min_corsa": 0,
+   "km": 0,
+   "zone_min": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "load_tot": 0,
+   "monotonia": null,
+   "strain": null
   }
  ],
  "corse": [
@@ -3213,12 +3206,8 @@
  ],
  "prestazione": {
   "fc_riferimento": 145,
-  "ritmo_a_fc_s": 371,
+  "ritmo_a_fc_s": 372,
   "ritmo_a_fc_storia": [
-   {
-    "data": "2026-08-30",
-    "pace_s": null
-   },
    {
     "data": "2026-09-06",
     "pace_s": 396
@@ -3266,6 +3255,10 @@
    {
     "data": "2026-11-22",
     "pace_s": 371
+   },
+   {
+    "data": "2026-11-23",
+    "pace_s": 372
    }
   ],
   "vo2max": 52.0,
@@ -3457,7 +3450,7 @@
   ],
   "mezza_teorica": "1:28:29",
   "mezza_teorica_s": 5309,
-  "polarizzazione_28": 81,
+  "polarizzazione_28": 79,
   "decoupling_medio_28": 3.2,
   "cadenza_media_28": 156.0
  }
