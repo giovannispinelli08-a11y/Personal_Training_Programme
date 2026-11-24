@@ -1,5 +1,5 @@
 {
- "generato": "2026-11-23",
+ "generato": "2026-11-24",
  "zone": [
   "Z1",
   "Z2",
@@ -30,57 +30,38 @@
   ]
  ],
  "oggi": {
-  "data": "2026-11-23",
-  "prontezza": 68,
-  "livello": "verde",
-  "ieri": 77,
+  "data": "2026-11-24",
+  "prontezza": null,
+  "livello": null,
+  "ieri": 68,
   "componenti": {
-   "rhr": {
-    "valore": 49.0,
-    "baseline": 45.9,
-    "delta": 3.1,
-    "z": 1.17,
-    "punti": 52.0,
-    "peso": 0.2
-   },
    "carico": {
-    "rapporto": 0.76,
-    "tsb": 2.2,
+    "rapporto": 0.68,
+    "tsb": 3.0,
     "punti": 85,
     "peso": 0.2
    }
   },
   "hrv_settimana": {
-   "media7": 101,
+   "media7": 97,
    "banda": [
     91,
     105
    ],
    "stato": "normale"
   },
-  "seduta": null,
-  "consiglio": "Giorno di riposo da piano. Recupero buono: una camminata o mobilità vanno benissimo.",
+  "seduta": {
+   "tipo": "facile",
+   "disciplina": "corsa",
+   "minuti": "29",
+   "fc_min": "136",
+   "fc_max": "156",
+   "note": ""
+  },
+  "consiglio": "Dati di recupero insufficienti: segui il piano e le sensazioni.",
   "note": []
  },
  "giornaliero": [
-  {
-   "data": "2026-07-27",
-   "hrv": null,
-   "hrv7": null,
-   "hrv_banda": [
-    77,
-    88
-   ],
-   "rhr": 57.0,
-   "rhr_base": 47.2,
-   "sonno_h": null,
-   "sonno_score": null,
-   "prontezza": 0,
-   "ctl": 2.9,
-   "atl": 0.6,
-   "tsb": 2.3,
-   "load": 0.0
-  },
   {
    "data": "2026-07-28",
    "hrv": null,
@@ -2222,6 +2203,24 @@
    "atl": 7.2,
    "tsb": 2.2,
    "load": 0.0
+  },
+  {
+   "data": "2026-11-24",
+   "hrv": null,
+   "hrv7": 97,
+   "hrv_banda": [
+    90,
+    104
+   ],
+   "rhr": null,
+   "rhr_base": 45.9,
+   "sonno_h": null,
+   "sonno_score": null,
+   "prontezza": null,
+   "ctl": 9.3,
+   "atl": 6.3,
+   "tsb": 3.0,
+   "load": 0.0
   }
  ],
  "settimane": [
@@ -3257,7 +3256,7 @@
     "pace_s": 371
    },
    {
-    "data": "2026-11-23",
+    "data": "2026-11-24",
     "pace_s": 372
    }
   ],
